@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 import { LanguageSwitcher } from "./LanguageSwitcher";
-import { Terminal } from "lucide-react";
+import Image from "next/image";
 
 interface NavbarProps {
   onNavigateHome: () => void;
@@ -81,15 +81,14 @@ export function Navbar({ onNavigateHome, onSearchFocus }: NavbarProps) {
           className="flex items-center gap-1.5 sm:gap-2 group min-w-0"
           aria-label="Back to index"
         >
-          <span
-            className="flex h-6 w-6 sm:h-7 sm:w-7 shrink-0 items-center justify-center rounded-md border border-border group-hover:border-primary/40 transition-colors"
-            style={{
-              background: "color-mix(in oklch, var(--primary) 8%, transparent)",
-            }}
-          >
-            <Terminal
-              className="h-3 w-3 sm:h-3.5 sm:w-3.5"
-              style={{ color: "var(--primary)" }}
+          <span className="flex h-6 w-6 sm:h-7 sm:w-7 shrink-0 items-center justify-center rounded-md overflow-hidden border border-border group-hover:border-primary/40 transition-colors">
+            <Image
+              src="/logo.png"
+              alt="cheat_sheet logo"
+              width={28}
+              height={28}
+              className="object-cover w-full h-full"
+              priority
             />
           </span>
           <span className="font-mono text-xs sm:text-sm font-semibold tracking-tight truncate">

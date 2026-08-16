@@ -23,7 +23,12 @@ export const metadata: Metadata = {
     "PyTorch", "TensorFlow", "system design", "Git", "Docker", "Linux",
   ],
   authors: [{ name: "Adil Shamim", url: "https://www.adilshamim.me/" }],
-  icons: { icon: "/logo.svg" },
+  icons: {
+    icon: [
+      { url: "/logo.png", type: "image/png" },
+    ],
+    apple: "/logo.png",
+  },
   openGraph: {
     title: "cheat_sheet — Premium Developer Reference",
     description:
