@@ -300,5 +300,4 @@ Built by **Adil Shamim** — engineer, developer, and author.
 ---
 
 ## License
-
 MIT
