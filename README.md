@@ -1,4 +1,4 @@
-# cheat_sheet
+# Cheat Sheet
 
 **Premium, fast-loading developer reference platform.** Maximum signal, minimum noise — the 20% of knowledge that resolves 80% of real-world usage, distilled for working engineers who need fast recall, not tutorials.
 
@@ -111,7 +111,7 @@ The UI chrome (navbar, section headers, search, filters, footer, keyboard hints)
 
 ### Particle hero
 
-Canvas 2D particle field in `src/components/cheat/ParticleHero.tsx`. Lazy-mounted via `IntersectionObserver`, disabled under `prefers-reduced-motion`, falls back to static gradient if canvas unavailable.
+Canvas 2D particle field in `src/components/cheat/ParticleHero.tsx`. Lazy-mounted via `IntersectionObserver`, disabled under `prefers-reduced-motion`, falls back to a static gradient if canvas is unavailable.
 
 ### Polish features
 
@@ -275,7 +275,7 @@ Static export requires `output: 'export'` in `next.config.ts`. The hash-based ro
 
 ## Performance budget
 
-Target: Lighthouse ≥ 95 across Performance / Accessibility / Best Practices / SEO; LCP < 2.0s on throttled connection.
+Target: Lighthouse ≥ 95 across Performance / Accessibility / Best Practices / SEO; LCP < 2.0s on a throttled connection.
 
 Notable optimizations:
 - No external syntax-highlighting library (~3KB custom tokenizer vs ~30KB for Prism)
