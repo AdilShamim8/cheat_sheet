@@ -298,6 +298,5 @@ Built by **Adil Shamim** — engineer, developer, and author.
 - Medium: [adilshamim8.medium.com](https://adilshamim8.medium.com/)
 
 ---
-
 ## License
 MIT
