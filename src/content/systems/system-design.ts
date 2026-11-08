@@ -675,6 +675,12 @@ class VClock:
     { syntax: "quota → queue → cache", behavior: "The standard read-path algebra: rate limit, then async work, then serve fast.", when: "Any API with variable cost per request." },
   ],
 
+  testing: [
+    { syntax: "load test (k6/Gatling)", behavior: "Replay production-shaped traffic; find the knee, not just the peak.", when: "Before launches and capacity changes; use prod traffic captures, not synthetic uniformity." },
+    { syntax: "chaos experiment", behavior: "Inject failure (kill node, add latency, drop packets) and verify SLOs hold.", when: "After each architectural change; run game-days quarterly." },
+    { syntax: "soak test", behavior: "Sustained moderate load for hours — catches leaks and GC death spirals.", when: "Anything with state or caches before long-lived deploys." },
+  ],
+
 };
 
 export default sheet;
