@@ -18,7 +18,7 @@ function h(level: number, text: string): string {
   return "#".repeat(level) + " " + text + NL + NL;
 }
 
-function constructTable(rows: ConstructRow[], title: string, level: number): string {
+function constructTable(rows: ConstructRow[] | undefined, title: string, level: number): string {
   if (!rows || !rows.length) return "";
   let out = h(level, title);
   out += "| Syntax | Behavior | When to use |" + NL + "| --- | --- | --- |" + NL;
@@ -26,7 +26,7 @@ function constructTable(rows: ConstructRow[], title: string, level: number): str
   return out + NL;
 }
 
-function codeBlocks(blocks: CodeBlock[], title: string, level: number): string {
+function codeBlocks(blocks: CodeBlock[] | undefined, title: string, level: number): string {
   if (!blocks || !blocks.length) return "";
   let out = h(level, title);
   for (const b of blocks) {
