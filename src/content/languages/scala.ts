@@ -9,6 +9,7 @@ const sheet: CheatSheet = {
   tagline: "JVM language fusing OO and functional programming — strong static types, type inference, and the engine behind Apache Spark and modern data engineering.",
   year: 2004,
   lastUpdated: "2026-11",
+  readingTime: 30,
   author: "Martin Odersky (EPFL)",
 
   tldr: [
@@ -176,7 +177,6 @@ def log[A](a: A)(using s: Show[A]): String = s"a = \${a.show}"
   ],
 
   goDeeper: [
-    { title: "Scala release notes and announcements", url: "https://www.scala-lang.org/download/", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "Scala Documentation — Official", url: "https://docs.scala-lang.org/", note: "The language tour + Scala 3 book are the canonical entry points; the Cookbook is excellent for recipes." },
     { title: "Programming in Scala (Odersky, Spoon, Venners)", url: "https://www.artima.com/shop/programming_in_scala_5ed", note: "The canonical book by the language designer; updated for Scala 3 in the 5th edition." },
     { title: "Scala 3 Reference (Dotty)", url: "https://docs.scala-lang.org/scala3/reference/", note: "The reference for all Scala 3 features — type classes, given/using, metaprogramming, etc." },
