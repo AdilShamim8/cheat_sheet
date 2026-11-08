@@ -319,3 +319,12 @@ Built by **Adil Shamim** — engineer, developer, and author.
 ---
 ## License
 MIT
+
+## Content coverage (Nov 2026)
+
+46 references, all refreshed against primary sources on 2026-11-08:
+
+- **Languages (29)** — Python 3.15 · TypeScript 7.0 · Go 1.27 · Java 26 · Rust 1.99 · C# 14/.NET 10 · Swift 6.4 · Kotlin 2.4.20 · Ruby 4.0 · PHP 8.5 · Elixir 1.20 · Dart 3.13 · C23/C2y · C++26 · and 16 more.
+- **ML/AI (6)** — PyTorch 2.15 · TensorFlow 2.21 · Keras 3.15 · scikit-learn 1.9 · pandas 3.1 · NumPy 2.5.
+- **Systems (1)** — System Design (incl. AI-native systems).
+- **Topics (10)** — Git 2.56 · Docker 29 · Linux 7.3 · Networking · DevOps · React 19.3 · Node.js 26 · PostgreSQL 18 · Redis 8.10 · Kubernetes 1.37.
