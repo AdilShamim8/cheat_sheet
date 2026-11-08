@@ -8,6 +8,7 @@ const sheet: CheatSheet = {
   tags: ["dynamic", "interpreted", "object-oriented", "web", "dsl-friendly", "rails", "scripting"],
   tagline: "Dynamic, object-oriented language optimized for developer happiness — the engine behind Rails and a king of internal DSLs.",
   year: 1995,
+  lastUpdated: "2026-11",
   author: "Yukihiro Matsumoto (Matz)",
 
   tldr: [
@@ -863,6 +864,7 @@ end
     { version: "3.2",  year: 2022, highlight: "Data.define immutable value class, Regexp timeout, WASI support, YJIT prod-ready." },
     { version: "3.3",  year: 2023, highlight: "YJIT enabled by default, M:N thread scheduler (experimental), Prism parser." },
     { version: "3.4",  year: 2024, highlight: "Prism becomes default parser, modular GC (you can swap Shoelace/Hash tracking), block-return warnings." },
+    { version: "4.0",  year: 2025, highlight: "Ruby Box (experimental monkey-patch isolation), ZJIT compiler (YJIT successor), Ractor::Port, Pathname and Set promoted to core classes." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────
