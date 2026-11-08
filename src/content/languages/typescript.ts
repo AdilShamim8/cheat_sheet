@@ -10,6 +10,7 @@ const sheet: CheatSheet = {
   year: 2012,
   author: "Microsoft (Anders Hejlsberg)",
   lastUpdated: "2026-11",
+  readingTime: 30,
 
   tldr: [
     "TypeScript is a strict syntactic superset of JavaScript that adds optional static typing, generics, and rich type inference, then erases the types to emit idiomatic JavaScript.",
@@ -176,7 +177,6 @@ function route<K extends keyof Routes>(
   ],
 
   goDeeper: [
-    { title: "TypeScript release notes and announcements", url: "https://github.com/microsoft/TypeScript/releases", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "TypeScript Handbook — Official Docs", url: "https://www.typescriptlang.org/docs/handbook/intro.html", note: "The authoritative tutorial; the Type Manipulation section covers generics, mapped, conditional, and template literal types." },
     { title: "TypeScript Release Notes", url: "https://devblogs.microsoft.com/typescript/", note: "Per-version changes are the fastest way to learn what idioms are now safe to use." },
     { title: "Type-level TypeScript", url: "https://type-level-typescript.com/", note: "Free deep course on the type system as a programming language in its own right." },
@@ -743,7 +743,6 @@ describe("types", () => {
 
   // ─── §17 Ecosystem & Tooling ───────────────────────────────────────
   ecosystem: [
-    { tool: "Vue 3.5.45", purpose: "Optional for TS users; shown as ecosystem version reference (Nov 2026).", url: "https://github.com/vuejs/core/releases", category: "build" },
     { tool: "tsc", purpose: "The TypeScript compiler — also a type-checker; --noEmit for CI checks.", url: "https://www.typescriptlang.org/", category: "build" },
     { tool: "tsx", purpose: "Zero-config TS executor for Node — uses esbuild, no type-checking.", url: "https://tsx.is/", category: "build" },
     { tool: "tsup", purpose: "esbuild-based bundler for TS libraries — zero-config, fast, dual CJS/ESM.", url: "https://tsup.egoist.dev/", category: "build" },
