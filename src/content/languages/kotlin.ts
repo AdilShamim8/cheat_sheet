@@ -8,6 +8,7 @@ const sheet: CheatSheet = {
   tags: ["static", "jvm", "android", "concise", "coroutines", "functional", "null-safe"],
   tagline: "Statically-typed JVM language with null safety, coroutines, and a conciseness bias — the default for Android and a strong server-side choice via Spring/Ktor.",
   year: 2011,
+  lastUpdated: "2026-11",
   author: "JetBrains",
 
   tldr: [
@@ -909,6 +910,7 @@ class UserRepoTest {
     { version: "1.9",  year: 2023, highlight: "K2 beta, KMP stable for non-UI code, enum class entries, data object stable." },
     { version: "2.0",  year: 2024, highlight: "K2 compiler default (2x faster), smart cast improvements, context parameters (preview)." },
     { version: "2.1",  year: 2024, highlight: "Context parameters (replacement for context receivers), nested generic nullability, guard improvements." },
+    { version: "2.4.20",  year: 2026, highlight: "Sealed classes export as Swift enums with cross-language inheritance, allDistinct/allEqual stdlib additions, browser-testing DSL on Playwright." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────
