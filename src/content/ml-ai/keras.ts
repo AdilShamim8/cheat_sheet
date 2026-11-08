@@ -972,6 +972,7 @@ def test_loss_handles_one_hot_vs_int_labels():
     { version: "3.3",  year: 2024, highlight: "keras.distribution.ModelParallel for SPMD on JAX; safetensors weight support." },
     { version: "3.4",  year: 2024, highlight: "Native ONNX export; KerasNLP LLM finetuning APIs matured (Gemma, Llama)." },
     { version: "3.5+", year: 2025, highlight: "Stabilized cross-backend LayerNorm / Attention / RoPE; torch.compile support under PyTorch backend." },
+    { version: "3.15", year: 2026, highlight: "Current line: export_torch path, sliding-window attention in MHA/GQA, MultiOptimizer, security hardening (restricted unpickling, path-traversal checks)." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────
