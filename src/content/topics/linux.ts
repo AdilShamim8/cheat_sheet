@@ -826,6 +826,14 @@ cat urls.txt | xargs -P 8 -I{} bash -c 'fetch_page "{}" >> out.txt'`,
     { syntax: "$(cmd) / <(cmd)", behavior: "Command / process substitution.", when: "diff <(sort a) <(sort b) — live FDs where files go." },
     { syntax: "xargs -P N", behavior: "Fan out stdin as args across N processes.", when: "Bounded parallel batch jobs." },
   ],
+  versionHistory: [
+    { version: "1.0", year: 1994, highlight: "Torvalds releases the kernel; GNU userland completes the OS." },
+    { version: "2.6", year: 2003, highlight: "Preemptible kernel, NPTL, epoll — the server era." },
+    { version: "4.x", year: 2015, highlight: "Live patching, cgroup v2 groundwork." },
+    { version: "5.1", year: 2019, highlight: "io_uring: zero-syscall async I/O, 2-10x over epoll at high IOPS." },
+    { version: "6.1", year: 2022, highlight: "Rust in the kernel, multi-gen LRU. 6.12/6.6 became the LTS workhorses." },
+    { version: "7.3", year: 2026, highlight: "Current stable line: dmem cgroup VRAM, sched_ext sub-schedulers, failfs." },
+  ],
 };
 
 export default sheet;
