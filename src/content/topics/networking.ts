@@ -713,6 +713,22 @@ curl -w "dns=%{time_namelookup} tls=%{time_appconnect} total=%{time_total}" \
     },
   ],
 
+  loops: [
+    {
+      lang: "bash",
+      caption: "Operational sweeps across hosts and ports",
+      code: `while read -r host; do
+  (timeout 2 bash -c "echo > /dev/tcp/$host/5432" \
+     && echo "up   $host" || echo "down $host") &
+done < hosts.txt | sort
+wait
+
+for h in $(cat hosts.txt); do
+  echo | openssl s_client -connect "$h:443" -servername "$h" 2>/dev/null \
+    | openssl x509 -noout -enddate | sed "s|^|$h |"
+done`,
+    },
+  ],
 };
 
 export default sheet;
