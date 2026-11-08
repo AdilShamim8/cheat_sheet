@@ -338,3 +338,11 @@ MIT
 ## Verifying facts
 
 Every version claim on this site was checked against a primary source on the date shown in each page's `lastUpdated` field. Key sources: official release notes (python.org, go.dev, openjdk.org, rust releases.rs, swift.org, kotlinlang.org), GitHub Releases, TIOBE index, Stack Overflow Developer Survey 2026, GitHub Octoverse 2026, DB-Engines ranking, Synergy Research cloud stats.
+
+## FAQ
+
+**Is the content English-only?** The UI localizes into 9 languages; reference content stays English (code is universal).
+
+**How often is it updated?** Version histories track current stable releases; the Nov 2026 refresh updated all 46 pages.
+
+**Can I contribute?** Yes — see CONTRIBUTING.md; one-page PRs with verified facts merge fastest.
