@@ -922,6 +922,7 @@ const sheet: CheatSheet = {
     { version: "1.10.1+", year: 2019, highlight: "Stability releases, error message improvements, performance work." },
     { version: "1.11", year: 2022, highlight: "Namespace qualification helpers, keyword argument destructuring improvements, Java 17 LTS support." },
     { version: "1.12", year: 2024, highlight: "Interactive form evaluation (REPL 2.0), Java 21 virtual threads interop, perf work." },
+    { version: "1.13", year: 2026, highlight: "Virtual-threads-first guidance on JDK 25+, faster core.async, tooling alignment with newer JDKs." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────
