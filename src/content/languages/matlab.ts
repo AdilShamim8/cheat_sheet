@@ -9,6 +9,7 @@ const sheet: CheatSheet = {
   tagline: "MathWorks' matrix-first numerical environment — the lingua franca of control systems, signal processing, and academic engineering labs.",
   year: 1984,
   lastUpdated: "2026-11",
+  readingTime: 30,
   author: "Cleve Moler / MathWorks",
 
   tldr: [
