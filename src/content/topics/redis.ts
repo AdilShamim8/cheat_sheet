@@ -432,6 +432,7 @@ redis-benchmark -t set,get -n 1000000 -P 16 -q
 
   // ─── §17 Ecosystem & tooling ──────────────────────────────────────────────
   ecosystem: [
+    { tool: "Valkey 9.1.3", purpose: "BSD-licensed fork under the Linux Foundation; drop-in compatible.", url: "https://valkey.io/", category: "build" },
     { tool: "redis-cli", purpose: "The built-in client: interactive REPL, --pipe bulk loading, --bigkeys, --latency, --stat.", url: "https://redis.io/docs/latest/develop/tools/cli/", category: "tooling" },
     { tool: "redis-benchmark", purpose: "Throughput/latency benchmarking with pipelining simulation.", url: "https://redis.io/docs/latest/develop/tools/redis-benchmark/", category: "test" },
     { tool: "RedisInsight", purpose: "Official GUI: data browser, slowlog, memory analysis, stream visualization.", url: "https://redis.io/insight/", category: "tooling" },
