@@ -8,6 +8,7 @@ const sheet: CheatSheet = {
   tags: ["static", "jvm", "functional", "object-oriented", "concurrent", "spark", "type-safe"],
   tagline: "JVM language fusing OO and functional programming — strong static types, type inference, and the engine behind Apache Spark and modern data engineering.",
   year: 2004,
+  lastUpdated: "2026-11",
   author: "Martin Odersky (EPFL)",
 
   tldr: [
