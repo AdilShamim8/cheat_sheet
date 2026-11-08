@@ -186,6 +186,7 @@ np.clip(X, lo, out=None)`,
   ],
 
   quickReference: [
+    { fact: "Learning path: numpy-100 exercises → broadcasting page → einsum practice → Array API for portable kernels.", tag: "learning" },
     { fact: "Current: NumPy 2.5.4 (Oct 2026); 2.5.0 dropped Python 3.11, supports 3.12-3.15, distutils removed, Array-API-compliant descending sorts, improved free-threading support.", tag: "version" },
     { fact: "NumPy 2.x (June 2024) was the first major in 18 years: NEP 50 promotion (python scalars weak), new string dtype, copy= keyword, 100+ removed aliases — migration was the story of 2024-25.", tag: "version" },
     { fact: "Slices are views; fancy (integer-array) indexing copies; reshape/transpose are metadata — until non-contiguity forces a copy.", tag: "behavior" },
