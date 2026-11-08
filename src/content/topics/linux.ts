@@ -815,17 +815,25 @@ cat urls.txt | xargs -P 8 -I{} bash -c 'fetch_page "{}" >> out.txt'`,
   ],
 
   testing: [
-    { syntax: "shellcheck", behavior: "Static analysis for shell: catches quoting, globbing, and SC2086-class bugs.", when: "Every script, every repo — CI-enforced; the single highest-ROI shell tool." },
-    { syntax: "bats-core", behavior: "Bash automated testing system: run() assertions in .bats files.", when: "Scripts whose correctness matters (deploy scripts, init hooks)." },
+    {
+      lang: "bash",
+      caption: "shellcheck: the highest-ROI tool in shell",
+      code: `shellcheck deploy.sh
+# deploy.sh:8:1: warning: Quote this to prevent word splitting [SC2046]
+#   for f in $(ls *.log); do      # breaks on spaces
+# fix:
+#   for f in *.log; do            # glob directly
+
+shellcheck -S warning **/*.sh   # CI gate: fail on any warning
+
+@test "backup creates dated archive" {   # bats-core
+  run ./backup.sh /tmp/src
+  [ "$status" -eq 0 ]
+  [ -f /tmp/backups/$(date +%F).tar.gz ]
+}`,
+    },
   ],
 
-  operators: [
-    { syntax: "cmd1 | cmd2", behavior: "Pipe: stdout of one feeds stdin of the next.", when: "The Unix composition operator." },
-    { syntax: "cmd > f 2>&1 / >> f", behavior: "Redirect stdout (+stderr merged); >> appends.", when: "Logs, capture. Order of 2>&1 matters." },
-    { syntax: "cmd1 && cmd2 / ||", behavior: "Run on success / on failure — exit codes are contracts.", when: "build && deploy; ping || echo down." },
-    { syntax: "$(cmd) / <(cmd)", behavior: "Command / process substitution.", when: "diff <(sort a) <(sort b) — live FDs where files go." },
-    { syntax: "xargs -P N", behavior: "Fan out stdin as args across N processes.", when: "Bounded parallel batch jobs." },
-  ],
   versionHistory: [
     { version: "1.0", year: 1994, highlight: "Torvalds releases the kernel; GNU userland completes the OS." },
     { version: "2.6", year: 2003, highlight: "Preemptible kernel, NPTL, epoll — the server era." },
