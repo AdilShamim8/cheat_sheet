@@ -198,6 +198,7 @@ tf.saved_model.save(
   ],
 
   quickReference: [
+    { fact: "TensorFlow 2.21 (Mar 2026) is current stable; 2.22-rc adds Python 3.14 and CUDA 13.", tag: "version" },
     { fact: "@tf.function gives 5–10× speedup over eager; first call always traces (slow), subsequent calls reuse the cached graph.", tag: "perf" },
     { fact: "tf.data.AUTOTUNE lets the runtime pick buffer sizes — always prefer it over hand-tuned values for prefetch/num_parallel_calls.", tag: "perf" },
     { fact: "SavedModel is the deploy artifact: directory with saved_model.pb (graph), variables/ (weights), and assets/ (vocab files). Loaded by name and version.", tag: "version" },
