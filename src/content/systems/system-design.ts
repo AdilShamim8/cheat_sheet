@@ -713,6 +713,24 @@ Idempotency-Key: 7f3c-...
 GET /orders?cursor=eyJpZCI6...&limit=50   # keyset pagination`,
     },
   ],
+  loops: [
+    {
+      lang: "python",
+      caption: "Retry with exponential backoff and full jitter",
+      code: `import random, time
+
+def with_retries(fn, *, tries=5, base=0.25, cap=8.0):
+    for attempt in range(tries):
+        try:
+            return fn()
+        except TransientError:
+            if attempt == tries - 1:
+                raise
+            time.sleep(random.uniform(0, min(cap, base * 2 ** attempt)))
+        except PermanentError:
+            raise`,
+    },
+  ],
 };
 
 export default sheet;
