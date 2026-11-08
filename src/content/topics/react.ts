@@ -177,6 +177,7 @@ function SubmitButton() {
   ],
 
   pitfalls: [
+    { title: "Upgrading to 19 without removing forwardRef", symptom: "React 19 logs warnings and ref props stop flowing through forwardRef wrappers.", fix: "ref is a normal prop since 19 — delete forwardRef wrappers, accept ref in props. Codemod provided by the React team." },
     { title: "Derived data stored in state", symptom: "useState + useEffect copying props into state — the UI shows stale values after the parent re-renders with new props.", fix: "If it can be computed from props/state, compute it during render (or useMemo). State is only for values that change independently of inputs." },
     { title: "Stale closures in effects and callbacks", symptom: "setInterval / event listener inside useEffect sees old state values forever.", fix: "The effect captured the state at run time. Either add the value to deps, use a ref for the latest value, or read via functional updates setX(x => x + 1)." },
     { title: "Keys from array index in reorderable lists", symptom: "Inputs keep the wrong value after sort/filter — component identity follows position, not item.", fix: "Use stable unique ids as keys. Index keys are safe only for append-only static lists." },
