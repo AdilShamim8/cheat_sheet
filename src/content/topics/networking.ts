@@ -697,9 +697,20 @@ A 32GB box can host ~32K threads or ~3M event-driven connections.`,
   ],
 
   testing: [
-    { syntax: "tcpdump/wireshark capture", behavior: "Packet truth: filters (host, port, tcp[13]) on the wire.", when: "Every is-it-the-network debate ends here — capture both ends." },
-    { syntax: "iperf3", behavior: "Saturate a path with controlled TCP/UDP load; measure throughput + jitter.", when: "Capacity verification, MTU/window tuning between sites." },
-    { syntax: "mtr", behavior: "traceroute + ping continuous — per-hop loss/latency over time.", when: "Intermittent path issues that single traceroutes miss." },
+    {
+      lang: "bash",
+      caption: "The network truth toolkit",
+      code: `sudo tcpdump -i eth0 -nn host 10.0.1.42 and tcp port 5432 -w db.pcap
+wireshark db.pcap
+
+iperf3 -s
+iperf3 -c server.example.com -t 30 -P 4
+
+mtr -rwzc 50 api.example.com
+
+curl -w "dns=%{time_namelookup} tls=%{time_appconnect} total=%{time_total}" \
+  -o /dev/null -s https://api.example.com`,
+    },
   ],
 
 };
