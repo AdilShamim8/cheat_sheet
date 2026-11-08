@@ -8,6 +8,7 @@ const sheet: CheatSheet = {
   tags: ["dynamic", "compiled", "scientific", "jit", "numerical", "multiple-dispatch", "julia"],
   tagline: "Lisp-flavored multiple dispatch over LLVM — Python's ergonomics with Fortran's speed for numerical work.",
   year: 2012,
+  lastUpdated: "2026-11",
   author: "Jeff Bezanson, Stefan Karpinski, Viral B. Shah, Alan Edelman",
 
   tldr: [
