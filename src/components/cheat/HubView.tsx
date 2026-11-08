@@ -61,7 +61,7 @@ function SheetCard({
             borderColor: "var(--tier-bd)",
           }}
         >
-          {TIER_LABEL[sheet.tier].split(" ")[0]}
+          {TIER_LABEL[sheet.tier].split(" · ")[0]}
         </span>
       </div>
       <p className="text-[12.5px] text-muted-foreground leading-relaxed line-clamp-2 flex-1">
