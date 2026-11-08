@@ -812,6 +812,25 @@ wait`,
     },
   ],
 
+  loops: [
+    {
+      lang: "yaml",
+      caption: "The pipeline DAG as the deployment loop",
+      code: `on: { push: { branches: [main] } }
+jobs:
+  verify:
+    steps: [lint, typecheck, unit-test]
+  package:
+    needs: verify
+    steps: [build-image, scan, push]
+  deploy-staging:
+    needs: package
+    steps: [helm-upgrade staging, smoke-test]
+  deploy-prod:
+    needs: deploy-staging
+    steps: [helm-upgrade prod --atomic]`,
+    },
+  ],
 };
 
 export default sheet;
