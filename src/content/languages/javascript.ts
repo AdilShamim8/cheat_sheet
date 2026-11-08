@@ -188,6 +188,7 @@ async function loadWithCutoff(url, ms) {
   ],
 
   goDeeper: [
+    { title: "JavaScript release notes and announcements", url: "https://tc39.es/process-document/", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "ECMAScript® 2024 Language Specification", url: "https://tc39.es/ecma262/", note: "The authoritative spec; the abstract operations explain coercion and prototype semantics." },
     { title: "MDN Web Docs — JavaScript Reference", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript", note: "Best browser-side reference; covers API availability matrix per engine." },
     { title: "You Don't Know JS Yet (Kyle Simpson)", url: "https://github.com/getify/You-Dont-Know-JS", note: "Free, deep treatment of scope, closures, this, types, and async." },
