@@ -798,6 +798,7 @@ export default defineConfig({
 
   // ─── §17 Ecosystem & Tooling ───────────────────────────────────────
   ecosystem: [
+    { tool: "Vite 8.3.6", purpose: "Build tool current line (Nov 2026).", url: "https://github.com/vitejs/vite/releases", category: "build" },
     { tool: "Node.js", purpose: "The dominant JS runtime — built on V8 + libuv; the foundation of server-side JS.", url: "https://nodejs.org/", category: "build" },
     { tool: "Deno", purpose: "Secure-by-default runtime with native TS, web-standard APIs, and a curated stdlib.", url: "https://deno.com/", category: "build" },
     { tool: "Bun", purpose: "All-in-one runtime + bundler + test runner + package manager; 2-5x faster startup than Node.", url: "https://bun.sh/", category: "build" },
