@@ -689,6 +689,12 @@ A 32GB box can host ~32K threads or ~3M event-driven connections.`,
     { vs: "DNS over HTTPS (DoH)", whenThis: "Plain DNS when you control the resolver and trust the path (datacenter, internal).", whenThat: "DoH/DoT when you need privacy from network observers, want to bypass ISP hijacking, or operate on hostile networks (coffee shop wifi)." },
     { vs: "WebSockets", whenThis: "HTTP polling when changes are infrequent and you can tolerate 10-60s latency; one request per check.", whenThat: "WebSockets when you need real-time bidirectional: chat, live dashboards, multiplayer. Single TCP connection, server can push without polling." },
   ],
+  operators: [
+    { syntax: "iptables/nftables chains", behavior: "Ordered rule lists: first match wins; tables filter/nat/mangle.", when: "Firewall logic, DNAT/SNAT — nftables is the modern replacement." },
+    { syntax: "CIDR math / supernets", behavior: "10.0.0.0/8 vs /16 vs /24 — power-of-two block algebra.", when: "VPC design, subnet planning, route summarization." },
+    { syntax: "TTL + hop limits", behavior: "Packet dies after N routers — loop protection baked into L3.", when: "Diagnosing routing loops; traceroute reads TTL expiry deliberately." },
+  ],
+
 };
 
 export default sheet;
