@@ -8,6 +8,7 @@ const sheet: CheatSheet = {
   tags: ["containers", "linux", "namespaces", "cgroups", "oci", "packaging", "devops"],
   tagline: "Packaging model that bundles an app and its dependencies into a portable, isolated Linux container built on kernel namespaces and cgroups.",
   year: 2013,
+  lastUpdated: "2026-11",
   author: "Docker, Inc. (Solomon Hykes)",
 
   tldr: [
