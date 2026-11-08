@@ -203,6 +203,7 @@ if err := load(id); err != nil {
   ],
 
   goDeeper: [
+    { title: "Go release notes and announcements", url: "https://go.dev/doc/devel/release", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "Effective Go — Official", url: "https://go.dev/doc/effective_go", note: "The canonical guide to idiomatic Go; reading it once saves weeks of bad habits." },
     { title: "The Go Programming Language Specification", url: "https://go.dev/ref/spec", note: "Authoritative language reference; definitive on memory model, channels, and interface semantics." },
     { title: "The Go Programming Language (Donovan & Kernighan)", url: "https://www.gopl.io/", note: "The canonical book — exercises build real intuition for CSP-style concurrency." },
