@@ -12,6 +12,7 @@ import {
   Clock, Check, X, Github, Linkedin, Twitter, Globe, BookMarked,
 } from "lucide-react";
 import { TIER_LABEL } from "@/lib/types";
+import { ALL_SHEETS } from "@/lib/registry";
 
 interface SheetViewProps {
   sheet: CheatSheet;
@@ -224,7 +225,7 @@ function DeveloperFooter() {
               Developer · Engineer · {t("footer.copyright")}
             </div>
             <div className="text-[11px] text-muted-foreground font-mono">
-              {t("footer.doctrine", { n: String(39) })}
+              {t("footer.doctrine", { n: String(ALL_SHEETS.length) })}
             </div>
           </div>
           <div>
