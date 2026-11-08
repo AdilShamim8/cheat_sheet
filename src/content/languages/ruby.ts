@@ -160,6 +160,7 @@ end
   ],
 
   quickReference: [
+    { fact: "Ruby 4.0.9 (Oct 2026) is current — ZJIT, Ruby Box, Ractor::Port; 4.1-preview1 is out.", tag: "version" },
     { fact: "MRI has a GVL (Giant VM Lock) — only one Ruby thread executes bytecode at a time. Use Ractors (3.0+) or multiple processes for true parallelism.", tag: "perf" },
     { fact: "Ruby 3.0 keyword args are separated from positional — `def m(a:)` requires `m(a: 1)`, not `m({a: 1})`.", tag: "version" },
     { fact: "Ruby 3.1+ shorthand hash literal: `{x:, y:}` is sugar for `{x: x, y: y}`.", tag: "version" },
