@@ -9,6 +9,7 @@ const sheet: CheatSheet = {
   tagline: "High-level neural-network API — stack layers, compile, fit. Three backends (TF, JAX, PyTorch) under one interface since Keras 3.",
   year: 2015,
   lastUpdated: "2026-11",
+  readingTime: 30,
   author: "François Chollet (Google)",
 
   tldr: [
@@ -233,7 +234,6 @@ model.load_weights("weights.h5")    # architecture must match exactly`,
   ],
 
   goDeeper: [
-    { title: "Keras release notes and announcements", url: "https://github.com/keras-team/keras/releases", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "Keras Official Documentation (keras.io)", url: "https://keras.io/guides/", note: "Authoritative guides — read 'The Functional API', 'Making New Layers and Models via Subclassing', and 'Customizing What Happens in fit'." },
     { title: "Deep Learning with Python (François Chollet)", url: "https://www.manning.com/books/deep-learning-with-python-second-edition", note: "Written by Keras's creator; the canonical book for both the API and the deep-learning intuition behind it." },
     { title: "Keras 3 Announcement — One API, Three Backends", url: "https://keras.io/keras_3/", note: "Explains the multi-backend design and migration path; read before adopting Keras 3 in production." },
