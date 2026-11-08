@@ -189,6 +189,7 @@ function SubmitButton() {
   ],
 
   quickReference: [
+    { fact: "Learning path Nov 2026: react.dev learn → build with Vite/Next 16 → React Compiler RC → Testing Library + Playwright.", tag: "learning" },
     { fact: "React 19 (Dec 2024) made Actions, useActionState, useOptimistic, useFormStatus, ref-as-prop, and Document Metadata stable; 19.3 (Sep 2026) added <ViewTransition/> and the browser() react-dom entry.", tag: "version" },
     { fact: "State of JS 2025: 85% usage, 72% retention. npm: ~252M weekly downloads — an order of magnitude above every other UI library.", tag: "usage" },
     { fact: "Server Components render on the server, never hydrate, and ship zero JS; Client Components hydrate and own state. The boundary is the 'use client' directive.", tag: "rsc" },
