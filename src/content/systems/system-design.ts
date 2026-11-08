@@ -7,6 +7,8 @@ const sheet: CheatSheet = {
   tier: "sys",
   tags: ["distributed-systems", "scalability", "availability", "latency", "caching", "sharding", "consistency"],
   tagline: "Designing distributed systems — the concepts that outlast any single framework, cloud, or interview cycle.",
+  lastUpdated: "2026-11",
+  readingTime: 26,
 
   tldr: [
     "System design is the practice of structuring distributed systems to meet explicit availability, latency, throughput, and consistency targets under real-world failure modes (partitions, hotspots, cascading failures).",
