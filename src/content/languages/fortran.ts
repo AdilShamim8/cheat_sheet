@@ -1290,6 +1290,7 @@ end program
     { version: "Fortran 2018", year: 2018, highlight: "Formerly F2015. Merged TS 29113 (further C interop), high-performance messaging for coarrays, do concurrent enhancements (reduce clauses)." },
     { version: "Fortran 2023", year: 2023, highlight: "Generic programming (templates groundwork), redistricting of coarray features, lock/type extension enhancements. The current standard." },
     { version: "fpm 1.0", year: 2023, highlight: "Fortran Package Manager hits 1.0 — first Cargo-like dependency management for Fortran. The biggest quality-of-life upgrade in decades." },
+    { version: "Fortran 2023 published", year: 2026, highlight: "ISO publishes Fortran 2023; fpm mainstream for new projects; fortran-lang stdlib covers common algorithms." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────
