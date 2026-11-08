@@ -787,6 +787,12 @@ npx playwright test e2e/checkout-smoke.spec.ts --reporter=json > /tmp/result.jso
     { vs: "Push-based deploys (kubectl apply)", whenThis: "GitOps (ArgoCD/Flux) when you want audit trail, drift detection, PR-based approvals, and 'who applied what when' is answerable.", whenThat: "Push-based kubectl for tiny teams, throwaway clusters, or when gitops adds too much overhead for the value." },
     { vs: "Pulumi", whenThis: "Terraform when you want the biggest ecosystem, broadest provider support, and HCL's declarative simplicity.", whenThat: "Pulumi when you want real programming languages (TS/Python/Go) for loops, conditionals, and abstraction in IaC." },
   ],
+  operators: [
+    { syntax: "pipeline: lint → test → build → deploy → verify", behavior: "Each gate fails fast; the artifact is promoted, never rebuilt.", when: "The canonical CI/CD DAG — the same image travels dev → staging → prod." },
+    { syntax: "deploy vs release", behavior: "Deployment puts code on servers; release makes it visible (flags, weights).", when: "Decouple them always: rollback a flag in seconds, a deploy in minutes." },
+    { syntax: "SLO + error budget", behavior: "Target reliability (99.9%) minus actual = budget for change risk.", when: "Burn the budget → freeze features and pay down reliability debt." },
+  ],
+
 };
 
 export default sheet;
