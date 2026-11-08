@@ -464,6 +464,7 @@ def test_zscore_matches_naive():
 
   // ─── §17 Ecosystem & tooling ──────────────────────────────────────────────
   ecosystem: [
+    { tool: "Ruff 0.17.4", purpose: "Rust linter/formatter; 0.17.0 shipped signed binaries and removed ruff-lsp (Oct 2026).", url: "https://github.com/astral-sh/ruff/releases", category: "build" },
     { tool: "SciPy", purpose: "Built on NumPy: optimization, signal, sparse, stats, spatial — the rest of numerical Python.", url: "https://scipy.org/", category: "science" },
     { tool: "pandas", purpose: "DataFrames over NumPy arrays — labeled, tabular, SQL-ish.", url: "https://pandas.pydata.org/", category: "data" },
     { tool: "scikit-learn", purpose: "ML estimators consuming (and validating) NumPy arrays.", url: "https://scikit-learn.org/", category: "ml" },
