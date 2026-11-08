@@ -197,6 +197,7 @@ ORDER BY path;
   ],
 
   quickReference: [
+    { fact: "PostgreSQL 18.6 (Aug 2026) is current security line; PG19 at RC1 — plan major upgrades on LTS cadence.", tag: "version" },
     { fact: "Logical eval order: FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY. Aliases in SELECT can't be used in WHERE.", tag: "gotcha" },
     { fact: "SQL operates on bags (multisets), not sets — duplicates persist unless DISTINCT. Aggregations ignore NULLs; COUNT(*) counts rows.", tag: "gotcha" },
     { fact: "LEFT JOIN + WHERE on the right table converts to INNER JOIN silently — move right-table filters into ON.", tag: "gotcha" },
