@@ -9,6 +9,7 @@ const sheet: CheatSheet = {
   tagline: "A zero-overhead, multi-paradigm systems language — the default when you need performance, control, and a vast library ecosystem at once.",
   year: 1985,
   lastUpdated: "2026-11",
+  readingTime: 30,
   author: "Bjarne Stroustrup",
 
   tldr: [
@@ -174,7 +175,6 @@ void dispatch(const std::vector<Event>& events) {
   ],
 
   goDeeper: [
-    { title: "C++ release notes and announcements", url: "https://isocpp.org/blog/", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "cppreference.com", url: "https://en.cppreference.com/", note: "The de-facto standard library reference; exhaustive, version-tagged, and accurate." },
     { title: "ISO C++ Official Site — Standard & FAQ", url: "https://isocpp.org/", note: "Spec pointer, committee papers, and the official Core Guidelines." },
     { title: "Effective Modern C++ (Scott Meyers)", url: "https://www.oreilly.com/library/view/effective-modern-c/9781491908419/", note: "The canonical guide to move semantics, smart pointers, and type deduction." },
