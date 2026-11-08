@@ -539,6 +539,18 @@ git bisect reset
     },
   ],
 
+  loops: [
+    {
+      lang: "bash",
+      caption: "Branch sweeps: iterate refs like data",
+      code: `git for-each-ref --sort=-committerdate refs/heads/ \
+  --format="%(committerdate:short) %(authorname) %(refname:short)"
+
+git branch --merged main | grep -v main | while read -r b; do
+  git branch -d "$b"
+done`,
+    },
+  ],
 };
 
 export default sheet;
