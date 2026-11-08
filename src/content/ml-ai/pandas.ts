@@ -159,6 +159,7 @@ pd.io.sql.to_sql(df, "stg_events", eng, if_exists="replace", index=False)`,
   ],
 
   pitfalls: [
+    { title: "Running 2.x code on 3.x unchanged", symptom: "Chained assignment silently no-ops; inplace= arguments error on some paths.", fix: "3.x is copy-on-write mandatory: use single .loc[...] = statements, replace inplace=True with assignment (PDEP-8), and run the 2.x deprecation warnings first." },
     { title: "Index alignment producing silent NaNs", symptom: "Adding two Series/DataFrames gives a column of NaNs — or row counts mysteriously grow after arithmetic.", fix: "Operations align on index labels, not positions. Reset/set indexes deliberately at boundaries (df.reset_index(drop=True) after filters); when you want positional math, use .to_numpy(). This is THE pandas footgun — check index equality first when arithmetic goes weird." },
     { title: "SettingWithCopy (mutating a slice)", symptom: "df[df.a > 5]['b'] = 1 silently does nothing — or raised warnings in 1.x/2.x.", fix: "One indexing operation per statement: df.loc[df.a > 5, 'b'] = 1. pandas 2.x+ copy-on-write makes chained assignment a hard error/no-op — modernize code instead of suppressing warnings." },
     { title: "object dtype eating your RAM", symptom: "A 5M-row string column takes 500MB; groupby/str ops crawl.", fix: "astype('category') for repeated strings (10-100x memory), string dtype in 2.x+/3.x (Arrow-backed) instead of object, float32/int32 when precision allows. df.info(memory_usage='deep') shows the truth." },
