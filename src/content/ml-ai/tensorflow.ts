@@ -215,6 +215,7 @@ tf.saved_model.save(
   ],
 
   goDeeper: [
+    { title: "TensorFlow release notes and announcements", url: "https://github.com/tensorflow/tensorflow/releases", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "TensorFlow Official Documentation", url: "https://www.tensorflow.org/guide", note: "The Guide section is canonical — read 'Introduction to Graphs and Functions', 'Better performance with tf.data', and 'Distributed training'." },
     { title: "TensorFlow: A System for Large-Scale Machine Learning (OSDI 2016)", url: "https://www.usenix.org/system/files/conference/osdi16/osdi16-abadi.pdf", note: "The original TensorFlow whitepaper — explains dataflow graph, sessions, and the design rationale." },
     { title: "Better Performance with the tf.data API", url: "https://www.tensorflow.org/guide/data_performance", note: "Official deep dive on pipelining, parallelism, and prefetching — read before profiling training throughput." },
