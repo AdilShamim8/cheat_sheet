@@ -908,6 +908,7 @@ void main() {
 
   // ─── §17 Ecosystem & Tooling ───────────────────────────────────────
   ecosystem: [
+    { tool: "Tailwind CSS 4.3.5", purpose: "Utility CSS; 4.3.4 added the Turbopack loader for Next.js (Nov 2026).", url: "https://github.com/tailwindlabs/tailwindcss/releases", category: "build" },
     { tool: "dart", purpose: "The Dart SDK CLI — run, compile, format, analyze, test. Bundled with Flutter.", url: "https://dart.dev/tools/dart-tool", category: "build" },
     { tool: "Flutter", purpose: "Cross-platform UI framework — iOS, Android, web, desktop from one codebase.", url: "https://flutter.dev/", category: "build" },
     { tool: "pub.dev", purpose: "Package registry — 'dart pub get' / 'flutter pub get'. The npm of Dart.", url: "https://pub.dev/", category: "package" },
