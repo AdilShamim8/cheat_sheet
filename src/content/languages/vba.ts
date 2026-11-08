@@ -9,6 +9,7 @@ const sheet: CheatSheet = {
   tagline: "Visual Basic for Applications — the scripting layer that powers Excel automation in every finance and ops team on Earth.",
   year: 1993,
   lastUpdated: "2026-11",
+  readingTime: 30,
   author: "Microsoft",
 
   tldr: [
