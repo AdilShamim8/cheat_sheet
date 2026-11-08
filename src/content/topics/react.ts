@@ -204,6 +204,7 @@ function SubmitButton() {
   ],
 
   goDeeper: [
+    { title: "React release notes and announcements", url: "https://react.dev/blog", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "react.dev — Official Docs", url: "https://react.dev/learn", note: "The rewritten docs (2023+) are the best learning resource in frontend; start with 'Thinking in React' and 'You Might Not Need an Effect'." },
     { title: "React Working Group — Discussions", url: "https://github.com/reactwg/react-19", note: "Design notes and upgrade guides straight from the React team." },
     { title: "New React Documentation — Server Components", url: "https://react.dev/reference/rsc/server-components", note: "The RSC mental model, the client/server boundary, and what serializes across it." },
