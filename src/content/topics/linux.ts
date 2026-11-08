@@ -789,6 +789,12 @@ fi
     { vs: "Container OSes (Talos, Bottlerocket)", whenThis: "Standard Linux (Debian/RHEL/Ubuntu) when you need general-purpose access, manual debugging, and broad package repos.", whenThat: "Container-optimized OS when running k8s nodes at scale — immutable, API-managed, no SSH, smaller attack surface." },
     { vs: "illumos / SmartOS", whenThis: "Linux for almost everything — the default with the largest ecosystem.", whenThat: "illumos when you want ZFS + DTrace + Zones as first-class primitives + Joyent's Triton. Niche but technically excellent." },
   ],
+  functions: [
+    { syntax: "f() { local x=$1; ...; }", behavior: "Function with local scope — locals prevent leaking/clobbering globals.", when: "Any script > 20 lines: functions + set -euo pipefail + local = maintainable bash." },
+    { syntax: "trap cleanup EXIT", behavior: "Guaranteed handler on exit/interrupt — the RAII of shell.", when: "Temp files, locks, ssh tunnels — always clean up, even on error." },
+    { syntax: "xargs -P / parallel", behavior: "Fan out a command across cores with bounded parallelism.", when: "Batch jobs: convert/compress/process thousands of files." },
+  ],
+
 };
 
 export default sheet;
