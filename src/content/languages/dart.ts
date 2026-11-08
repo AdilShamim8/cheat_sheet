@@ -8,6 +8,7 @@ const sheet: CheatSheet = {
   tags: ["static", "compiled", "flutter", "ui", "jvm-like", "async", "cross-platform"],
   tagline: "Statically-typed, GC'd language purpose-built for UI — the engine behind Flutter, with a sound null-safety system and an isolates-based concurrency model.",
   year: 2011,
+  lastUpdated: "2026-11",
   author: "Lars Bak & Kasper Lund (Google)",
 
   tldr: [
@@ -942,6 +943,7 @@ void main() {
     { version: "3.3",  year: 2024, highlight: "Extension types stable, WasmGC support, native code interop improvements." },
     { version: "3.4",  year: 2024, highlight: "WasmGC stable for Flutter web, improved JS interop, faster pub get." },
     { version: "3.5",  year: 2024, highlight: "Improved isolate API (Isolate.run), better concurrency primitives, dart:ffi improvements." },
+    { version: "3.13 / Flutter 3.47", year: 2026, highlight: "material_ui/cupertino_ui 1.0 standalone packages (built-ins deprecating), Impeller default on all desktop platforms, Widget Previews stable." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────
