@@ -643,6 +643,7 @@ trivy image --format sarif --output /tmp/scan.sarif myapp:latest   # for GitHub 
     { version: "25.0", year: 2024, highlight: "Compose v1 (Python) fully removed; v2 (Go) is the only compose. New containerd image store backend (opt-in)." },
     { version: "26.0", year: 2024, highlight: "containerd image store promoted; BuildKit 0.13; improved BuildKit frontend protocol. Legacy 'builder' backend removed." },
     { version: "27.0", year: 2024, highlight: "containerd image store GA; multi-platform builds become default-recommended path. runc updated to 1.2." },
+    { version: "29.x", year: 2026, highlight: "Current line: security-driven releases (RSA-key parsing CPU fix, Swarm overlay encryption fix after firewalld flush), BuildKit 0.34.x, daemon hang fix under API load." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────
