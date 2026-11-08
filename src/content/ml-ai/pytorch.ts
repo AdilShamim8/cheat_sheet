@@ -222,6 +222,7 @@ loader = DataLoader(ds, batch_size=32, shuffle=True,
   ],
 
   goDeeper: [
+    { title: "PyTorch release notes and announcements", url: "https://github.com/pytorch/pytorch/releases", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "PyTorch Official Documentation", url: "https://docs.pytorch.org/", note: "Authoritative API reference; the 'Notes' sections on autograd and CUDA semantics are required reading." },
     { title: "PyTorch: An Imperative Style, High-Performance Deep Learning Library (NeurIPS 2019)", url: "https://papers.nips.cc/paper/9015-pytorch-an-imperative-style-high-performance-deep-learning-library.pdf", note: "The canonical paper — explains the eager-execution design and how the dispatcher works." },
     { title: "Deep Learning with PyTorch (Stevens, Antiga, Viehmann)", url: "https://pytorch.org/deep-learning-with-pytorch.html", note: "Free interactive book from PyTorch devs; best path from tensors to deployment." },
