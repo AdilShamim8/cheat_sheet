@@ -8,6 +8,7 @@ const sheet: CheatSheet = {
   tags: ["static-typing", "dotnet", "gc", "oop", "enterprise", "backend", "game-dev"],
   tagline: "A statically-typed, multi-paradigm .NET language — the default for Windows desktop, game engines (Unity), and modern back-ends.",
   year: 2000,
+  lastUpdated: "2026-11",
   author: "Anders Hejlsberg (Microsoft)",
 
   tldr: [
@@ -836,6 +837,7 @@ public class SumBench {
     { version: "C# 11.0", year: 2022, highlight: "Static virtual interface members, list patterns, raw string literals, required members." },
     { version: "C# 12.0", year: 2023, highlight: "Primary constructors, collection expressions, inline arrays, ref struct interfaces." },
     { version: "C# 13.0", year: 2024, highlight: "params collections, `field` contextual keyword, partial properties, lock object improvements." },
+    { version: "C# 14 / .NET 10 (LTS)", year: 2025, highlight: "Extension members (properties, static, operators), null-conditional assignment, first-class span conversions, `nameof(List<>)`." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────
