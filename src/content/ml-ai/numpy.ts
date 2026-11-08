@@ -174,6 +174,7 @@ np.clip(X, lo, out=None)`,
   ],
 
   pitfalls: [
+    { title: "NumPy 1.x code relying on value-based promotion", symptom: "float32_array + python_float results changed dtype behavior after the 2.x NEP 50 rules.", fix: "Python scalars are weak: array dtype wins. Cast explicitly where you need wider results; run the 2.0 migration guide checks." },
     { title: "Mutating a parent through a slice view", symptom: "You wrote to a slice; the original array changed too (or vice versa — a filter 'loses' your edit because you wrote to a copy).", fix: "Slices are views sharing memory — .copy() when independence matters. The reverse bug: fancy indexing (a[idx]) returns a copy, so `a[idx][...] = v` writes nowhere; scatter with a[idx] = v directly." },
     { title: "Accidental dtype = object arrays", symptom: "An array of arrays/None/mixed types — every op falls back to Python speed or errors cryptically.", fix: "Construction mixed types (lists of lists with different lengths, None values) silently yields dtype=object. Check a.dtype first when things are slow/weird; sanitize input (fill None, enforce shapes) before np.array(...)." },
     { title: "Integer vs float division surprises", symptom: "np.array([1,2,3]) / 2 gives floats (fine), but // and int arrays truncate toward zero — and -7//2 == -4 semantics differ from intuition.", fix: "Know the dtype promotion rules (NEP 50 in NumPy 2: python scalars are 'weak' — arr + 1 preserves arr dtype). Cast deliberately: arr.astype(np.float32) at boundaries; check result dtypes after arithmetic on int arrays." },
