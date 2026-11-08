@@ -9,6 +9,7 @@ const sheet: CheatSheet = {
   tagline: "A 24,000-line embeddable scripting VM — the scripting language of game engines, Redis, Nginx, and Wireshark.",
   year: 1993,
   lastUpdated: "2026-11",
+  readingTime: 30,
   author: "Roberto Ierusalimschy, Waldemar Celes, Luiz Henrique de Figueiredo",
 
   tldr: [
@@ -194,7 +195,6 @@ end`,
   ],
 
   goDeeper: [
-    { title: "Lua release notes and announcements", url: "https://www.lua.org/versions.html", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "Lua 5.4 Reference Manual", url: "https://www.lua.org/manual/5.4/", note: "The official spec — every operator, every stdlib function. Read it once end-to-end; it's only ~200 pages." },
     { title: "Programming in Lua (Roberto Ierusalimschy)", url: "https://www.lua.org/pil/2.0.html", note: "Written by the language designer. The 4th edition covers 5.3; free older edition (PIL 1.0) covers 5.0 and is still useful." },
     { title: "LuaJIT Project", url: "https://luajit.org/", note: "The JIT compiler docs — trace compiler semantics, the FFI extension, and performance characteristics that matter in production." },
