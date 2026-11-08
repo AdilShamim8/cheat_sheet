@@ -25,9 +25,9 @@ export const metadata: Metadata = {
   authors: [{ name: "Adil Shamim", url: "https://www.adilshamim.me/" }],
   icons: {
     icon: [
-      { url: "/logo.png", type: "image/png" },
+      { url: "/logo.svg", type: "image/svg+xml" },
     ],
-    apple: "/logo.png",
+    apple: "/logo.svg",
   },
   openGraph: {
     title: "cheat_sheet — Premium Developer Reference",
