@@ -1,8 +1,7 @@
 {
   "name": "nextjs_tailwind_shadcn_ts",
-  "version": "0.2.1",
-  "private": true,
   "version": "2.2.0",
+  "private": true,
   "engines": { "node": ">=20" },
   "scripts": {
     "dev": "next dev -p 3000 2>&1 | tee dev.log",
