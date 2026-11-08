@@ -8,6 +8,7 @@ const sheet: CheatSheet = {
   tags: ["dynamic", "interpreted", "embedded", "scripting", "game-dev", "register-based-vm", "minimal"],
   tagline: "A 24,000-line embeddable scripting VM — the scripting language of game engines, Redis, Nginx, and Wireshark.",
   year: 1993,
+  lastUpdated: "2026-11",
   author: "Roberto Ierusalimschy, Waldemar Celes, Luiz Henrique de Figueiredo",
 
   tldr: [
