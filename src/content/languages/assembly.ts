@@ -9,6 +9,7 @@ const sheet: CheatSheet = {
   tagline: "The textual form of the CPU's actual instructions — what every compiled program ultimately becomes.",
   year: 1947,
   lastUpdated: "2026-11",
+  readingTime: 30,
   author: "Kathleen Booth (first symbolic assembler)",
 
   tldr: [
