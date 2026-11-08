@@ -10,6 +10,7 @@ const sheet: CheatSheet = {
   year: 2013,
   author: "Jordan Walke (Meta)",
   lastUpdated: "2026-11",
+  readingTime: 30,
 
   tldr: [
     "React is a component-based UI library: you describe what the UI should look like for a given state, and React reconciles the DOM to match. It is not a full framework — routing, data fetching, and server concerns come from the ecosystem (Next.js, React Router) or the platform.",
@@ -204,7 +205,6 @@ function SubmitButton() {
   ],
 
   goDeeper: [
-    { title: "React release notes and announcements", url: "https://react.dev/blog", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "react.dev — Official Docs", url: "https://react.dev/learn", note: "The rewritten docs (2023+) are the best learning resource in frontend; start with 'Thinking in React' and 'You Might Not Need an Effect'." },
     { title: "React Working Group — Discussions", url: "https://github.com/reactwg/react-19", note: "Design notes and upgrade guides straight from the React team." },
     { title: "New React Documentation — Server Components", url: "https://react.dev/reference/rsc/server-components", note: "The RSC mental model, the client/server boundary, and what serializes across it." },
@@ -634,7 +634,6 @@ test("checkout flow", async ({ page }) => {
 
   // ─── §17 Ecosystem & tooling ─────────────────────────────────────────────
   ecosystem: [
-    { tool: "Next.js 16.4.5", purpose: "React framework current line; security release Nov 2026.", url: "https://github.com/vercel/next.js/releases", category: "build" },
     { tool: "Next.js", purpose: "The dominant React framework: App Router RSC, routing, SSR/SSG, caching. Current: 16.4.x.", url: "https://nextjs.org/docs", category: "framework" },
     { tool: "TanStack Query", purpose: "Async state: caching, dedupe, retries, optimistic updates. The client-data standard.", url: "https://tanstack.com/query/latest", category: "data" },
     { tool: "TanStack Router / React Router 7", purpose: "Type-safe routing; React Router 7 merged Remix features.", url: "https://tanstack.com/router/latest", category: "routing" },
