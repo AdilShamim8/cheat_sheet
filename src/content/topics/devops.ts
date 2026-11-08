@@ -9,6 +9,7 @@ const sheet: CheatSheet = {
   tagline: "The practice of unifying dev and ops through automation, measurement, and shared ownership — pipelines, IaC, and observability.",
   year: 2009,
   lastUpdated: "2026-11",
+  readingTime: 30,
   author: "Patrick Debois (coined the term)",
 
   tldr: [
@@ -265,7 +266,6 @@ The deploy added an N+1 query in the checkout flow...
   ],
 
   goDeeper: [
-    { title: "DevOps / CI-CD release notes and announcements", url: "https://dora.dev/research/", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "The Phoenix Project (Gene Kim, Kevin Behr, George Spafford)", url: "https://itrevolution.com/the-phoenix-project/", note: "The novel that launched the DevOps movement — explains the 'Three Ways' (flow, feedback, continuous learning) through a relatable IT parable." },
     { title: "Continuous Delivery (Jez Humble, David Farley)", url: "https://continuousdelivery.com/", note: "The foundational 2010 book — deployment pipelines, blue-green, canary, build-vs-deploy-vs-release distinction. Still the reference." },
     { title: "Site Reliability Engineering (Google)", url: "https://sre.google/sre-book/table-of-contents/", note: "Free online; the canonical treatment of SLIs/SLOs, error budgets, incident response, and postmortems as practiced at Google." },
