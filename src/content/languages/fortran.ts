@@ -8,6 +8,7 @@ const sheet: CheatSheet = {
   tags: ["compiled", "static", "numerical", "scientific", "array-oriented", "column-major", "legacy"],
   tagline: "The first high-level language — still the fastest tool for dense linear algebra and HPC kernels.",
   year: 1957,
+  lastUpdated: "2026-11",
   author: "John Backus (IBM)",
 
   tldr: [
