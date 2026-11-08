@@ -186,6 +186,7 @@ git bisect reset`,
   ],
 
   goDeeper: [
+    { title: "Git release notes and announcements", url: "https://git-scm.com/doc/relnotes", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "Pro Git (Scott Chacon, Ben Straub)", url: "https://git-scm.com/book/en/v2", note: "The official free book; chapters 7 (tools) and 10 (internals) are the highest-signal material on Git anywhere." },
     { title: "git-rebase(1) manual", url: "https://git-scm.com/docs/git-rebase", note: "Definitive reference for rebase, including --interactive, --onto, and --rebase-merges modes." },
     { title: "gitworkflows(7) manual", url: "https://git-scm.com/docs/gitworkflows", note: "Linus's own description of the topic-branch and maintainer workflows used on the Linux kernel." },
