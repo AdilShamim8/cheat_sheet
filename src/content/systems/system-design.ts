@@ -658,6 +658,15 @@ class VClock:
     { vs: "Memcached", whenThis: "Redis when you need data structures (lists, sets, sorted sets), persistence, pub/sub, Lua scripts, or streams.", whenThat: "Pure KV cache, maximum raw throughput, lowest memory overhead — no persistence, no advanced types." },
     { vs: "gRPC", whenThis: "REST/HTTP when you need browser clients, human-readable payloads, CDN caching, or broad ecosystem tooling.", whenThat: "Internal service-to-service with strict schemas, bidirectional streaming, low payload overhead via protobuf." },
   ],
+  versionHistory: [
+    { version: "Dynamo (paper)", year: 2007, highlight: "Amazon Dynamo paper launches the NoSQL movement: eventual consistency, consistent hashing, vector clocks." },
+    { version: "Bigtable / MapReduce", year: 2006, highlight: "Google papers seed Hadoop, Bigtable-style column stores, and the entire distributed-data era." },
+    { version: "Kubernetes", year: 2015, highlight: "Borg successor open-sourced; the scheduling substrate for the next decade of systems." },
+    { version: "Envoy/service mesh era", year: 2017, highlight: "istio/envoy make mTLS, retries, and traffic shifting infrastructure concerns, not app code." },
+    { version: "Cloud-native + serverless", year: 2020, highlight: "CNCF ecosystem matures; event-driven functions and managed everything become default architecture." },
+    { version: "AI-native systems", year: 2024, highlight: "Vector stores, RAG pipelines, and GPU scheduling become core systems-design topics; >40% of PRs involve AI agents by 2026 (Octoverse)." },
+  ],
+
 };
 
 export default sheet;
