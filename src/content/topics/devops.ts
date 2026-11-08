@@ -8,6 +8,7 @@ const sheet: CheatSheet = {
   tags: ["ci", "cd", "automation", "iac", "observability", "kubernetes", "sre"],
   tagline: "The practice of unifying dev and ops through automation, measurement, and shared ownership — pipelines, IaC, and observability.",
   year: 2009,
+  lastUpdated: "2026-11",
   author: "Patrick Debois (coined the term)",
 
   tldr: [
