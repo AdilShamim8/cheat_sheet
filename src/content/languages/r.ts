@@ -8,6 +8,7 @@ const sheet: CheatSheet = {
   tags: ["dynamic", "interpreted", "statistics", "data-science", "vectorized", "ggplot2", "research"],
   tagline: "Domain-specific language for statistical computing and graphics — vectorized, lazily-evaluated, and the home of ggplot2, the grammar of graphics.",
   year: 1993,
+  lastUpdated: "2026-11",
   author: "Ross Ihaka & Robert Gentleman",
 
   tldr: [
