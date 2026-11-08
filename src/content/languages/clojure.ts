@@ -8,6 +8,7 @@ const sheet: CheatSheet = {
   tags: ["functional", "dynamic", "lisp", "jvm", "immutable", "concurrent", "stm"],
   tagline: "A modern Lisp on the JVM — immutable data, software transactional memory, and the REPL-driven workflow that defined data engineering at scale.",
   year: 2007,
+  lastUpdated: "2026-11",
   author: "Rich Hickey",
 
   tldr: [
