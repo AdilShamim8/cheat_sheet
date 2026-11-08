@@ -9,6 +9,7 @@ const sheet: CheatSheet = {
   tagline: "A statically-typed superset of JavaScript that compiles to portable JS — the default for large web codebases.",
   year: 2012,
   author: "Microsoft (Anders Hejlsberg)",
+  lastUpdated: "2026-11",
 
   tldr: [
     "TypeScript is a strict syntactic superset of JavaScript that adds optional static typing, generics, and rich type inference, then erases the types to emit idiomatic JavaScript.",
@@ -780,6 +781,9 @@ describe("types", () => {
     { version: "5.5",  year: 2024, highlight: "Inferred type predicates, `@import` JSDoc, ECMA module spec compliance." },
     { version: "5.6",  year: 2024, highlight: "Disallow truthy bigint/string comparisons, `Iterator` global type." },
     { version: "5.7",  year: 2024, highlight: "`--rewriteRelativeImportExtensions`, path rewriting in emit." },
+    { version: "5.8",  year: 2025, highlight: "Granular checks for `--module nodenext`, `--erasableSyntaxOnly` for Node type-stripping." },
+    { version: "6.0",  year: 2026, highlight: "Last JavaScript-based compiler release; `--target es2026`, library modernization — the transition release before the Go port." },
+    { version: "7.0",  year: 2026, highlight: "Compiler rewritten in Go — ~10x faster checks (VS Code: 125s → 10s), parallel `--checkers`/`--builders`, new watch mode, `strict` by default. Native port, same language." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────
