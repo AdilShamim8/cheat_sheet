@@ -354,3 +354,7 @@ Every version claim on this site was checked against a primary source on the dat
 | `node scripts/validate-content.mjs` | Validate every sheet against the schema contract |
 | `bun run lint` / `npx tsc --noEmit` | Lint and typecheck |
 | `bun run build && bun run start` | Production build + serve |
+
+## Acknowledgments
+
+Version facts verified against: python.org, go.dev, openjdk.org, releases.rs, swift.org, kotlinlang.org, php.net, elixir-lang.org, docs.flutter.dev, isocpp.org, open-std.org, pytorch.org, github.com releases pages, kernel.org, git-scm.com, docs.docker.com, kubernetes.io, postgresql.org, redis.io, react.dev, nodejs.org. Survey data: TIOBE, Stack Overflow 2026, GitHub Octoverse 2026, State of JS 2025, DB-Engines, Synergy Research.
