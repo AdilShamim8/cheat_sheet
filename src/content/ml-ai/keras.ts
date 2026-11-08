@@ -216,6 +216,7 @@ model.load_weights("weights.h5")    # architecture must match exactly`,
   ],
 
   quickReference: [
+    { fact: "Keras 3.15.1 (Jul 2026) is current — export_torch path and security hardening for dataset loaders.", tag: "version" },
     { fact: "Default .fit() batch_size=32, default Adam lr=0.001. These are starting points, not tuned values — always tune.", tag: "perf" },
     { fact: "EarlyStopping with restore_best_weights=True is mandatory for real training — without it you keep the weights from the LAST epoch, not the BEST.", tag: "gotcha" },
     { fact: ".keras format (Keras 3, 2023) is a zip with config.json + model.weights + optimizer. Replaces .h5 (single-backend) and SavedModel (TF-only).", tag: "version" },
