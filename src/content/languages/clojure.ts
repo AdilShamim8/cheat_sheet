@@ -177,6 +177,7 @@ const sheet: CheatSheet = {
   ],
 
   goDeeper: [
+    { title: "Clojure release notes and announcements", url: "https://clojure.org/releases", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "Clojure Documentation — clojure.org", url: "https://clojure.org/", note: "Official reference + the rationale essays ('Values and Change', 'State and Identity') that explain the design." },
     { title: "ClojureDocs Community Reference", url: "https://clojuredocs.org/", note: "Examples for every core function, community-curated; the fastest lookup while coding." },
     { title: "Clojure for the Brave and True (Daniel Higginbotham)", url: "https://www.braveclojure.com/clojure-for-the-brave-and-true/", note: "Free online intro book; covers the language, then a real project (web app). Best onboarding path." },
