@@ -200,6 +200,7 @@ np.clip(X, lo, out=None)`,
   ],
 
   goDeeper: [
+    { title: "NumPy release notes and announcements", url: "https://numpy.org/news/", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "NumPy documentation — Absolute Basics + User Guide", url: "https://numpy.org/doc/stable/user/absolute_beginners.html", note: "Start here, then broadcasting and indexing pages — the two that unlock everything else." },
     { title: "NumPy 2.x migration guide", url: "https://numpy.org/doc/stable/numpy_2_0_migration_guide.html", note: "NEP 50 promotion and the removed aliases — read before pinning a major version." },
     { title: "100 NumPy Exercises (rougier)", url: "https://github.com/rougier/numpy-100", note: "The classic drill set — do 20 and your array intuition levels up." },
