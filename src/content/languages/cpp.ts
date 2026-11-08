@@ -8,6 +8,7 @@ const sheet: CheatSheet = {
   tags: ["static-typing", "compiled", "systems", "zero-overhead", "manual-memory", "performance"],
   tagline: "A zero-overhead, multi-paradigm systems language — the default when you need performance, control, and a vast library ecosystem at once.",
   year: 1985,
+  lastUpdated: "2026-11",
   author: "Bjarne Stroustrup",
 
   tldr: [
