@@ -8,6 +8,7 @@ const sheet: CheatSheet = {
   tags: ["static-typing", "compiled", "systems", "manual-memory", "portable", "low-level"],
   tagline: "Portable assembly with types — the lingua franca of operating systems, embedded systems, and FFI boundaries.",
   year: 1972,
+  lastUpdated: "2026-11",
   author: "Dennis Ritchie",
 
   tldr: [
@@ -815,6 +816,7 @@ extern int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
     { version: "C11",   year: 2011, highlight: "_Generic, stdatomic.h, threads.h, _Static_assert, anonymous structs/unions." },
     { version: "C17 / C18", year: 2018, highlight: "Bugfix release; no new features; clarifies C11 ambiguities." },
     { version: "C23",   year: 2023, highlight: "nullptr, bool/true/false keywords, [[nodiscard]]/[[maybe_unused]]/[[deprecated]] attributes, auto, stdckdint.h, #embed." },
+    { version: "C2y / C26", year: 2026, highlight: "Expected publication: #embed expanded with parameters, constexpr functions, placeholder object specifiers. ISO ballot underway." },
     { version: "C2y",   year: 2026, highlight: "Next iteration — working draft; reflection, contracts considered." },
     { version: "POSIX.1-2008", year: 2008, highlight: "Standardized getline, strlcpy/strlcat, pthreads; the POSIX layer most C code assumes." },
     { version: "BSD libc",  year: 1994, highlight: "4.4BSD Lite introduced strlcpy/strlcat — safer string handling now widespread." },
