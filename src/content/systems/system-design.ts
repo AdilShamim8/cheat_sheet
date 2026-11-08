@@ -667,6 +667,14 @@ class VClock:
     { version: "AI-native systems", year: 2024, highlight: "Vector stores, RAG pipelines, and GPU scheduling become core systems-design topics; >40% of PRs involve AI agents by 2026 (Octoverse)." },
   ],
 
+  operators: [
+    { syntax: "consistency: strong vs eventual", behavior: "Linearizability costs latency; eventual consistency buys availability during partitions.", when: "CAP reality: choose per-query, not per-system (strong for money, eventual for feeds)." },
+    { syntax: "idempotency key", behavior: "Client-supplied key makes retries safe: same key → same effect once.", when: "Every write API that can be retried (payments, queues, webhooks)." },
+    { syntax: "backpressure vs buffering", behavior: "Reject early (load shedding) vs absorb spikes (queues) — the fundamental flow-control choice.", when: "Shed at the edge for user traffic; buffer for bursty internal pipelines." },
+    { syntax: "shard key choice", behavior: "Determines data locality and hot-spot distribution; changing it later is a migration.", when: "Pick high-cardinality, query-aligned keys (user_id, tenant_id) before launch." },
+    { syntax: "quota → queue → cache", behavior: "The standard read-path algebra: rate limit, then async work, then serve fast.", when: "Any API with variable cost per request." },
+  ],
+
 };
 
 export default sheet;
