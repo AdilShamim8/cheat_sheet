@@ -184,6 +184,7 @@ tx.Commit();   // rollback runs at scope exit if we throw before here`,
   ],
 
   goDeeper: [
+    { title: "C# release notes and announcements", url: "https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "C# Language Specification — Microsoft Learn", url: "https://learn.microsoft.com/dotnet/csharp/language-reference/", note: "Authoritative language reference; the definitive source for operator precedence, patterns, and async semantics." },
     { title: "C# in Depth (Jon Skeet, 4th ed.)", url: "https://csharpindepth.com/", note: "The canonical book on the evolution from C# 1 to modern — best treatment of generics, delegates, and async internals." },
     { title: ".NET Docs — Microsoft Learn", url: "https://learn.microsoft.com/dotnet/", note: "Official API reference, runtime design notes, and per-version migration guides." },
