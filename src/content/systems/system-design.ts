@@ -677,9 +677,27 @@ class VClock:
   ],
 
   testing: [
-    { syntax: "load test (k6/Gatling)", behavior: "Replay production-shaped traffic; find the knee, not just the peak.", when: "Before launches and capacity changes; use prod traffic captures, not synthetic uniformity." },
-    { syntax: "chaos experiment", behavior: "Inject failure (kill node, add latency, drop packets) and verify SLOs hold.", when: "After each architectural change; run game-days quarterly." },
-    { syntax: "soak test", behavior: "Sustained moderate load for hours — catches leaks and GC death spirals.", when: "Anything with state or caches before long-lived deploys." },
+    {
+      lang: "bash",
+      caption: "Load test with k6 — find the knee, not just the peak",
+      code: `// load.js — run: k6 run load.js
+import http from "k6/http";
+import { sleep } from "k6";
+
+export const options = {
+  stages: [
+    { duration: "2m", target: 50 },
+    { duration: "5m", target: 50 },
+    { duration: "2m", target: 400 },
+  ],
+  thresholds: { http_req_duration: ["p(99)<500"] },
+};
+
+export default function () {
+  http.get("https://api.example.com/items");
+  sleep(1);
+}`,
+    },
   ],
 
 };
