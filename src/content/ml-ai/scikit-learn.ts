@@ -9,6 +9,7 @@ const sheet: CheatSheet = {
   tagline: "Uniform fit/predict interface for classical ML — the default for tabular data, baselines, and preprocessing pipelines.",
   year: 2007,
   lastUpdated: "2026-11",
+  readingTime: 30,
   author: "Inria / Community (David Cournapeau, Fabian Pedregosa)",
 
   tldr: [
@@ -220,7 +221,6 @@ preds = clf.predict(new_data[loaded["feature_names"]])`,
   ],
 
   goDeeper: [
-    { title: "scikit-learn release notes and announcements", url: "https://scikit-learn.org/stable/whats_new.html", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "scikit-learn Official Documentation", url: "https://scikit-learn.org/stable/", note: "The User Guide section is canonical — read 'Pipeline and composite estimators', 'Tuning the hyper-parameters', and 'Common pitfalls in choosing ML estimators'." },
     { title: "Scikit-learn: Machine Learning in Python (Pedregosa et al., JMLR 2011)", url: "https://jmlr.csail.mit.edu/papers/v12/pedregosa11a.html", note: "The original paper — defines the fit/predict/transform API contract every other Python ML library imitates." },
     { title: "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow (Aurélien Géron)", url: "https://www.oreilly.com/library/view/hands-on-machine-learning/9781098125967/", note: "Chapters 1–9 are the most-used sklearn tutorial in industry; chapters 2–4 cover the end-to-end project pipeline." },
