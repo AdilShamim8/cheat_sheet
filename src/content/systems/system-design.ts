@@ -700,6 +700,19 @@ export default function () {
     },
   ],
 
+  inputOutput: [
+    {
+      lang: "python",
+      caption: "The API contract: idempotency, pagination, flow control",
+      code: `POST /payments
+Idempotency-Key: 7f3c-...
+
+# Response headers carry the contract:
+#   X-RateLimit-Remaining: 42
+#   Retry-After: 3              # ONLY on 429/503
+GET /orders?cursor=eyJpZCI6...&limit=50   # keyset pagination`,
+    },
+  ],
 };
 
 export default sheet;
