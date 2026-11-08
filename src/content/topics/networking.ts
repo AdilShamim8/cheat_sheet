@@ -8,6 +8,7 @@ const sheet: CheatSheet = {
   tags: ["tcp", "ip", "http", "dns", "tls", "protocols", "transport"],
   tagline: "The protocol stack that lets two processes on different machines exchange bytes — physical, IP, transport, and application layers.",
   year: 1983,
+  lastUpdated: "2026-11",
   author: "IETF (RFC series); Vint Cerf & Bob Kahn (TCP/IP)",
 
   tldr: [
