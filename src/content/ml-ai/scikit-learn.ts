@@ -8,6 +8,7 @@ const sheet: CheatSheet = {
   tags: ["classical-ml", "supervised", "unsupervised", "preprocessing", "pipelines", "numpy", "python", "inria"],
   tagline: "Uniform fit/predict interface for classical ML — the default for tabular data, baselines, and preprocessing pipelines.",
   year: 2007,
+  lastUpdated: "2026-11",
   author: "Inria / Community (David Cournapeau, Fabian Pedregosa)",
 
   tldr: [
