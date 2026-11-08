@@ -897,6 +897,7 @@ def test_transformer_no_mutation():
     { version: "1.4",  year: 2024, highlight: "Metadata routing GA; HGBT callbacks; TreeEnsemble grows marginal speedups from OpenMP." },
     { version: "1.5",  year: 2024, highlight: "FixedDict for estimator params; PCA sparse support; HGBT early stopping fixes." },
     { version: "1.6",  year: 2025, highlight: "Improved pandas-output coverage; Array API support expands (more estimators work with torch/jax arrays)." },
+    { version: "1.9",  year: 2026, highlight: "Current stable: experimental Callback API (ProgressBar, ScoringMonitor), narwhals dataframe interop, first release supporting Python 3.15." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────
