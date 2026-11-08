@@ -334,3 +334,7 @@ MIT
 - [ ] Rust, Zig, GraphQL, Terraform, CI/CD deep-dives
 - [ ] Rust→Wasm playground integration
 - [ ] Community translations of section headers
+
+## Verifying facts
+
+Every version claim on this site was checked against a primary source on the date shown in each page's `lastUpdated` field. Key sources: official release notes (python.org, go.dev, openjdk.org, rust releases.rs, swift.org, kotlinlang.org), GitHub Releases, TIOBE index, Stack Overflow Developer Survey 2026, GitHub Octoverse 2026, DB-Engines ranking, Synergy Research cloud stats.
