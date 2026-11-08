@@ -710,6 +710,17 @@ USER node
 CMD ["node", "server.js"]`,
     },
   ],
+  functions: [
+    {
+      lang: "bash",
+      caption: "Entrypoint scripts: the container function layer",
+      code: `#!/usr/bin/env sh
+set -e
+until nc -z "$DB_HOST" 5432; do sleep 1; done
+envsubst < /etc/app/template.conf > /etc/app/app.conf
+exec node server.js    # exec: node becomes PID 1, gets SIGTERM`,
+    },
+  ],
 };
 
 export default sheet;
