@@ -166,6 +166,7 @@ Response res = new Response(userF.join(), ordersF.join(), profileF.join());`,
   ],
 
   quickReference: [
+    { fact: "Java 26 (Mar 2026) is current non-LTS; JDK 25 remains the LTS target for services.", tag: "version" },
     { fact: "Java 21 (LTS, Sep 2023) added virtual threads, sequenced collections, pattern matching for switch; Java 17 (LTS, 2021) added sealed classes, records.", tag: "version" },
     { fact: "LTS cadence: 8, 11, 17, 21, 25 (every 2 years); non-LTS versions are 6-month releases, unsupported for production.", tag: "version" },
     { fact: "HotSpot escape analysis can scalar-replace short-lived objects — microbenchmarks showing allocation may be free in practice; verify with `-XX:+PrintEscapeAnalysis`.", tag: "perf" },
