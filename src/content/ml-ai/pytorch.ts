@@ -8,6 +8,7 @@ const sheet: CheatSheet = {
   tags: ["deep-learning", "autograd", "gpu", "neural-networks", "research", "tensor", "python", "meta"],
   tagline: "Dynamic-computation-graph tensor library with reverse-mode autodiff — the de facto standard for deep-learning research.",
   year: 2016,
+  lastUpdated: "2026-11",
   author: "Meta AI (FAIR)",
 
   tldr: [
