@@ -9,6 +9,7 @@ const sheet: CheatSheet = {
   tagline: "A small, statically-typed, GC'd language with built-in concurrency — the default for cloud-native back-ends and CLIs.",
   year: 2009,
   lastUpdated: "2026-11",
+  readingTime: 30,
   author: "Google (Robert Griesemer, Rob Pike, Ken Thompson)",
 
   tldr: [
@@ -203,7 +204,6 @@ if err := load(id); err != nil {
   ],
 
   goDeeper: [
-    { title: "Go release notes and announcements", url: "https://go.dev/doc/devel/release", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "Effective Go — Official", url: "https://go.dev/doc/effective_go", note: "The canonical guide to idiomatic Go; reading it once saves weeks of bad habits." },
     { title: "The Go Programming Language Specification", url: "https://go.dev/ref/spec", note: "Authoritative language reference; definitive on memory model, channels, and interface semantics." },
     { title: "The Go Programming Language (Donovan & Kernighan)", url: "https://www.gopl.io/", note: "The canonical book — exercises build real intuition for CSP-style concurrency." },
@@ -835,7 +835,6 @@ func TestMain(m *testing.M) {
 
   // ─── §17 Ecosystem & Tooling ───────────────────────────────────────
   ecosystem: [
-    { tool: "Go 1.27.3", purpose: "Current patch (Oct 2026).", url: "https://go.dev/dl/", category: "build" },
     { tool: "go (the toolchain)", purpose: "The Go tool — `go build`, `go test`, `go vet`, `go fmt`. Batteries included; no Makefile needed.", url: "https://go.dev/cmd/go/", category: "build" },
     { tool: "Go modules", purpose: "Built-in dependency manager — go.mod, go.sum, GOPROXY; replaced every previous attempt (dep, glide, godep).", url: "https://go.dev/ref/mod", category: "package" },
     { tool: "golangci-lint", purpose: "Meta-linter aggregating 50+ analyzers — the de-facto standard for Go CI.", url: "https://golangci-lint.run/", category: "lint" },
