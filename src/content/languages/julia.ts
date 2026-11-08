@@ -926,6 +926,7 @@ println(minimum(bench), " ", median(bench))
     { version: "1.9", year: 2023, highlight: "Native code caching per-package, reduced TTFP, concurrent GC, @assume_effects." },
     { version: "1.10 (LTS)", year: 2024, highlight: "Pkgimages, extension precompilation, performance improvements. The new LTS." },
     { version: "1.11", year: 2024, highlight: "Incremental precompilation of method invalidations, further TTFP reduction, @public for export." },
+    { version: "1.12", year: 2025, highlight: "Runtime-dispatch reduction continues; juliac static-compilation path matures for shipping binaries. Current stable line." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────
