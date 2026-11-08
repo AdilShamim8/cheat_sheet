@@ -172,6 +172,7 @@ async function loadWithCutoff(url, ms) {
   ],
 
   quickReference: [
+    { fact: "ES2026 shipped Oct 2026: deferred module evaluation, Float16Array, RegExp modifiers, iterator sequencing.", tag: "version" },
     { fact: "Numbers are IEEE-754 double — integers up to 2^53 are exact (Number.MAX_SAFE_INTEGER); use BigInt beyond that.", tag: "gotcha" },
     { fact: "Array.prototype.sort() default comparator coerces to string — `[10, 9, 1].sort()` gives [1, 10, 9]. Always pass a comparator.", tag: "gotcha" },
     { fact: "Modern engines (V8 12+) compile hot functions with TurboFan; warmup is ~10–1000 invocations. Microbenchmarks lie cold.", tag: "perf" },
