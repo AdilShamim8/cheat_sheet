@@ -203,6 +203,7 @@ preds = clf.predict(new_data[loaded["feature_names"]])`,
   ],
 
   quickReference: [
+    { fact: "scikit-learn 1.9.1 (Sep 2026) — Callback API (ProgressBar/ScoringMonitor) and narwhals dataframe interop.", tag: "version" },
     { fact: "Trailing-underscore attributes (coef_, classes_, feature_importances_) exist ONLY after fit() — accessing them before raises AttributeError.", tag: "gotcha" },
     { fact: "fit_transform() is not always == fit().transform(): Tf-idf and PCA have a faster fused path; for those, always use fit_transform on train.", tag: "perf" },
     { fact: "Pipeline caches nothing by default — set memory='/tmp' to cache transformers across GridSearchCV iterations (huge speedup when preprocessing is expensive).", tag: "perf" },
