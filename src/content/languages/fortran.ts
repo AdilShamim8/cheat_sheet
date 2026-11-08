@@ -9,6 +9,7 @@ const sheet: CheatSheet = {
   tagline: "The first high-level language — still the fastest tool for dense linear algebra and HPC kernels.",
   year: 1957,
   lastUpdated: "2026-11",
+  readingTime: 30,
   author: "John Backus (IBM)",
 
   tldr: [
@@ -215,7 +216,6 @@ end module
   ],
 
   goDeeper: [
-    { title: "Fortran release notes and announcements", url: "https://fortran-lang.org/en/learn/building_programs/", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "Fortran Wiki — fortran-lang.org", url: "https://fortran-lang.org/", note: "Community hub + Learn tutorial + fpm package index. The friendliest on-ramp to modern Fortran." },
     { title: "Fortran 2018 Standard (ISO/IEC 1539-1:2018)", url: "https://www.iso.org/standard/72320.html", note: "Authoritative spec; expensive but the reference. Fortran Wiki mirrors key sections." },
     { title: "Modern Fortran in Practice (Arjen Markus)", url: "https://www.cambridge.org/core/books/modern-fortran-in-practice/C2A975F2C7D6F8C2F0D6F1A4F6F8D7C2", note: "Pragmatic treatment of modules, OO, F2003+ features with real examples." },
