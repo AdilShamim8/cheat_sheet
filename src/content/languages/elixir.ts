@@ -8,6 +8,7 @@ const sheet: CheatSheet = {
   tags: ["functional", "dynamic", "beam", "actor-model", "concurrent", "fault-tolerant", "compiled"],
   tagline: "Ruby-flavored syntax on Erlang's BEAM VM — for systems that must serve millions of WebSocket connections without dropping them.",
   year: 2011,
+  lastUpdated: "2026-11",
   author: "José Valim",
 
   tldr: [
@@ -979,6 +980,7 @@ end
     { version: "1.15", year: 2023, highlight: "Compiler optimizations, mixed-version compatibility, OTP 26 support." },
     { version: "1.16", year: 2024, highlight: "Improved compiler diagnostics, Hex package integrity, integration with OTP 27's native JSON." },
     { version: "1.17", year: 2024, highlight: "Compiler performance work, gradual types groundwork (experimental), LiveView 1.0 stable." },
+    { version: "1.20", year: 2026, highlight: "Gradual set-theoretic types complete — every program is now type-checked; type inference across all language constructs. The biggest change since 1.0." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────
