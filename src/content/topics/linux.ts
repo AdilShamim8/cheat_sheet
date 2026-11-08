@@ -197,6 +197,7 @@ cat /proc/sys/fs/file-nr
   ],
 
   quickReference: [
+    { fact: "Kernel 7.3.3 (Nov 2026) is stable; LTS 6.12/6.6 remain the distro defaults — match your distro kernel policy.", tag: "version" },
     { fact: "Current kernel lines (Nov 2026): mainline 7.4-rc, stable 7.3.x (dmem cgroup VRAM control, sched_ext sub-schedulers, failfs sandboxing); LTS 6.12 and 6.6 remain the distro defaults.", tag: "version" },
     { fact: "Signal numbers: HUP=1, INT=2, QUIT=3, KILL=9, SEGV=11, PIPE=13, TERM=15, STOP=19, CONT=18. `kill -l` lists them all.", tag: "gotcha" },
     { fact: "Default ulimit -n: 1024 soft / 4096 hard on most distros. Production servers need 65536+ via systemd `LimitNOFILE`.", tag: "gotcha" },
