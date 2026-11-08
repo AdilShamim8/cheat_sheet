@@ -8,6 +8,7 @@ const sheet: CheatSheet = {
   tags: ["vcs", "distributed", "dag", "branching", "collaboration", "cli"],
   tagline: "A distributed version control system built on a content-addressable DAG of immutable snapshots — the de facto standard for source control.",
   year: 2005,
+  lastUpdated: "2026-11",
   author: "Linus Torvalds",
 
   tldr: [
