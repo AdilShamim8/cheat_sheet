@@ -270,7 +270,7 @@ export function HubView({ onNavigate }: HubViewProps) {
         <div className="flex items-baseline gap-3 mb-4 pb-2 border-b border-border">
           <span className="font-mono text-xl sm:text-2xl" style={{ color: "var(--primary)" }}>≡</span>
           <h2 className="text-lg sm:text-xl md:text-2xl font-semibold tracking-tight">
-            Real-world data · November 2026
+            {t("hub.data.title")} · November 2026
           </h2>
           <span className="text-xs font-mono text-muted-foreground">verified</span>
         </div>
