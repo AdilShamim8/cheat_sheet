@@ -663,6 +663,7 @@ A 32GB box can host ~32K threads or ~3M event-driven connections.`,
     { version: "HTTP/3 (RFC 9114)", year: 2022, highlight: "QUIC over UDP — per-stream loss recovery, no head-of-line blocking, connection migration across IPs." },
     { version: "io_uring (Linux 5.1+)", year: 2019, highlight: "Zero-syscall I/O via shared ring buffers; 2-10x faster than epoll for high-IOPS workloads." },
     { version: "BBR congestion control", year: 2016, highlight: "Google's BBR (Linux 4.9+) measures bottleneck bandwidth + RTT instead of packet loss; 2-3x throughput on cellular." },
+    { version: "io_uring + BBRv3 era", year: 2026, highlight: "Linux 6.x/7.x ship io_uring as the default high-IOPS path and BBRv3 as the standard long-haul congestion control; datacenter RPC standardizes on QUIC + zero-copy send." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────
