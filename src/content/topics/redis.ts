@@ -10,6 +10,7 @@ const sheet: CheatSheet = {
   year: 2009,
   author: "Salvatore Sanfilippo (antirez)",
   lastUpdated: "2026-11",
+  readingTime: 26,
 
   tldr: [
     "Redis is an in-memory key-value store exposing rich data structures — strings, hashes, lists, sets, sorted sets, streams — with optional persistence (RDB snapshots + AOF) and single-threaded command execution that makes reasoning about atomicity trivial.",
@@ -165,7 +166,6 @@ ZRANGEBYSCORE events <from_ms> <to_ms>   # time-indexed lookup
   ],
 
   goDeeper: [
-    { title: "Redis release notes and announcements", url: "https://github.com/redis/redis/releases", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "Redis official documentation", url: "https://redis.io/docs/latest/", note: "The commands reference and data-types intro are exemplary; read the persistence and cluster pages before operating either." },
     { title: "Redis Interactive Tutorial (redis.io/learn)", url: "https://redis.io/learn/", note: "Browser-based, covers patterns from basics to streams and vector search." },
     { title: "How Redis Scaling Works (Salvatore's blog archive)", url: "http://oldblog.antirez.com/post/redis-persistence-demystified.html", note: "Persistence demystified by the original author — still the clearest fork/fsync explanation." },
@@ -432,7 +432,6 @@ redis-benchmark -t set,get -n 1000000 -P 16 -q
 
   // ─── §17 Ecosystem & tooling ──────────────────────────────────────────────
   ecosystem: [
-    { tool: "Valkey 9.1.3", purpose: "BSD-licensed fork under the Linux Foundation; drop-in compatible.", url: "https://valkey.io/", category: "build" },
     { tool: "redis-cli", purpose: "The built-in client: interactive REPL, --pipe bulk loading, --bigkeys, --latency, --stat.", url: "https://redis.io/docs/latest/develop/tools/cli/", category: "tooling" },
     { tool: "redis-benchmark", purpose: "Throughput/latency benchmarking with pipelining simulation.", url: "https://redis.io/docs/latest/develop/tools/redis-benchmark/", category: "test" },
     { tool: "RedisInsight", purpose: "Official GUI: data browser, slowlog, memory analysis, stream visualization.", url: "https://redis.io/insight/", category: "tooling" },
