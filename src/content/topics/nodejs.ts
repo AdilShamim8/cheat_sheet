@@ -178,6 +178,7 @@ setInterval(() => {
   ],
 
   quickReference: [
+    { fact: "Learning path: Node docs guides → Fastify quickstart → node:test → deploy behind a reverse proxy or Fly/Railway.", tag: "learning" },
     { fact: "Current lines (Nov 2026): Node 26 'Lithium' is Active LTS (26.13.0, Oct 2026); 24 'Krypton' and 22 'Jod' in maintenance. Node 26 shipped Temporal enabled by default + V8 14.6.", tag: "version" },
     { fact: "Node 26 (May 2026) enabled Temporal by default — the modern date/time API replacing moment/luxon; V8 14.6 adds Map.getOrInsert and Iterator.concat.", tag: "version" },
     { fact: "Global fetch/undici (Node 18+) and WebStreams make the WHATWG platform APIs first-class; Node implements more of the web platform every release.", tag: "version" },
