@@ -865,7 +865,7 @@ end
     { version: "3.1",  year: 2021, highlight: "YJIT (Shopify, opt-in), anonymous block forwarding &, Hash#except." },
     { version: "3.2",  year: 2022, highlight: "Data.define immutable value class, Regexp timeout, WASI support, YJIT prod-ready." },
     { version: "3.3",  year: 2023, highlight: "YJIT enabled by default, M:N thread scheduler (experimental), Prism parser." },
-    { version: "3.4",  year: 2024, highlight: "Prism becomes default parser, modular GC (you can swap Shoelace/Hash tracking), block-return warnings." },
+    { version: "3.4",  year: 2024, highlight: "Prism becomes default parser, modular GC (you can swap Shoelace/Hash tracking), chilled-strings deprecation warnings." },
     { version: "4.0",  year: 2025, highlight: "Ruby Box (experimental monkey-patch isolation), ZJIT compiler (YJIT successor), Ractor::Port, Pathname and Set promoted to core classes." },
   ],
 

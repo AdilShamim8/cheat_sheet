@@ -166,7 +166,7 @@ Response res = new Response(userF.join(), ordersF.join(), profileF.join());`,
   ],
 
   quickReference: [
-    { fact: "Java 26 (Mar 2026) is current non-LTS; JDK 25 remains the LTS target for services.", tag: "version" },
+    { fact: "JDK 27 (Sep 2026) is current non-LTS; JDK 25 remains the LTS target for services.", tag: "version" },
     { fact: "Java 21 (LTS, Sep 2023) added virtual threads, sequenced collections, pattern matching for switch; Java 17 (LTS, 2021) added sealed classes, records.", tag: "version" },
     { fact: "LTS cadence: 8, 11, 17, 21, 25 (every 2 years); non-LTS versions are 6-month releases, unsupported for production.", tag: "version" },
     { fact: "HotSpot escape analysis can scalar-replace short-lived objects — microbenchmarks showing allocation may be free in practice; verify with `-XX:+PrintEscapeAnalysis`.", tag: "perf" },
@@ -798,8 +798,9 @@ class UserRepositoryTest {
     { version: "Java 11 (LTS)", year: 2018, highlight: "var, HttpClient, Flight Recorder open-sourced, Nashorn deprecated." },
     { version: "Java 17 (LTS)", year: 2021, highlight: "Records, sealed types, pattern matching for instanceof, switch expressions." },
     { version: "Java 21 (LTS)", year: 2023, highlight: "Virtual threads, sequenced collections, pattern matching for switch, generational ZGC." },
-    { version: "Java 25 (LTS)", year: 2025, highlight: "Scoped values, structured concurrency, statement patterns, AOT caching improvements." },
+    { version: "Java 25 (LTS)", year: 2025, highlight: "Scoped values final (JEP 506), structured concurrency 5th preview, AOT method profiling + command-line ergonomics (JEP 514/515)." },
     { version: "Java 26", year: 2026, highlight: "HTTP/3 client (JEP 517), AOT object caching with any GC, structured concurrency 6th preview, Applet API removed." },
+    { version: "Java 27", year: 2026, highlight: "Current release (GA Sep 2026); non-LTS line, next LTS lands on the 29 cadence." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────

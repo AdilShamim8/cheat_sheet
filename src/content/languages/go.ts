@@ -870,8 +870,8 @@ func TestMain(m *testing.M) {
     { version: "Go 1.23",  year: 2024, highlight: "Range-over-func (iter.Seq[T] iterators), unique package, timer behavior fixes." },
     { version: "Go 1.24",  year: 2025, highlight: "Generic type aliases, toolchain management via go.mod, swiss-table map implementation (2-3x faster)." },
     { version: "Go 1.25",  year: 2025, highlight: "testing/synctest for deterministic concurrency tests, encoding/json/v2 experiment (GOEXPERIMENT), GC crash-resilience work." },
-    { version: "Go 1.26",  year: 2026, highlight: "`encoding/json/v2` stabilized for early adopters, experimental greenthreads, more biannual release cadence groundwork." },
-    { version: "Go 1.27",  year: 2026, highlight: "Generic methods (type parameters on methods), struct-field initialization in literals, crypto/mldsa post-quantum, native uuid package, up to 30% cheaper small allocations." },
+    { version: "Go 1.26",  year: 2026, highlight: "Green Tea garbage collector becomes default; encoding/json/v2 still experimental (GOEXPERIMENT=jsonv2)." },
+    { version: "Go 1.27",  year: 2026, highlight: "Generic methods (type parameters on methods), struct-field keys as any selector, encoding/json/v2 graduates to back encoding/json, crypto/mldsa post-quantum, native uuid package, up to 30% cheaper small allocations." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────

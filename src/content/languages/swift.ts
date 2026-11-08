@@ -195,7 +195,7 @@ func sync<R: Repository>(_ remote: R) async throws where R.Entity: Codable {
   ],
 
   quickReference: [
-    { fact: "Swift 6.4.2 (Sep 2026) is current — Swift Build default in SwiftPM, Subprocess 1.0.", tag: "version" },
+    { fact: "Swift 6.4.2 (Oct 2026) is current — Swift Build default in SwiftPM, Subprocess 1.0.", tag: "version" },
     { fact: "ARC (Automatic Reference Counting) — no tracing GC; insert `weak`/`unowned` to break cycles. Cost is paid at assignment, not pause.", tag: "perf" },
     { fact: "Structs are value types — copied on assignment. Classes are reference types — ARC-managed. Default to struct.", tag: "gotcha" },
     { fact: "Swift 5.5 introduced structured concurrency (async/await, actors, TaskGroup); Swift 6 enforces data-race safety at compile time.", tag: "version" },
@@ -945,7 +945,7 @@ let service = UserService(client: mock)`,
     { version: "5.8",  year: 2023, highlight: "Inline array initializers, lightweight type syntax, incremental compilation improvements." },
     { version: "5.9",  year: 2023, highlight: "Macros (SE-0382, powers Observable), if/switch expressions, noncopyable types (preview)." },
     { version: "5.10", year: 2024, highlight: "Noncopyable generics, strict concurrency checking complete-ier, Swift Testing released." },
-    { version: "6.0",  year: 2024, highlight: "Data-race safety enforced by default, typed throws, USDs of concurrency migration. Major." },
+    { version: "6.0",  year: 2024, highlight: "Swift 6 language mode opts into enforced data-race safety, typed throws, concurrency migration aids. Major." },
     { version: "6.4",  year: 2026, highlight: "Swift Build default in SwiftPM, Subprocess 1.0, Span↔C++ std::span interop, up to 40x faster Wasm bridging via JavaScriptKit." },
   ],
 

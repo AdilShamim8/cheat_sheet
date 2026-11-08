@@ -983,7 +983,7 @@ prop_withCoverage = property $ do
     { version: "GHC 9.4", year: 2022, highlight: "JS backend (replacing GHCJS), Pratt parser for less-coupled syntax, runtime improvements." },
     { version: "GHC 9.6 / 9.8", year: 2023, highlight: "Stable type system extensions, improved inference, primitive arrays. HLS becomes mature." },
     { version: "GHC 9.10", year: 2024, highlight: "Improved records (OverloadedRecordUpdate), cross-module record field resolution, perf work." },
-    { version: "GHC 9.14", year: 2026, highlight: "GHC API restructure matured, improved cross-compilation, low-level primops; HLS stable for industrial use." },
+    { version: "GHC 9.14 (LTS)", year: 2025, highlight: "First official LTS line (9.14.1, Dec 2025): GHC API restructure matured, improved cross-compilation, low-level primops; HLS stable for industrial use. GHC 10.0.1 at alpha as of late 2026." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────

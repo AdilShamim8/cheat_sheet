@@ -170,7 +170,7 @@ tx.Commit();   // rollback runs at scope exit if we throw before here`,
 
   quickReference: [
     { fact: ".NET 10 is LTS (EOL Nov 2028); C# 15/.NET 11 at RC — pin LTS for services.", tag: "version" },
-    { fact: ".NET 8 (LTS, Nov 2023) added primary constructors, collection expressions; .NET 9 (Nov 2024) adds `field` keyword, more source generators; cadence is annual LTS every even year.", tag: "version" },
+    { fact: ".NET 8 (LTS, Nov 2023) added primary constructors, collection expressions; C# 13/.NET 9 (Nov 2024) previewed the `field` keyword (stable in C# 14); cadence is annual LTS every even year.", tag: "version" },
     { fact: "JIT compiles per-method on first call; tiered compilation (default since .NET Core 3) tiers C1→C2 — microbenchmarks need explicit warmup.", tag: "perf" },
     { fact: "Span<T> / Memory<T> are zero-allocation views over arrays/strings/native memory — the foundation of modern perf-oriented BCL.", tag: "perf" },
     { fact: "Value types (struct) are copied on assignment and boxed when boxed as object — avoid in hot paths that touch `object`.", tag: "perf" },
@@ -838,8 +838,8 @@ public class SumBench {
     { version: "C# 10.0", year: 2021, highlight: "Global usings, file-scoped namespaces, record structs, const interpolated strings." },
     { version: "C# 11.0", year: 2022, highlight: "Static virtual interface members, list patterns, raw string literals, required members." },
     { version: "C# 12.0", year: 2023, highlight: "Primary constructors, collection expressions, inline arrays, ref struct interfaces." },
-    { version: "C# 13.0", year: 2024, highlight: "params collections, `field` contextual keyword, partial properties, lock object improvements." },
-    { version: "C# 14 / .NET 10 (LTS)", year: 2025, highlight: "Extension members (properties, static, operators), null-conditional assignment, first-class span conversions, `nameof(List<>)`." },
+    { version: "C# 13.0", year: 2024, highlight: "params collections, `field` contextual keyword (preview), partial properties, lock object improvements." },
+    { version: "C# 14 / .NET 10 (LTS)", year: 2025, highlight: "Extension members (properties, static, operators), null-conditional assignment, first-class span conversions, `nameof(List<>)`, `field` keyword stable." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────

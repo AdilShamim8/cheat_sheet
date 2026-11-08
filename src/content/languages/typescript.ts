@@ -161,7 +161,7 @@ function route<K extends keyof Routes>(
   ],
 
   quickReference: [
-    { fact: "TypeScript 7.0.2 (Aug 2026) is current — Go-based compiler, ~10x faster, strict by default; 7.1 in beta.", tag: "version" },
+    { fact: "TypeScript 7.0.2 is current (npm latest) — Go-based compiler, ~10x faster, strict by default; 7.1 Beta (Oct 2026) adds the `es2026` target.", tag: "version" },
     { fact: "`strict: true` enables noImplicitAny, strictNullChecks, strictFunctionTypes, strictBindCallApply, strictPropertyInitialization, noImplicitThis, alwaysStrict, useUnknownInCatchVariables.", tag: "version" },
     { fact: "TypeScript 5.0 (2023) added `const` type parameters; 5.4 added NoInfer; 5.5 added inferred type predicates.", tag: "version" },
     { fact: "Compilation cost scales with project size and `any` count — `any` defeats memoization in the checker and can 10x incremental builds.", tag: "perf" },
@@ -784,8 +784,8 @@ describe("types", () => {
     { version: "5.6",  year: 2024, highlight: "Disallow truthy bigint/string comparisons, `Iterator` global type." },
     { version: "5.7",  year: 2024, highlight: "`--rewriteRelativeImportExtensions`, path rewriting in emit." },
     { version: "5.8",  year: 2025, highlight: "Granular checks for `--module nodenext`, `--erasableSyntaxOnly` for Node type-stripping." },
-    { version: "6.0",  year: 2026, highlight: "Last JavaScript-based compiler release; `--target es2026`, library modernization — the transition release before the Go port." },
-    { version: "7.0",  year: 2026, highlight: "Compiler rewritten in Go — ~10x faster checks (VS Code: 125s → 10s), parallel `--checkers`/`--builders`, new watch mode, `strict` by default. Native port, same language." },
+    { version: "6.0",  year: 2026, highlight: "Last JavaScript-based compiler release (Mar 2026); `--target es2025`, library modernization — the transition release before the Go port." },
+    { version: "7.0",  year: 2026, highlight: "Compiler rewritten in Go (Jul 2026) — ~10x faster checks (VS Code: 125s → 10s), parallel `--checkers`/`--builders`, new watch mode, `strict` by default. Native port, same language." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────

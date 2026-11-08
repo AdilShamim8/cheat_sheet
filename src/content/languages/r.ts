@@ -861,7 +861,8 @@ covr::report(cov)  # HTML report
     { version: "4.2",  year: 2022, highlight: "Pipe placeholder _, |>-based argument forwarding, 32-bit Windows EOL." },
     { version: "4.3",  year: 2023, highlight: "Reduced R-expression overhead, more pipe improvements, pkg improvements." },
     { version: "4.4",  year: 2024, highlight: "Faster ALTREP, JSON parser improvements, tcltk updates." },
-    { version: "4.5",  year: 2025, highlight: "Named-vector printing overhaul, performance work in hot paths. Current major line." },
+    { version: "4.5",  year: 2025, highlight: "Named-vector printing overhaul, performance work in hot paths." },
+    { version: "4.6",  year: 2026, highlight: "Current major line — 4.6.2 (Oct 2026)." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────

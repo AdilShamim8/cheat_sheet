@@ -172,7 +172,7 @@ async function loadWithCutoff(url, ms) {
   ],
 
   quickReference: [
-    { fact: "ES2026 shipped Oct 2026: deferred module evaluation, Float16Array, RegExp modifiers, iterator sequencing.", tag: "version" },
+    { fact: "ES2026 (approved Jun 2026): Map.getOrInsert upsert, JSON.parse source-text access, iterator sequencing, Uint8Array↔base64/hex, Math.sumPrecise, Error.isError, Array.fromAsync.", tag: "version" },
     { fact: "Numbers are IEEE-754 double — integers up to 2^53 are exact (Number.MAX_SAFE_INTEGER); use BigInt beyond that.", tag: "gotcha" },
     { fact: "Array.prototype.sort() default comparator coerces to string — `[10, 9, 1].sort()` gives [1, 10, 9]. Always pass a comparator.", tag: "gotcha" },
     { fact: "Modern engines (V8 12+) compile hot functions with TurboFan; warmup is ~10–1000 invocations. Microbenchmarks lie cold.", tag: "perf" },
@@ -834,8 +834,8 @@ export default defineConfig({
     { version: "ES2022", year: 2022, highlight: "Top-level await, class fields (#private), Error.cause, Object.hasOwn, Array.at." },
     { version: "ES2023", year: 2023, highlight: "Array.findLast/findLastIndex, toSorted/toReversed (non-mutating), Hashbang grammar." },
     { version: "ES2024", year: 2024, highlight: "Promise.withResolvers, Object.groupBy, Map.groupBy, well-formed Unicode strings." },
-    { version: "ES2025", year: 2025, highlight: "Iterator helpers (map/filter/take on iterators), Set methods (union/intersection), import attributes, RegExp.escape." },
-    { version: "ES2026", year: 2026, highlight: "Deferred module evaluation (await-free lazy imports), Float16Array, RegExp modifiers, Iterator sequencing." },
+    { version: "ES2025", year: 2025, highlight: "Iterator helpers (map/filter/take on iterators), Set methods (union/intersection), import attributes, RegExp.escape, Float16Array, RegExp modifiers, Promise.try." },
+    { version: "ES2026", year: 2026, highlight: "Approved Jun 2026: Upsert (Map.getOrInsert), JSON.parse source-text access, Iterator sequencing, Uint8Array↔base64/hex, Math.sumPrecise, Error.isError, Array.fromAsync." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────

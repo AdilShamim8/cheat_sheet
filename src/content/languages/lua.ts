@@ -177,7 +177,7 @@ end`,
   ],
 
   quickReference: [
-    { fact: "Lua 5.1 (LuaJIT 2.1) is the dominant runtime in production: Redis, Nginx/LuaJIT, Neovim, WoW, Roblox. Lua 5.4 is the latest reference release (2024) but ecosystem fragmentation is real.", tag: "version" },
+    { fact: "Lua 5.1 (LuaJIT 2.1) is the dominant runtime in production: Redis, Nginx/LuaJIT, Neovim, WoW, Roblox. Lua 5.5 (Dec 2025) is the latest reference release but ecosystem fragmentation is real.", tag: "version" },
     { fact: "LuaJIT is ~10-50x faster than reference Lua on tight loops via trace compilation; it's the de-facto standard for game-embedded scripting.", tag: "perf" },
     { fact: "Register-based VM: most ops touch 2-3 explicit registers, no stack manipulation — ~30-50% fewer ops than a stack-based Python/JS VM for equivalent code.", tag: "perf" },
     { fact: "Table lookup is O(1) amortized; arrays are stored as a contiguous C array when keys are 1..n, hash fallback for sparse keys.", tag: "complexity" },
@@ -924,7 +924,7 @@ print("all tests passed")`,
     { version: "5.3", year: 2015, highlight: "Integer subtype (int64), bitwise operators (& | ~ << >>), 32-bit integers deprecated. utf8 module added." },
     { version: "5.4", year: 2020, highlight: "Generational GC, const locals, integers always 64-bit, goto continues, math.tointeger. Performance and memory improvements." },
     { version: "LuaJIT 2.1", year: 2021, highlight: "LuaJIT 2.1 released — the long-running dev branch stabilizes. Adds FFI improvements, ARM64 support, bug fixes." },
-    { version: "5.5 (work)", year: 2024, highlight: "In-development: improved const, integer-next, segmented stacks. LuaJIT continues on 5.1 compatibility track." },
+    { version: "5.5", year: 2025, highlight: "Released Dec 2025 — declarations for global variables, named vararg tables. First major version in five years; LuaJIT continues on the 5.1 compatibility track." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────

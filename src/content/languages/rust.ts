@@ -179,7 +179,7 @@ fn main() {
   ],
 
   quickReference: [
-    { fact: "Rust 1.99.1 (Oct 2026) is current — C-variadic definitions, LLVM 23; the 2.0-number milestone is next.", tag: "version" },
+    { fact: "Rust 1.99.1 (Oct 2026) is current — C-variadic definitions, LLVM 23; next up is 1.100.0 (semver 1.x continues).", tag: "version" },
     { fact: "Edition 2021 (default) closes capture patterns in closures, fixes panic semantics; Edition 2024 (1.85+, Feb 2025) adds `gen` blocks, unsafe attributes, and stricter async fn lifetimes.", tag: "version" },
     { fact: "Cargo is the build tool — `cargo build --release` enables optimizations; debug builds are 10–100x slower and skip inlining.", tag: "perf" },
     { fact: "LLVM produces code on par with C/C++ in release mode; aggressive inlining + monomorphization are why — binary size grows with type diversity.", tag: "perf" },
@@ -894,7 +894,7 @@ criterion_main!(benches);
     { version: "1.75", year: 2023, highlight: "async fn in traits (without dyn dispatch), return-position impl Trait in traits." },
     { version: "Edition 2024", year: 2025, highlight: "`gen` blocks, unsafe attributes, stricter async fn lifetimes, generic `expr` context. Released with 1.85." },
     { version: "1.85", year: 2025, highlight: "Edition 2024 stable, async closures, unsafe extern blocks formalized." },
-    { version: "1.99", year: 2026, highlight: "C-variadic function definitions stable, `mod` in macro bodies, LLVM 23, Cargo `debug` profile — the release before the 2.0-version-number milestone." },
+    { version: "1.99", year: 2026, highlight: "C-variadic function definitions stable, `mod` in macro bodies, LLVM 23, Cargo `debug` profile — 1.100.0 follows on the same 1.x semver line." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────

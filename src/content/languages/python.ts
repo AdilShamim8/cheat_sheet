@@ -831,8 +831,8 @@ exclude_lines = [
     { version: "3.11", year: 2022, highlight: "10-60% faster (specialization), exception groups (PEP 654), TaskGroup, 'tomllib'." },
     { version: "3.12", year: 2023, highlight: "PEP 695 type parameter syntax ('def f[T](x: T)'), f-string improvements, per-interpreter GIL groundwork." },
     { version: "3.13", year: 2024, highlight: "Experimental free-threaded build (no GIL, PEP 703), JIT landing, '--disable-gil' flag." },
-    { version: "3.14", year: 2025, highlight: "Free-threaded build officially supported (PEP 779), deferred annotations (PEP 649), template strings (t-strings), tail-calling interpreter on Windows x64." },
-    { version: "3.15", year: 2026, highlight: "Lazy imports (PEP 810), frozendict + sentinel builtins (PEP 814/661), UTF-8 default encoding (PEP 686), unpacking in comprehensions (PEP 798), Tachyon profiler, stable abi3t ABI." },
+    { version: "3.14", year: 2025, highlight: "Free-threaded build officially supported (PEP 779), deferred annotations (PEP 649), template strings (t-strings), opt-in tail-calling interpreter (Clang 19+, x86-64/AArch64)." },
+    { version: "3.15", year: 2026, highlight: "Lazy imports (PEP 810), frozendict + sentinel builtins (PEP 814/661), UTF-8 default encoding (PEP 686), unpacking in comprehensions (PEP 798), Tachyon profiler, stable abi3t ABI, tail-calling interpreter on Windows x64." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────

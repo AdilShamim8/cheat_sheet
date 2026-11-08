@@ -181,7 +181,7 @@ EventLoop::run();`,
   ],
 
   quickReference: [
-    { fact: "PHP 8.5.11 (Sep 2026) is current; 8.6 at RC5 — check release notes before adopting the pipe operator.", tag: "version" },
+    { fact: "PHP 8.5.12 (Oct 2026, security release) is current; 8.6 at RC5 (GA Nov 19, 2026) — check release notes before adopting the pipe operator.", tag: "version" },
     { fact: "Opcache caches the compiled opcodes — must be enabled in production; ~2-3x request throughput for free.", tag: "perf" },
     { fact: "PHP 8.0 JIT helps CPU-bound code (image processing, math) ~1.5-2x; near-zero effect on typical I/O-bound web requests.", tag: "perf" },
     { fact: "PHP 8.1 enums, readonly, fibers; 8.2 readonly classes, DNF types; 8.3 typed class constants, json_validate().", tag: "version" },
