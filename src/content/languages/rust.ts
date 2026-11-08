@@ -179,6 +179,7 @@ fn main() {
   ],
 
   quickReference: [
+    { fact: "Rust 1.99.1 (Oct 2026) is current — C-variadic definitions, LLVM 23; the 2.0-number milestone is next.", tag: "version" },
     { fact: "Edition 2021 (default) closes capture patterns in closures, fixes panic semantics; Edition 2024 (1.85+, Feb 2025) adds `gen` blocks, unsafe attributes, and stricter async fn lifetimes.", tag: "version" },
     { fact: "Cargo is the build tool — `cargo build --release` enables optimizations; debug builds are 10–100x slower and skip inlining.", tag: "perf" },
     { fact: "LLVM produces code on par with C/C++ in release mode; aggressive inlining + monomorphization are why — binary size grows with type diversity.", tag: "perf" },
