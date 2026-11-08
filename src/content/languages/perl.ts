@@ -8,6 +8,7 @@ const sheet: CheatSheet = {
   tags: ["dynamic", "interpreted", "scripting", "text-processing", "regex", "sysadmin", "ducktyping"],
   tagline: "Larry Wall's Swiss-army chainsaw — the duct tape of the early web, still unmatched for one-liner text wrangling.",
   year: 1987,
+  lastUpdated: "2026-11",
   author: "Larry Wall",
 
   tldr: [
