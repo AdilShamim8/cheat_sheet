@@ -328,3 +328,9 @@ MIT
 - **ML/AI (6)** — PyTorch 2.15 · TensorFlow 2.21 · Keras 3.15 · scikit-learn 1.9 · pandas 3.1 · NumPy 2.5.
 - **Systems (1)** — System Design (incl. AI-native systems).
 - **Topics (10)** — Git 2.56 · Docker 29 · Linux 7.3 · Networking · DevOps · React 19.3 · Node.js 26 · PostgreSQL 18 · Redis 8.10 · Kubernetes 1.37.
+
+## Roadmap
+
+- [ ] Rust, Zig, GraphQL, Terraform, CI/CD deep-dives
+- [ ] Rust→Wasm playground integration
+- [ ] Community translations of section headers
