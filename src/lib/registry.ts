@@ -57,6 +57,7 @@ import linux from "@/content/topics/linux";
 import networking from "@/content/topics/networking";
 import devops from "@/content/topics/devops";
 import react from "@/content/topics/react";
+import nodejs from "@/content/topics/nodejs";
 
 export const ALL_SHEETS: CheatSheet[] = [
   // Tier 1
@@ -70,7 +71,7 @@ export const ALL_SHEETS: CheatSheet[] = [
   // Systems
   systemDesign,
   // Topics
-  git, docker, linux, networking, devops, react,
+  git, docker, linux, networking, devops, react, nodejs,
 ];
 
 export const SHEETS_BY_SLUG: Record<string, CheatSheet> = Object.fromEntries(
