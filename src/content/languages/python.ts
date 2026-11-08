@@ -10,6 +10,7 @@ const sheet: CheatSheet = {
   year: 1991,
   author: "Guido van Rossum",
   lastUpdated: "2026-11",
+  readingTime: 30,
 
   tldr: [
     "Python is a high-level, dynamically-typed, garbage-collected language whose design prioritizes readability and a single obvious way to do most things.",
@@ -156,7 +157,6 @@ def handle(r: Result) -> int:
   ],
 
   goDeeper: [
-    { title: "Python release notes and announcements", url: "https://www.python.org/downloads/", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "Python Documentation — official language reference", url: "https://docs.python.org/3/reference/", note: "The authoritative spec; read the data model chapter for __dunder__ semantics." },
     { title: "PEP 8 — Style Guide for Python Code", url: "https://peps.python.org/pep-0008/", note: "The canonical style reference; ruff/black implement its spirit." },
     { title: "Fluent Python (Luciano Ramalho)", url: "https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/", note: "Best deep treatment of the data model, descriptors, and concurrency." },
@@ -792,7 +792,6 @@ exclude_lines = [
 
   // ─── §17 Ecosystem & Tooling ───────────────────────────────────────
   ecosystem: [
-    { tool: "uv 0.13.7", purpose: "Rust-based Python manager; 0.13.0 made Python 3.15 the default (Nov 2026).", url: "https://github.com/astral-sh/uv/releases", category: "build" },
     { tool: "uv", purpose: "Astral's Rust-based package manager — 10-100x faster than pip/pip-tools.", url: "https://docs.astral.sh/uv/", category: "package" },
     { tool: "ruff", purpose: "Rust-based linter + formatter — replaces flake8/isort/black/pyupgrade in one tool.", url: "https://docs.astral.sh/ruff/", category: "lint" },
     { tool: "mypy", purpose: "Static type checker; the original. Use --strict for new code.", url: "https://mypy.readthedocs.io/", category: "lint" },
