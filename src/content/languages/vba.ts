@@ -1150,6 +1150,7 @@ End Function
     { version: "Office Scripts", year: 2020, highlight: "Microsoft introduces Office Scripts (TypeScript) for Excel on the web — the first modern alternative to VBA. New feature investment shifts here." },
     { version: "Excel Lambda", year: 2021, highlight: "Excel formulas become Turing-complete via LAMBDA — many VBA use cases (custom functions) can now be pure formulas." },
     { version: "Python in Excel", year: 2023, highlight: "Microsoft integrates Python directly into Excel (preview, then GA) — yet another alternative to VBA for data work." },
+    { version: "Office Scripts + Copilot", year: 2025, highlight: "Excel Copilot automates many macro use cases via natural language; Office Scripts (TypeScript) is the cross-platform successor for web automation." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────
