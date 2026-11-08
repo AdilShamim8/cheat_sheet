@@ -8,6 +8,7 @@ const sheet: CheatSheet = {
   tags: ["dynamic", "array-oriented", "numerical", "scientific", "proprietary", "matrix-first", "engineering"],
   tagline: "MathWorks' matrix-first numerical environment — the lingua franca of control systems, signal processing, and academic engineering labs.",
   year: 1984,
+  lastUpdated: "2026-11",
   author: "Cleve Moler / MathWorks",
 
   tldr: [
