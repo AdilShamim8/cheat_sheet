@@ -9,6 +9,7 @@ const sheet: CheatSheet = {
   tagline: "Packaging model that bundles an app and its dependencies into a portable, isolated Linux container built on kernel namespaces and cgroups.",
   year: 2013,
   lastUpdated: "2026-11",
+  readingTime: 30,
   author: "Docker, Inc. (Solomon Hykes)",
 
   tldr: [
@@ -205,7 +206,6 @@ docker inspect <container> --format '{{json .GraphDriver.Data}}'`,
   ],
 
   goDeeper: [
-    { title: "Docker release notes and announcements", url: "https://docs.docker.com/engine/release-notes/", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "Docker Docs — official reference", url: "https://docs.docker.com/", note: "The Dockerfile reference and BuildKit section are essential; the rest is operational guidance." },
     { title: "OCI Image Format Specification", url: "https://github.com/opencontainers/image-spec", note: "The standard Docker images conform to — explains manifests, layers, and digest addressing independent of Docker." },
     { title: "BuildKit README", url: "https://github.com/moby/buildkit", note: "Authoritative source for cache mounts, multi-stage, frontend syntax, and `--mount` types not documented elsewhere." },
