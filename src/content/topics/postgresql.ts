@@ -170,6 +170,7 @@ SELECT body->>'type', (body->'latency')::int FROM docs;
   ],
 
   quickReference: [
+    { fact: "Learning path: official tutorial → EXPLAIN (ANALYZE, BUFFERS) drills → pg_stat_statements → CKA-style ops drills (backup/restore with pgbackrest).", tag: "learning" },
     { fact: "Current: PostgreSQL 18 (Sep 2025; 18.6 security release Aug 2026) — async I/O for heap scans, virtual generated columns, OAuth SASL auth. PG19 at RC (Oct 2026).", tag: "version" },
     { fact: "DB-Engines Nov 2026: #4 overall (689.7 score), #1 open-source non-commercial engine; the default choice in new architectures across every cloud.", tag: "usage" },
     { fact: "MVCC snapshot isolation is the default (READ COMMITTED per-statement snapshots; REPEATABLE READ = snapshot per transaction, no phantom reads).", tag: "isolation" },
