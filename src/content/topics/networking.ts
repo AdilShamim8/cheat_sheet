@@ -695,6 +695,12 @@ A 32GB box can host ~32K threads or ~3M event-driven connections.`,
     { syntax: "TTL + hop limits", behavior: "Packet dies after N routers — loop protection baked into L3.", when: "Diagnosing routing loops; traceroute reads TTL expiry deliberately." },
   ],
 
+  testing: [
+    { syntax: "tcpdump/wireshark capture", behavior: "Packet truth: filters (host, port, tcp[13]) on the wire.", when: "Every is-it-the-network debate ends here — capture both ends." },
+    { syntax: "iperf3", behavior: "Saturate a path with controlled TCP/UDP load; measure throughput + jitter.", when: "Capacity verification, MTU/window tuning between sites." },
+    { syntax: "mtr", behavior: "traceroute + ping continuous — per-hop loss/latency over time.", when: "Intermittent path issues that single traceroutes miss." },
+  ],
+
 };
 
 export default sheet;
