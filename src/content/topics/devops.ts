@@ -761,6 +761,7 @@ npx playwright test e2e/checkout-smoke.spec.ts --reporter=json > /tmp/result.jso
     { version: "SLO-based alerting", year: 2019, highlight: "Google's SRE workbook popularizes burn-rate alerts over threshold alerts; alert on user impact, not raw metrics." },
     { version: "Terraform license change", year: 2023, highlight: "HashiCorp switches Terraform to BSL; community forks OpenTofu under Linux Foundation. The IaC landscape splits." },
     { version: "Platform engineering", year: 2023, highlight: "Gartner declares 'platform engineering' the successor to DevOps; internal developer platforms (Backstage, Port) become the new hotness." },
+    { version: "Agent-driven pipelines", year: 2026, highlight: "GitHub Octoverse 2026: >40% of PRs start with an AI agent by September (110M/month); repos with agent config files log 8x as many commits. Platform teams now govern agent permissions like any other identity." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────
