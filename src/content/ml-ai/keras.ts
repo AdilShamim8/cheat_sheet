@@ -8,6 +8,7 @@ const sheet: CheatSheet = {
   tags: ["deep-learning", "neural-networks", "high-level-api", "sequential", "functional", "multi-backend", "python"],
   tagline: "High-level neural-network API — stack layers, compile, fit. Three backends (TF, JAX, PyTorch) under one interface since Keras 3.",
   year: 2015,
+  lastUpdated: "2026-11",
   author: "François Chollet (Google)",
 
   tldr: [
