@@ -8,4 +8,4 @@
 - **Highlighting**: dependency-free tokenizer `src/lib/highlight.tsx` (30+ slugs).
 
 ## Adding content
-See CONTRIBUTING.md. Validation: `node scripts/validate-content.mjs`.
+See CONTRIBUTING.md. Validation: `bun scripts/validate-content.ts`.

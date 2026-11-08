@@ -351,7 +351,7 @@ Every version claim on this site was checked against a primary source on the dat
 
 | Command | Purpose |
 |---|---|
-| `node scripts/validate-content.mjs` | Validate every sheet against the schema contract |
+| `bun scripts/validate-content.ts` | Validate every sheet against the schema contract |
 | `bun run lint` / `npx tsc --noEmit` | Lint and typecheck |
 | `bun run build && bun run start` | Production build + serve |
 

@@ -9,7 +9,7 @@
     "build": "next build",
     "start": "NODE_ENV=production bun .next/standalone/server.js 2>&1 | tee server.log",
     "lint": "eslint .",
-    "validate:content": "node scripts/validate-content.mjs",
+    "validate:content": "bun scripts/validate-content.ts",
     "db:push": "prisma db push --accept-data-loss",
     "db:generate": "prisma generate",
     "db:migrate": "prisma migrate dev",
