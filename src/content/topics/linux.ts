@@ -819,6 +819,13 @@ cat urls.txt | xargs -P 8 -I{} bash -c 'fetch_page "{}" >> out.txt'`,
     { syntax: "bats-core", behavior: "Bash automated testing system: run() assertions in .bats files.", when: "Scripts whose correctness matters (deploy scripts, init hooks)." },
   ],
 
+  operators: [
+    { syntax: "cmd1 | cmd2", behavior: "Pipe: stdout of one feeds stdin of the next.", when: "The Unix composition operator." },
+    { syntax: "cmd > f 2>&1 / >> f", behavior: "Redirect stdout (+stderr merged); >> appends.", when: "Logs, capture. Order of 2>&1 matters." },
+    { syntax: "cmd1 && cmd2 / ||", behavior: "Run on success / on failure — exit codes are contracts.", when: "build && deploy; ping || echo down." },
+    { syntax: "$(cmd) / <(cmd)", behavior: "Command / process substitution.", when: "diff <(sort a) <(sort b) — live FDs where files go." },
+    { syntax: "xargs -P N", behavior: "Fan out stdin as args across N processes.", when: "Bounded parallel batch jobs." },
+  ],
 };
 
 export default sheet;
