@@ -743,6 +743,7 @@ describe("types", () => {
 
   // ─── §17 Ecosystem & Tooling ───────────────────────────────────────
   ecosystem: [
+    { tool: "Vue 3.5.45", purpose: "Optional for TS users; shown as ecosystem version reference (Nov 2026).", url: "https://github.com/vuejs/core/releases", category: "build" },
     { tool: "tsc", purpose: "The TypeScript compiler — also a type-checker; --noEmit for CI checks.", url: "https://www.typescriptlang.org/", category: "build" },
     { tool: "tsx", purpose: "Zero-config TS executor for Node — uses esbuild, no type-checking.", url: "https://tsx.is/", category: "build" },
     { tool: "tsup", purpose: "esbuild-based bundler for TS libraries — zero-config, fast, dual CJS/ESM.", url: "https://tsup.egoist.dev/", category: "build" },
