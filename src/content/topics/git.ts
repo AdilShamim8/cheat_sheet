@@ -518,6 +518,12 @@ git unpack-objects < /path/to/clean.pack   # re-import from a good copy
     { vs: "Fossil", whenThis: "Git when you want a separate issue tracker, wiki, and CI; when you want the massive ecosystem of git hosts and tooling.", whenThat: "Fossil for small self-hosted projects that want VCS + wiki + issues + chat in one SQLite-backed binary. Single-file repo, immutable history." },
     { vs: "Jujutsu (jj)", whenThis: "Git when you need maximum compatibility — every tool, every host, every tutorial is built on git.", whenThat: "Jujutsu when you want first-class commits-as-objects (auto-rebase), no index, conflicts as first-class state, and a git-compatible backend." },
   ],
+  operators: [
+    { syntax: "git rebase vs merge", behavior: "Rebase rewrites history linearly; merge preserves topology with a commit.", when: "Rebase local WIP; merge to main (or squash) — agree per team and codify in settings." },
+    { syntax: "git reset --soft/--mixed/--hard", behavior: "Moves HEAD; keeps index+tree / keeps tree / nukes everything.", when: "--soft to re-commit; --hard only when the work is truly disposable (reflog saves most mistakes)." },
+    { syntax: "^ vs ~ (parent navigation)", behavior: "HEAD~2 = two first-parents back; HEAD^2 = the second parent of a merge.", when: "Rebase onto the right fork point; inspect merges precisely." },
+  ],
+
 };
 
 export default sheet;
