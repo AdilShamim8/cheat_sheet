@@ -2,7 +2,7 @@
 
 **Premium, fast-loading developer reference platform.** Maximum signal, minimum noise — the 20% of knowledge that resolves 80% of real-world usage, distilled for working engineers who need fast recall, not tutorials.
 
-Built with Next.js 16 + TypeScript + Tailwind CSS 4. Three switchable themes. Nine UI languages. **39 references × 20 sections each** — every page is an expert-level deep dive.
+Built with Next.js 16 + TypeScript + Tailwind CSS 4. Three switchable themes. Nine UI languages. **46 references × 20 sections each** — every page is an expert-level deep dive.
 
 ---
 
@@ -31,14 +31,14 @@ npx tsc --noEmit
 
 ## What's inside (v2)
 
-39 references organized into 4 categories:
+46 references organized into 4 categories:
 
 | Category | Count | Examples |
 |---|---|---|
 | **Languages** | 29 | Python, JavaScript, TypeScript, C++, C, Java, C#, Go, Rust, Ruby, PHP, Swift, Kotlin, Dart, R, SQL, Bash, Scala, Objective-C, Perl, Lua, Julia, MATLAB, Haskell, Elixir, Clojure, Assembly, Fortran, VBA |
-| **ML / AI** | 4 | PyTorch, TensorFlow, Keras, scikit-learn |
+| **ML / AI** | 6 | PyTorch, TensorFlow, Keras, scikit-learn, pandas, NumPy |
 | **Systems & Architecture** | 1 | System Design |
-| **Topics** | 5 | Git, Docker, Linux, Networking, DevOps / CI-CD |
+| **Topics** | 10 | Git, Docker, Linux, Networking, DevOps / CI-CD, React, Node.js, PostgreSQL, Redis, Kubernetes |
 
 Each reference follows the **20-section 80/20 expert template**:
 
