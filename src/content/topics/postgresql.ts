@@ -184,6 +184,7 @@ SELECT body->>'type', (body->'latency')::int FROM docs;
   ],
 
   goDeeper: [
+    { title: "PostgreSQL release notes and announcements", url: "https://www.postgresql.org/docs/release/", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "PostgreSQL Official Documentation", url: "https://www.postgresql.org/docs/current/", note: "The best docs in the database world — read the MVCC, indexing, and EXPLAIN chapters end-to-end once a year." },
     { title: "Use The Index, Luke!", url: "https://use-the-index-luke.com/", note: "SQL indexing tutorial that happens to use Postgres syntax — fixes the mental model around B-tree traversal." },
     { title: "pganalyze blog & EXPLAIN visualizer", url: "https://pganalyze.com/", note: "Practical tuning content plus a paste-your-plan visualizer for review." },
