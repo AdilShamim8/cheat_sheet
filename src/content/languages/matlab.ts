@@ -889,6 +889,7 @@ end
     { version: "R2021a", year: 2021, highlight: "arguments block — type-checked function arguments, replaces validateattributes." },
     { version: "R2022a", year: 2022, highlight: "Python integration expanded; Live Editor collapsible sections; major GPU perf work." },
     { version: "R2024a", year: 2024, highlight: "Python package manager interop, improved docker support, AI chat assistant (MathWorks)." },
+    { version: "R2026a", year: 2026, highlight: "AI assistant integrated across Simulink and toolboxes; deeper Python interop; GPU cloud workflows." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────
