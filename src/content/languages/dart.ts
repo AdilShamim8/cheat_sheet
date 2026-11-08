@@ -206,6 +206,7 @@ Future<List<String>> _fetchResults(String q) async {
   ],
 
   goDeeper: [
+    { title: "Dart release notes and announcements", url: "https://docs.flutter.dev/release/release-notes", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "Dart Documentation — Official", url: "https://dart.dev/guides", note: "The language tour + library tour are the canonical entry points; Effective Dart is the style guide." },
     { title: "Dart Language Spec (PDF)", url: "https://dart.dev/resources/language/spec", note: "Formal specification — useful for edge cases in null promotion and generic bounds." },
     { title: "Effective Dart", url: "https://dart.dev/effective-dart", note: "Style, documentation, usage, and design guidelines — the equivalent of PEP 8 + Effective Java." },
