@@ -6,7 +6,7 @@
 
 import type { CheatSheet } from "@/lib/types";
 
-// Tier 1 — Core languages
+// Tier 1 — Core languages (the 9 most-used languages in industry, per SO/TIOBE 2026)
 import python from "@/content/languages/python";
 import javascript from "@/content/languages/javascript";
 import typescript from "@/content/languages/typescript";
@@ -41,7 +41,7 @@ import assembly from "@/content/languages/assembly";
 import fortran from "@/content/languages/fortran";
 import vba from "@/content/languages/vba";
 
-// ML / AI frameworks
+// ML / AI frameworks (training, serving, and the data stack beneath them)
 import pytorch from "@/content/ml-ai/pytorch";
 import tensorflow from "@/content/ml-ai/tensorflow";
 import keras from "@/content/ml-ai/keras";
@@ -52,7 +52,7 @@ import numpy from "@/content/ml-ai/numpy";
 // Systems & architecture
 import systemDesign from "@/content/systems/system-design";
 
-// Topics hub
+// Topics hub (tools & platforms engineers use daily — grows indefinitely)
 import git from "@/content/topics/git";
 import docker from "@/content/topics/docker";
 import linux from "@/content/topics/linux";
