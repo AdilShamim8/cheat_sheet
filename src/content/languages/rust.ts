@@ -9,6 +9,7 @@ const sheet: CheatSheet = {
   tagline: "A memory-safe systems language with no GC — the modern default for performance-critical, low-latency, and security-sensitive code.",
   year: 2010,
   lastUpdated: "2026-11",
+  readingTime: 30,
   author: "Mozilla (Graydon Hoare)",
 
   tldr: [
@@ -194,7 +195,6 @@ fn main() {
   ],
 
   goDeeper: [
-    { title: "Rust release notes and announcements", url: "https://releases.rs/", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "The Rust Programming Language (The Book)", url: "https://doc.rust-lang.org/book/", note: "The official, free canonical introduction — required reading for ownership, borrows, and lifetimes." },
     { title: "Rust Reference", url: "https://doc.rust-lang.org/reference/", note: "The authoritative language reference; definitive on type system, memory model, and unsafe semantics." },
     { title: "Rustonomicon", url: "https://doc.rust-lang.org/nomicon/", note: "The dark-arts manual for unsafe Rust — required reading before writing any `unsafe` block." },
