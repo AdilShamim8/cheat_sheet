@@ -188,6 +188,7 @@ if err := load(id); err != nil {
   ],
 
   quickReference: [
+    { fact: "Go 1.27.3 (Oct 2026) is current — generic methods, encoding/json/v2, post-quantum crypto/mldsa, native uuid.", tag: "version" },
     { fact: "Go 1.22 (Feb 2024) fixed loop-variable capture and added range-over-int; 1.23 added range-over-func and unique; 1.21 added min/max/clear builtins.", tag: "version" },
     { fact: "Goroutine stack starts at 2KB and grows on demand — millions of goroutines fit in <10GB; the runtime multiplexes them onto OS threads (GOMAXPROCS).", tag: "perf" },
     { fact: "GC is concurrent, low-pause (~sub-ms for <1GB heap), targets 2x live heap growth; tunable via GOGC (default 100) or GOMEMLIMIT (1.19+).", tag: "perf" },
