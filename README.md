@@ -346,3 +346,11 @@ Every version claim on this site was checked against a primary source on the dat
 **How often is it updated?** Version histories track current stable releases; the Nov 2026 refresh updated all 46 pages.
 
 **Can I contribute?** Yes — see CONTRIBUTING.md; one-page PRs with verified facts merge fastest.
+
+## Scripts
+
+| Command | Purpose |
+|---|---|
+| `node scripts/validate-content.mjs` | Validate every sheet against the schema contract |
+| `bun run lint` / `npx tsc --noEmit` | Lint and typecheck |
+| `bun run build && bun run start` | Production build + serve |
