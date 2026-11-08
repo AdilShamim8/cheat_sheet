@@ -963,6 +963,7 @@ jobs:
   versionHistory: [
     { version: "1.0",  year: 1989, highlight: "First release by Brian Fox (GNU) — Bourne shell successor." },
     { version: "2.0",  year: 1996, highlight: "POSIX mode, arrays, [[ ]], functions, $'...' quoting. The modern era." },
+    { version: "5.3",  year: 2026, highlight: "Current stable line: loadable builtins rework, malloc hardening. 5.2.x remains the conservative default in most distros." },
     { version: "3.0",  year: 2004, highlight: "Regular expressions via =~, brace expansion, pipefail option." },
     { version: "3.1",  year: 2005, highlight: "printf -v (assign to variable), better locale support." },
     { version: "4.0",  year: 2009, highlight: "Associative arrays (declare -A), coproc, mapfile/readarray, |& for stderr piping." },
