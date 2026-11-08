@@ -8,6 +8,7 @@ const sheet: CheatSheet = {
   tags: ["static-typing", "compiled", "memory-safe", "zero-cost", "ownership", "systems", "concurrent"],
   tagline: "A memory-safe systems language with no GC — the modern default for performance-critical, low-latency, and security-sensitive code.",
   year: 2010,
+  lastUpdated: "2026-11",
   author: "Mozilla (Graydon Hoare)",
 
   tldr: [
@@ -891,6 +892,7 @@ criterion_main!(benches);
     { version: "1.75", year: 2023, highlight: "async fn in traits (without dyn dispatch), return-position impl Trait in traits." },
     { version: "Edition 2024", year: 2025, highlight: "`gen` blocks, unsafe attributes, stricter async fn lifetimes, generic `expr` context. Released with 1.85." },
     { version: "1.85", year: 2025, highlight: "Edition 2024 stable, async closures, unsafe extern blocks formalized." },
+    { version: "1.99", year: 2026, highlight: "C-variadic function definitions stable, `mod` in macro bodies, LLVM 23, Cargo `debug` profile — the release before the 2.0-version-number milestone." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────
