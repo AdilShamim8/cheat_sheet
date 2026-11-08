@@ -526,9 +526,17 @@ git unpack-objects < /path/to/clean.pack   # re-import from a good copy
   ],
 
   testing: [
-    { syntax: "pre-commit hooks", behavior: "Run lint/format on staged files; fail before the commit lands.", when: "Zero-excuse hygiene: format + lint + secret-scan locally, mirror in CI." },
-    { syntax: "CI on the merge queue", behavior: "Validate PRs serialized against the latest main — no broken merges, ever.", when: "GitHub merge queue / equivalent; the end of works-on-my-fork." },
-    { syntax: "git bisect", behavior: "Binary-search history for the commit that introduced a bug.", when: "Any regression with a reproducible test: log2(n) checkouts to the culprit." },
+    {
+      lang: "bash",
+      caption: "Git bisect: binary-search the regression",
+      code: `git bisect start HEAD v2.3.0
+git bisect run bun test tests/e2e/checkout.spec.ts
+git bisect reset
+
+# Hygiene gates that keep history bisectable:
+#   pre-commit: lint + format + secret-scan on staged files
+#   CI merge queue: every PR validated against latest main`,
+    },
   ],
 
 };
