@@ -139,6 +139,7 @@ def handle(r: Result) -> int:
   ],
 
   quickReference: [
+    { fact: "Python 3.15.2 (Oct 2026) is current — lazy imports, frozendict, UTF-8 default; 3.14 in bugfix, 3.13 security-only.", tag: "version" },
     { fact: "GIL: only one thread runs Python bytecode at a time — use multiprocessing or C-extensions (NumPy releases the GIL) for true CPU parallelism.", tag: "perf" },
     { fact: "Free-threaded Python (no-GIL) is officially supported since 3.14 (PEP 779); 3.15 adds a stable abi3t ABI and installs free-threading by default in the official macOS binaries.", tag: "version" },
     { fact: "List comprehension is ~30-50% faster than an equivalent for-loop with .append() due to specialized bytecode.", tag: "perf" },
