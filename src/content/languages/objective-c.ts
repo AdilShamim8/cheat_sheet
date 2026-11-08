@@ -9,6 +9,7 @@ const sheet: CheatSheet = {
   tagline: "Smalltalk-style message passing layered over C — Apple's lingua franca for Cocoa until Swift arrived.",
   year: 1984,
   lastUpdated: "2026-11",
+  readingTime: 30,
   author: "Brad Cox & Tom Love",
 
   tldr: [
