@@ -362,3 +362,9 @@ Version facts verified against: python.org, go.dev, openjdk.org, releases.rs, sw
 ## Support
 
 Open a GitHub issue (bug, content correction, or new-sheet request — templates provided). Content PRs with primary-source citations get priority review.
+
+## Project stats (Nov 2026)
+
+- 46 references, 20 sections each, 9 UI languages, 3 themes
+- 300+ commits in the November 2026 refresh
+- Content validation in CI (schema contract on every PR)
