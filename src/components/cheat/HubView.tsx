@@ -265,6 +265,50 @@ export function HubView({ onNavigate }: HubViewProps) {
         </div>
       </section>
 
+      {/* ─── Real-world data (Nov 2026, verified) ─────────────────────── */}
+      <section className="max-w-6xl mx-auto px-4 sm:px-5 md:px-8 pt-8 sm:pt-12 w-full">
+        <div className="flex items-baseline gap-3 mb-4 pb-2 border-b border-border">
+          <span className="font-mono text-xl sm:text-2xl" style={{ color: "var(--primary)" }}>≡</span>
+          <h2 className="text-lg sm:text-xl md:text-2xl font-semibold tracking-tight">
+            Real-world data · November 2026
+          </h2>
+          <span className="text-xs font-mono text-muted-foreground">verified</span>
+        </div>
+        <p className="text-xs sm:text-sm text-muted-foreground mb-4 -mt-2">
+          Where the industry actually is right now — sources opened and verified 2026-11-08.
+        </p>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-3">
+          {[
+            { src: "TIOBE · Nov 2026", lines: ["Python #1 — 20.86% (all-time high)", "C 11.48% · Java 8.89% · C++ 8.35%", "C# 3.39% · JS 2.42% · R 2.27%"], url: "https://www.tiobe.com/tiobe-index/" },
+            { src: "Stack Overflow Survey 2026", lines: ["JavaScript 62% — top for 12th year", "SQL 58.4% · Python 58.0% · Bash 51.3%", "TypeScript 43.8% · Java 27.6% · C# 27.1%"], url: "https://survey.stackoverflow.co/2026/technology" },
+            { src: "GitHub Octoverse 2026", lines: ["TypeScript #1 language · Python #2", "225M+ devs · 34.3B commits this year", ">40% of PRs start with an AI agent"], url: "https://github.blog/news-insights/octoverse/" },
+            { src: "State of JS 2025", lines: ["React 85% usage · Vue 52% · Angular 48%", "Svelte 27% · Solid 10% (89% retention)", "react: ~252M weekly npm downloads"], url: "https://2025.stateofjs.com/" },
+            { src: "DB-Engines · Nov 2026", lines: ["Oracle #1 · MySQL #2 · SQL Server #3", "PostgreSQL #4 — top non-commercial", "MongoDB #5 · Redis #8 · Snowflake #6"], url: "https://db-engines.com/en/ranking" },
+            { src: "Cloud infra · Q3 2026", lines: ["AWS 26% · Azure 19% · Google 16%", "$168B quarter — +55% YoY growth", "12th straight quarter of rising growth"], url: "https://www.srgresearch.com/articles/cloud-market-growth-rate-surges-to-well-over-50-per-year-q3-revenues-reach-168-billion" },
+          ].map((c) => (
+            <a
+              key={c.src}
+              href={c.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cheat-card-hover rounded-lg border bg-card p-4 border-border block"
+            >
+              <div className="text-[10px] font-mono uppercase tracking-[.15em] text-muted-foreground mb-2">
+                {c.src}
+              </div>
+              <ul className="space-y-1">
+                {c.lines.map((l) => (
+                  <li key={l} className="text-[13px] leading-relaxed flex items-start gap-2">
+                    <span className="mt-[7px] h-1 w-1 shrink-0 rounded-full" style={{ background: "var(--primary)" }} />
+                    <span>{l}</span>
+                  </li>
+                ))}
+              </ul>
+            </a>
+          ))}
+        </div>
+      </section>
+
       {/* ─── Results ────────────────────────────────────────────────── */}
       <section className="max-w-6xl mx-auto px-4 sm:px-5 md:px-8 py-8 sm:py-12 md:py-16 w-full flex-1">
         <div className="flex items-center justify-between mb-4 sm:mb-6">
