@@ -195,6 +195,7 @@ sudo dscacheutil -flushcache          # macOS`,
   ],
 
   goDeeper: [
+    { title: "Networking release notes and announcements", url: "https://www.ietf.org/standards/rfcs/", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "RFC 793 (TCP) / 768 (UDP) / 1035 (DNS) / 7540 (HTTP/2) / 8446 (TLS 1.3) / 9114 (HTTP/3)", url: "https://www.rfc-editor.org/", note: "The primary sources. RFCs are denser than tutorials but are the only authoritative references — read the ones for protocols you depend on daily." },
     { title: "Beej's Guide to Network Programming", url: "https://beej.us/guide/bgnet/", note: "Free, friendly, comprehensive intro to the sockets API and the C-level reality of TCP/UDP. The canonical first read for anyone touching raw networking." },
     { title: "TCP/IP Illustrated, Volume 1 (W. Richard Stevens)", url: "https://www.oreilly.com/library/view/tcpip-illustrated-volume/9780132806208/", note: "The classic 1000-page treatment of every protocol in the stack with packet-level detail. Stevens' examples still run today." },
