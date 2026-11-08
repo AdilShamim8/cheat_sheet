@@ -10,6 +10,7 @@ const sheet: CheatSheet = {
   year: 2009,
   author: "Ryan Dahl",
   lastUpdated: "2026-11",
+  readingTime: 29,
 
   tldr: [
     "Node.js is a JavaScript runtime built on Chrome's V8 engine plus libuv: single-threaded event loop, non-blocking I/O, and an async-first standard library. It excels at I/O-heavy servers, tooling, and scripts that live close to the npm ecosystem.",
@@ -192,7 +193,6 @@ setInterval(() => {
   ],
 
   goDeeper: [
-    { title: "Node.js release notes and announcements", url: "https://nodejs.org/en/blog/release", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "Node.js official docs", url: "https://nodejs.org/docs/latest/api/", note: "The API reference is genuinely readable — the stream, event-loop, and worker_threads chapters are the ones that pay off." },
     { title: "Node.js Best Practices (goldbergyoni)", url: "https://github.com/goldbergyoni/nodebestpractices", note: "The 100k-star production checklist: error handling, security, structure, testing — audit your repo against it." },
     { title: "The Node.js Event Loop — official guide", url: "https://nodejs.org/en/learn/asynchronous-work/event-loop-timers-and-nexttick", note: "Loop phases, nextTick vs microtasks, setImmediate vs setTimeout(0) — the canonical explanation." },
@@ -577,7 +577,6 @@ test("order flow persists", async () => {
 
   // ─── §17 Ecosystem & tooling ──────────────────────────────────────────────
   ecosystem: [
-    { tool: "Bun 1.4.4", purpose: "All-in-one runtime; bun fmt ~286x faster than Prettier on its own repo (Oct 2026).", url: "https://bun.com/blog/bun-v1.4.4", category: "build" },
     { tool: "Fastify", purpose: "High-performance framework with schema-optimized serialization; the API default over Express.", url: "https://fastify.dev/", category: "framework" },
     { tool: "NestJS", purpose: "Opinionated DI/decorator architecture for large teams with Java/C# habits.", url: "https://docs.nestjs.com/", category: "framework" },
     { tool: "Hono", purpose: "Ultra-light router that runs on Node/Bun/Deno/edge — portable handlers.", url: "https://hono.dev/", category: "framework" },
