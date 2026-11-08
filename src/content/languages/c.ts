@@ -172,6 +172,7 @@ static const size_t n_commands =
   ],
 
   goDeeper: [
+    { title: "C release notes and announcements", url: "https://www.open-std.org/jtc1/sc22/wg14/", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "The C Programming Language (K&R, 2nd ed.)", url: "https://www.oreilly.com/library/view/the-c-programming/9780133086249/", note: "Kernighan & Ritchie — still the most concise correct introduction to idiomatic C." },
     { title: "ISO/IEC 9899:2023 — C23 Standard", url: "https://www.iso.org/standard/82075.html", note: "The authoritative language spec; the definitive answer on edge-case semantics." },
     { title: "Modern C (Jens Gustedt)", url: "https://gustedt.gitlabpages.inria.fr/modern-c/", note: "Free, comprehensive treatment of C99 through C23; the modern successor to K&R." },
