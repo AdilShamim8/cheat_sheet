@@ -8,6 +8,7 @@ const sheet: CheatSheet = {
   tags: ["dynamic", "interpreted", "embedded", "office", "macro", "visual-basic", "enterprise"],
   tagline: "Visual Basic for Applications — the scripting layer that powers Excel automation in every finance and ops team on Earth.",
   year: 1993,
+  lastUpdated: "2026-11",
   author: "Microsoft",
 
   tldr: [
