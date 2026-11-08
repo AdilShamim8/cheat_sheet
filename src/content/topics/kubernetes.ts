@@ -10,6 +10,7 @@ const sheet: CheatSheet = {
   year: 2014,
   author: "Google (Borg lineage), CNCF",
   lastUpdated: "2026-11",
+  readingTime: 29,
 
   tldr: [
     "Kubernetes is a control plane that drives a cluster of machines toward a declared desired state: you submit YAML describing containers, replicas, networks, and storage; controllers continuously reconcile reality against it.",
