@@ -9,6 +9,7 @@ const sheet: CheatSheet = {
   tagline: "Larry Wall's Swiss-army chainsaw — the duct tape of the early web, still unmatched for one-liner text wrangling.",
   year: 1987,
   lastUpdated: "2026-11",
+  readingTime: 30,
   author: "Larry Wall",
 
   tldr: [
@@ -183,7 +184,6 @@ print "got \${^MATCH}\\n";   # 'll' even after the next regex runs`,
   ],
 
   goDeeper: [
-    { title: "Perl release notes and announcements", url: "https://www.perl.org/get.html", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "perldoc.perl.org — official Perl documentation", url: "https://perldoc.perl.org/", note: "Start with perlintro, then perlvar (the special variables), then perlsyn and perlop. Everything is browsable online." },
     { title: "Modern Perl (chromatic)", url: "https://modernperlbooks.com/books/modernperl/", note: "Free book; the canonical 'how to write Perl like it's 2024 not 1998' reference. Treats Moo, strictures, and named params as defaults." },
     { title: "Programming Perl (Wall, Christiansen, Orwant)", url: "https://www.oreilly.com/library/view/programming-perl-4th/9781449321453/", note: "The Camel book — the language reference by Larry Wall himself. Dense but authoritative; chapters 2-8 cover every operator." },
