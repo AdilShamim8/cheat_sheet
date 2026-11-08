@@ -9,6 +9,7 @@ const sheet: CheatSheet = {
   tagline: "Lisp-flavored multiple dispatch over LLVM — Python's ergonomics with Fortran's speed for numerical work.",
   year: 2012,
   lastUpdated: "2026-11",
+  readingTime: 30,
   author: "Jeff Bezanson, Stefan Karpinski, Viral B. Shah, Alan Edelman",
 
   tldr: [
@@ -194,7 +195,6 @@ end
   ],
 
   goDeeper: [
-    { title: "Julia release notes and announcements", url: "https://julialang.org/downloads/", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "Julia Documentation — official manual", url: "https://docs.julialang.org/en/v1/", note: "Read the 'Performance Tips' and 'Types' chapters — they explain 80% of why Julia code is fast or slow." },
     { title: "Julia: The Original Paper (Bezanson et al., 2017)", url: "https://arxiv.org/abs/1411.1607", note: "The peer-reviewed rationale for multiple dispatch + specialization as a language design choice." },
     { title: "Modern Julia Workflows", url: "https://modernjuliaworkflows.org/", note: "Community-maintained guide to packaging, testing, CI, and performance work in 2024-era Julia." },
