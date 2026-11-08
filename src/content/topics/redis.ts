@@ -152,6 +152,7 @@ ZRANGEBYSCORE events <from_ms> <to_ms>   # time-indexed lookup
   ],
 
   quickReference: [
+    { fact: "Learning path: redis.io learn → streams tutorial → CLIENT TRACKING → redis-cli --bigkeys on a real dataset.", tag: "learning" },
     { fact: "Current: Redis 8.10.3 (Oct 2026 security release — cluster-bus heap overflow fix >4GB PUBLISH propagation). Redis 8.x merged modules into core: query engine (search), JSON, time series, probabilistic (bloom/cuckoo/topk).", tag: "version" },
     { fact: "Valkey (BSD fork under Linux Foundation, post-2021 license change) is at 9.1.3 — the drop-in used by AWS ElastiCache/Lambda-friendly stacks and cloud vendors avoiding RSALv2/SSPL.", tag: "version" },
     { fact: "DB-Engines Nov 2026: #8 overall (163.3). Still the default cache in 2026 architectures, now with vector search competition from pgvector/dedicated DBs.", tag: "usage" },
