@@ -690,6 +690,26 @@ docker buildx build \
     },
   ],
 
+  loops: [
+    {
+      lang: "dockerfile",
+      caption: "Cache-friendly multi-stage layer ordering",
+      code: `FROM node:26-alpine AS deps
+WORKDIR /app
+COPY package.json bun.lock ./
+RUN bun install --frozen-lockfile
+
+FROM deps AS build
+COPY . .
+RUN bun run build
+
+FROM node:26-alpine AS run
+WORKDIR /app
+COPY --from=build /app/.next/standalone ./
+USER node
+CMD ["node", "server.js"]`,
+    },
+  ],
 };
 
 export default sheet;
