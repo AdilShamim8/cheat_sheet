@@ -9,6 +9,7 @@ const sheet: CheatSheet = {
   tagline: "The only native language of the browser — runs the web front-end and, via Node.js, a vast slice of back-ends and tooling.",
   year: 1995,
   lastUpdated: "2026-11",
+  readingTime: 30,
   author: "Brendan Eich",
 
   tldr: [
@@ -188,7 +189,6 @@ async function loadWithCutoff(url, ms) {
   ],
 
   goDeeper: [
-    { title: "JavaScript release notes and announcements", url: "https://tc39.es/process-document/", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "ECMAScript® 2024 Language Specification", url: "https://tc39.es/ecma262/", note: "The authoritative spec; the abstract operations explain coercion and prototype semantics." },
     { title: "MDN Web Docs — JavaScript Reference", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript", note: "Best browser-side reference; covers API availability matrix per engine." },
     { title: "You Don't Know JS Yet (Kyle Simpson)", url: "https://github.com/getify/You-Dont-Know-JS", note: "Free, deep treatment of scope, closures, this, types, and async." },
@@ -798,7 +798,6 @@ export default defineConfig({
 
   // ─── §17 Ecosystem & Tooling ───────────────────────────────────────
   ecosystem: [
-    { tool: "Vite 8.3.6", purpose: "Build tool current line (Nov 2026).", url: "https://github.com/vitejs/vite/releases", category: "build" },
     { tool: "Node.js", purpose: "The dominant JS runtime — built on V8 + libuv; the foundation of server-side JS.", url: "https://nodejs.org/", category: "build" },
     { tool: "Deno", purpose: "Secure-by-default runtime with native TS, web-standard APIs, and a curated stdlib.", url: "https://deno.com/", category: "build" },
     { tool: "Bun", purpose: "All-in-one runtime + bundler + test runner + package manager; 2-5x faster startup than Node.", url: "https://bun.sh/", category: "build" },
