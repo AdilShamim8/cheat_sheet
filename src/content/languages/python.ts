@@ -9,7 +9,7 @@ const sheet: CheatSheet = {
   tagline: "Batteries-included, dynamically-typed language — the default for scripting, data/ML, and backend services.",
   year: 1991,
   author: "Guido van Rossum",
-  lastUpdated: "2026-08",
+  lastUpdated: "2026-11",
 
   tldr: [
     "Python is a high-level, dynamically-typed, garbage-collected language whose design prioritizes readability and a single obvious way to do most things.",
@@ -139,7 +139,7 @@ def handle(r: Result) -> int:
 
   quickReference: [
     { fact: "GIL: only one thread runs Python bytecode at a time — use multiprocessing or C-extensions (NumPy releases the GIL) for true CPU parallelism.", tag: "perf" },
-    { fact: "PEP 703 (no-GIL) is opt-in behind PYTHON_GIL=0 in 3.13+; becomes default in 3.14+.", tag: "version" },
+    { fact: "Free-threaded Python (no-GIL) is officially supported since 3.14 (PEP 779); 3.15 adds a stable abi3t ABI and installs free-threading by default in the official macOS binaries.", tag: "version" },
     { fact: "List comprehension is ~30-50% faster than an equivalent for-loop with .append() due to specialized bytecode.", tag: "perf" },
     { fact: "Dict ordering is insertion-ordered since 3.7 (CPython 3.6 implementation detail, then language guarantee).", tag: "version" },
     { fact: "sys.int_max_str_digits caps int→str conversion at 4300 digits by default since 3.11 (DoS mitigation).", tag: "gotcha" },
@@ -829,7 +829,8 @@ exclude_lines = [
     { version: "3.11", year: 2022, highlight: "10-60% faster (specialization), exception groups (PEP 654), TaskGroup, 'tomllib'." },
     { version: "3.12", year: 2023, highlight: "PEP 695 type parameter syntax ('def f[T](x: T)'), f-string improvements, per-interpreter GIL groundwork." },
     { version: "3.13", year: 2024, highlight: "Experimental free-threaded build (no GIL, PEP 703), JIT landing, '--disable-gil' flag." },
-    { version: "3.14", year: 2025, highlight: "Free-threaded build promoted, deferred evaluation of annotations (PEP 649), template strings (t-string)." },
+    { version: "3.14", year: 2025, highlight: "Free-threaded build officially supported (PEP 779), deferred annotations (PEP 649), template strings (t-strings), tail-calling interpreter on Windows x64." },
+    { version: "3.15", year: 2026, highlight: "Lazy imports (PEP 810), frozendict + sentinel builtins (PEP 814/661), UTF-8 default encoding (PEP 686), unpacking in comprehensions (PEP 798), Tachyon profiler, stable abi3t ABI." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────
