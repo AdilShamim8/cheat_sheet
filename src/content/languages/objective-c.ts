@@ -792,6 +792,7 @@ OCMVerify([mock dataTaskWithRequest:[OCMArg checkWithBlock:^BOOL(id req) {
     { version: "Blocks", year: 2009, highlight: "Closures (blocks) added with iOS 4 / Mac OS X 10.6 — required for GCD and modern completion-handler APIs." },
     { version: "ARC", year: 2011, highlight: "Automatic Reference Counting (Xcode 4.2 / iOS 5) — compiler inserts retain/release, eliminating a whole class of memory bugs." },
     { version: "Literals", year: 2012, highlight: "Clang adds @1, @\"str\", @[], @{} literals and subscripting (arr[0], dict[k]) — major readability win." },
+    { version: "Steady state", year: 2026, highlight: "Language frozen (last major features 2015: nullability, generics). Still required for macOS/iOS internals; SwiftUI covers new app UI work." },
     { version: "Modules", year: 2013, highlight: "@import Module; — precompiled headers replaced by semantic modules; faster builds, no more #import cycles." },
     { version: "Nullability", year: 2014, highlight: "nullable / nonnull / null_resettable annotations bridge to Swift optionals. Apple audits the entire SDK in 2015." },
     { version: "Lightweight Generics", year: 2015, highlight: "NSArray<NSString*> — typed collections, mostly compile-time enforced; interop with Swift's [String]." },
