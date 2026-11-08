@@ -10,6 +10,7 @@ const sheet: CheatSheet = {
   year: 2008,
   author: "Wes McKinney",
   lastUpdated: "2026-11",
+  readingTime: 27,
 
   tldr: [
     "pandas gives Python an in-memory table (DataFrame: typed columns + an index) plus the operations that cover ~90% of data work: filtering, joins, group-aggregations, reshaping, and time-series alignment.",
@@ -185,7 +186,6 @@ pd.io.sql.to_sql(df, "stg_events", eng, if_exists="replace", index=False)`,
   ],
 
   goDeeper: [
-    { title: "pandas release notes and announcements", url: "https://pandas.pydata.org/docs/whatsnew/index.html", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "pandas official documentation", url: "https://pandas.pydata.org/docs/", note: "The User Guide's indexing and groupby pages are required reading — 90% of confusion lives there." },
     { title: "pandas 3.1.0 release notes", url: "https://pandas.pydata.org/docs/whatsnew/v3.1.0.html", note: "What changed in the 3.x era: copy-on-write, parallel CSV, select() expressions." },
     { title: "Modern pandas (Ted Petrou)", url: "https://tdpetrou.com/modern-pandas", note: "Method-chaining style and the pre-2.x patterns that led to copy-on-write — the 'why' behind the API." },
