@@ -9,6 +9,7 @@ const sheet: CheatSheet = {
   tagline: "Statically-typed, GC'd language purpose-built for UI — the engine behind Flutter, with a sound null-safety system and an isolates-based concurrency model.",
   year: 2011,
   lastUpdated: "2026-11",
+  readingTime: 30,
   author: "Lars Bak & Kasper Lund (Google)",
 
   tldr: [
@@ -206,7 +207,6 @@ Future<List<String>> _fetchResults(String q) async {
   ],
 
   goDeeper: [
-    { title: "Dart release notes and announcements", url: "https://docs.flutter.dev/release/release-notes", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "Dart Documentation — Official", url: "https://dart.dev/guides", note: "The language tour + library tour are the canonical entry points; Effective Dart is the style guide." },
     { title: "Dart Language Spec (PDF)", url: "https://dart.dev/resources/language/spec", note: "Formal specification — useful for edge cases in null promotion and generic bounds." },
     { title: "Effective Dart", url: "https://dart.dev/effective-dart", note: "Style, documentation, usage, and design guidelines — the equivalent of PEP 8 + Effective Java." },
@@ -908,7 +908,6 @@ void main() {
 
   // ─── §17 Ecosystem & Tooling ───────────────────────────────────────
   ecosystem: [
-    { tool: "Tailwind CSS 4.3.5", purpose: "Utility CSS; 4.3.4 added the Turbopack loader for Next.js (Nov 2026).", url: "https://github.com/tailwindlabs/tailwindcss/releases", category: "build" },
     { tool: "dart", purpose: "The Dart SDK CLI — run, compile, format, analyze, test. Bundled with Flutter.", url: "https://dart.dev/tools/dart-tool", category: "build" },
     { tool: "Flutter", purpose: "Cross-platform UI framework — iOS, Android, web, desktop from one codebase.", url: "https://flutter.dev/", category: "build" },
     { tool: "pub.dev", purpose: "Package registry — 'dart pub get' / 'flutter pub get'. The npm of Dart.", url: "https://pub.dev/", category: "package" },
