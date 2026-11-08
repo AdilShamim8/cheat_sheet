@@ -937,6 +937,7 @@ class UserServiceSpec extends AnyFlatSpec with MockFactory {
     { version: "3.3",  year: 2023, highlight: "Scala 3.3 LTS — second LTS line. Stable for libraries + production. Backwards-compat with 3.1.x." },
     { version: "3.4",  year: 2024, highlight: "Better error messages, -language:strictEquality preview, smaller compiler fixes." },
     { version: "3.5",  year: 2024, highlight: "Iteration over syntax improvements, performance, better Java interop." },
+    { version: "3.9",  year: 2026, highlight: "Continued compiler performance focus, named tuples stabilized, JDK 26-aligned toolchain." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────
