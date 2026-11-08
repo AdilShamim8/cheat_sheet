@@ -159,6 +159,7 @@ void dispatch(const std::vector<Event>& events) {
   ],
 
   quickReference: [
+    { fact: "C++26 feature set is frozen: reflection (P2996), contracts, std::execution — publication ballot pending.", tag: "version" },
     { fact: "C++26 adds reflection (P2996) and contracts; C++23 added std::expected, std::print, std::mdspan; C++20 added concepts, ranges, modules, coroutines.", tag: "version" },
     { fact: "ABI stability freeze on libstdc++/libc++ makes some std types (std::string, std::regex) effectively unfixable — libraries like fmt and re2 exist for this reason.", tag: "gotcha" },
     { fact: "std::vector growth is amortized O(1) append via 1.5–2x capacity doubling; reserve() before bulk inserts to avoid reallocation.", tag: "complexity" },
