@@ -912,6 +912,7 @@ print("all tests passed")`,
   versionHistory: [
     { version: "1.0", year: 1993, highlight: "First release at PUC-Rio — designed as a configuration language for PETROBRAS data entry tools." },
     { version: "2.0", year: 1995, highlight: "Adds 'long strings' [[...]], fallbacks for table access (proto-metatables)." },
+    { version: "5.4",  year: 2020, highlight: "Integer division & bitwise operators, goto, <close> to-be-closed variables, generational GC. Current major; 5.5 in development." },
     { version: "3.0", year: 1996, highlight: "Introduces metatables (replacing fallbacks), tag methods, anonymous functions. The modern language takes shape." },
     { version: "4.0", year: 2000, highlight: "Multiple assignment, locals anywhere, 'for' generic iterator. Major API cleanup." },
     { version: "5.0", year: 2003, highlight: "Register-based VM (~30% fewer ops than stack-based), lexical scoping, full coroutine support." },
