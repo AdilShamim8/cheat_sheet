@@ -200,6 +200,7 @@ spec:
   ],
 
   pitfalls: [
+    { title: "Assuming Pod startup order", symptom: "Service B crashes at boot because Pod A was not ready yet.", fix: "initContainers with wait loops or readiness-gated Services (startupProbe + retry clients); ordering is never guaranteed by the API." },
     { title: "No resource requests/limits", symptom: "Pods land on packed nodes, get OOM-killed randomly, HPA autoscaling does nothing, cluster dies on one noisy neighbor.", fix: "Set requests (scheduling guarantee) and limits (containment) on every container, always. Size from metrics (kubectl top), not vibes. CPU limits cause throttling — many teams set CPU requests only + memory both, deliberately and explicitly." },
     { title: "Deploying :latest and praying", symptom: "Rollouts don't trigger (same tag), rollbacks impossible, no one knows what's running, cache-pull surprises.", fix: "Pin immutable tags (git SHA or semver) — the Deployment spec must change for a rollout to happen. imagePullPolicy aside, :latest breaks the core k8s contract that spec-change drives change." },
     { title: "Skipping readiness probes (or pointing them at /)", symptom: "Traffic hits pods mid-boot or mid-crash; 502s during every deploy; rolling updates are not actually zero-downtime.", fix: "readiness = 'should this pod receive traffic' (deps connected, warmed up) — gates rollout steps. liveness = 'should this pod be restarted' (deadlock detection). Keep liveness lenient — a strict liveness probe causes restart storms under load." },
