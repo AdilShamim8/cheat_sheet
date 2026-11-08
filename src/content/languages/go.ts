@@ -835,6 +835,7 @@ func TestMain(m *testing.M) {
 
   // ─── §17 Ecosystem & Tooling ───────────────────────────────────────
   ecosystem: [
+    { tool: "Go 1.27.3", purpose: "Current patch (Oct 2026).", url: "https://go.dev/dl/", category: "build" },
     { tool: "go (the toolchain)", purpose: "The Go tool — `go build`, `go test`, `go vet`, `go fmt`. Batteries included; no Makefile needed.", url: "https://go.dev/cmd/go/", category: "build" },
     { tool: "Go modules", purpose: "Built-in dependency manager — go.mod, go.sum, GOPROXY; replaced every previous attempt (dep, glide, godep).", url: "https://go.dev/ref/mod", category: "package" },
     { tool: "golangci-lint", purpose: "Meta-linter aggregating 50+ analyzers — the de-facto standard for Go CI.", url: "https://golangci-lint.run/", category: "lint" },
