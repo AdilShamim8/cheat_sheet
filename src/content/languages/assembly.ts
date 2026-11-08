@@ -1043,6 +1043,7 @@ int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
     { version: "ARM SVE", year: 2016, highlight: "Scalable Vector Extension — vector length agnostic (128-2048 bits). Used in HPC (Fugaku supercomputer)." },
     { version: "RISC-V", year: 2010, highlight: "Open ISA — base RV32I/RV64I + extensions (M, A, F, D, V). Gaining ground in embedded and custom silicon." },
     { version: "x86 APX", year: 2023, highlight: "Intel's Advanced Performance Extensions — 16 new GPRs (r16-r31), 3-operand instructions. Modernizes x86." },
+    { version: "RISC-V RVA23", year: 2024, highlight: "RVA23 profile standardizes the SoC baseline (Vector 1.0 mandatory) — the reference target for portable RISC-V software through this decade." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────
