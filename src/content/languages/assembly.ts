@@ -8,6 +8,7 @@ const sheet: CheatSheet = {
   tags: ["low-level", "compiled", "isa", "x86-64", "arm64", "systems", "bare-metal"],
   tagline: "The textual form of the CPU's actual instructions — what every compiled program ultimately becomes.",
   year: 1947,
+  lastUpdated: "2026-11",
   author: "Kathleen Booth (first symbolic assembler)",
 
   tldr: [
