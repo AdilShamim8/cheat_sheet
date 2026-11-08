@@ -792,6 +792,7 @@ exclude_lines = [
 
   // ─── §17 Ecosystem & Tooling ───────────────────────────────────────
   ecosystem: [
+    { tool: "uv 0.13.7", purpose: "Rust-based Python manager; 0.13.0 made Python 3.15 the default (Nov 2026).", url: "https://github.com/astral-sh/uv/releases", category: "build" },
     { tool: "uv", purpose: "Astral's Rust-based package manager — 10-100x faster than pip/pip-tools.", url: "https://docs.astral.sh/uv/", category: "package" },
     { tool: "ruff", purpose: "Rust-based linter + formatter — replaces flake8/isort/black/pyupgrade in one tool.", url: "https://docs.astral.sh/ruff/", category: "lint" },
     { tool: "mypy", purpose: "Static type checker; the original. Use --strict for new code.", url: "https://mypy.readthedocs.io/", category: "lint" },
