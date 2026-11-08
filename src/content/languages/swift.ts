@@ -9,6 +9,7 @@ const sheet: CheatSheet = {
   tagline: "Apple's static, type-safe systems language for iOS/macOS — value semantics, protocol-oriented design, and structured concurrency.",
   year: 2014,
   lastUpdated: "2026-11",
+  readingTime: 30,
   author: "Chris Lattner (Apple)",
 
   tldr: [
@@ -212,7 +213,6 @@ func sync<R: Repository>(_ remote: R) async throws where R.Entity: Codable {
   ],
 
   goDeeper: [
-    { title: "Swift release notes and announcements", url: "https://www.swift.org/blog/", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "The Swift Programming Language — Official Book", url: "https://docs.swift.org/swift-book/", note: "Apple's canonical language guide; the Language Reference chapter is the spec-lite." },
     { title: "Swift Evolution — SE Proposals", url: "https://github.com/swiftlang/swift-evolution", note: "Every language feature has an SE number; read proposals to understand motivation and trade-offs." },
     { title: "Swift.org — Official Site", url: "https://www.swift.org/", note: "Open-source Swift, downloads, blog, and working group notes (server, embedded, etc.)." },
