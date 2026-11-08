@@ -791,9 +791,27 @@ fi
     { vs: "illumos / SmartOS", whenThis: "Linux for almost everything — the default with the largest ecosystem.", whenThat: "illumos when you want ZFS + DTrace + Zones as first-class primitives + Joyent's Triton. Niche but technically excellent." },
   ],
   functions: [
-    { syntax: "f() { local x=$1; ...; }", behavior: "Function with local scope — locals prevent leaking/clobbering globals.", when: "Any script > 20 lines: functions + set -euo pipefail + local = maintainable bash." },
-    { syntax: "trap cleanup EXIT", behavior: "Guaranteed handler on exit/interrupt — the RAII of shell.", when: "Temp files, locks, ssh tunnels — always clean up, even on error." },
-    { syntax: "xargs -P / parallel", behavior: "Fan out a command across cores with bounded parallelism.", when: "Batch jobs: convert/compress/process thousands of files." },
+    {
+      lang: "bash",
+      caption: "Shell functions done right: locals, traps, fan-out",
+      code: `#!/usr/bin/env bash
+set -euo pipefail
+
+cleanup() { rm -f "$TMP"; }
+TMP=$(mktemp); trap cleanup EXIT
+
+fetch_page() {
+  local url=$1 retries=3
+  for ((i = 1; i <= retries; i++)); do
+    curl -fsSL --max-time 10 "$url" && return 0
+    sleep $((i * 2))
+  done
+  echo "failed: $url" >&2; return 1
+}
+export -f fetch_page
+
+cat urls.txt | xargs -P 8 -I{} bash -c 'fetch_page "{}" >> out.txt'`,
+    },
   ],
 
   testing: [
