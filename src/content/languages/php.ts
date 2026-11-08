@@ -8,6 +8,7 @@ const sheet: CheatSheet = {
   tags: ["dynamic", "interpreted", "web", "backend", "laravel", "scripting", "shared-nothing"],
   tagline: "Web-first dynamic language powering ~75% of the web — shared-nothing request model, opcache-fast, with Laravel as the dominant framework.",
   year: 1995,
+  lastUpdated: "2026-11",
   author: "Rasmus Lerdorf",
 
   tldr: [
@@ -972,6 +973,7 @@ $mailer->shouldReceive('sendWelcome')
     { version: "8.3",  year: 2023, highlight: "Typed class constants, json_validate(), #[Override] attribute, deep-cloning of readonly props." },
     { version: "8.4",  year: 2024, highlight: "Property hooks (C#-like), asymmetric visibility, array_find(), new without parens in args." },
     { version: "9.0",  year: 2025, highlight: "Expected release — drops PHP 7.x-era legacy APIs, marks many extensions moved to PECL." },
+    { version: "8.5",  year: 2025, highlight: "Pipe operator |>, clone with, #[\NoDiscard] attribute, array_first()/array_last(), URI extension (RFC 3986/WHATWG)." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────
