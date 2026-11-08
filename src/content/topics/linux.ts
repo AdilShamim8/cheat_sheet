@@ -215,6 +215,7 @@ cat /proc/sys/fs/file-nr
   ],
 
   goDeeper: [
+    { title: "Linux Fundamentals release notes and announcements", url: "https://www.kernel.org/", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "The Linux Programming Interface (Michael Kerrisk)", url: "https://man7.org/tlpi/", note: "The definitive 1500-page reference on Linux/UNIX system programming — syscalls, signals, IPC, threads. Author maintains the man pages." },
     { title: "Linux man pages — especially section 7", url: "https://man7.org/linux/man-pages/man7/intro.7.html", note: "Section 7 has overview pages (signal, user_namespaces, cgroups, capabilities) that explain concepts the per-command pages assume you know." },
     { title: "systemd Documentation", url: "https://systemd.io/", note: "Official docs including the unit file reference, 'systemd for Administrators' blog series by Lennart Poettering, and the rationale behind the design." },
