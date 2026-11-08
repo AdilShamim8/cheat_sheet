@@ -577,6 +577,7 @@ test("order flow persists", async () => {
 
   // ─── §17 Ecosystem & tooling ──────────────────────────────────────────────
   ecosystem: [
+    { tool: "Bun 1.4.4", purpose: "All-in-one runtime; bun fmt ~286x faster than Prettier on its own repo (Oct 2026).", url: "https://bun.com/blog/bun-v1.4.4", category: "build" },
     { tool: "Fastify", purpose: "High-performance framework with schema-optimized serialization; the API default over Express.", url: "https://fastify.dev/", category: "framework" },
     { tool: "NestJS", purpose: "Opinionated DI/decorator architecture for large teams with Java/C# habits.", url: "https://docs.nestjs.com/", category: "framework" },
     { tool: "Hono", purpose: "Ultra-light router that runs on Node/Bun/Deno/edge — portable handlers.", url: "https://hono.dev/", category: "framework" },
