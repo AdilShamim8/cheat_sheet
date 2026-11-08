@@ -1,0 +1,11 @@
+name: link-check
+on:
+  schedule: [{ cron: "0 4 1 * *" }]
+  workflow_dispatch: {}
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: lycheeverse/lychee-action@v2
+        with: { fail: false }
