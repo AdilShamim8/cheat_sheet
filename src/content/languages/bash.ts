@@ -176,6 +176,7 @@ some-command 2> >(tee /dev/stderr) 1> >(verbose | tee out.log)`,
   ],
 
   quickReference: [
+    { fact: "bash 5.3 is the current line (malloc hardening, loadable-builtin rework); distros mostly still ship 5.2.x.", tag: "version" },
     { fact: "`set -Eeuo pipefail` is the minimum safety floor — exit on error, undefined var, broken pipe. -E inherits ERR traps to subshells.", tag: "gotcha" },
     { fact: "Quote every expansion: `\"$VAR\"`, `\"$@\"`, `\"\${arr[@]}\"`. Unquoted = word-split + glob expand.", tag: "gotcha" },
     { fact: "`\"$@\"` preserves each arg as one word; `\"$*\"` joins with IFS (usually space). Use `\"$@\"` 99% of the time.", tag: "gotcha" },
