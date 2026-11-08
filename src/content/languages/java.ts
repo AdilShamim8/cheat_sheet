@@ -8,6 +8,7 @@ const sheet: CheatSheet = {
   tags: ["static-typing", "jvm", "gc", "oop", "enterprise", "backend", "portable"],
   tagline: "A statically-typed, GC'd, JVM-based language with a vast enterprise ecosystem — the default for large back-end systems on the JVM.",
   year: 1995,
+  lastUpdated: "2026-11",
   author: "James Gosling (Sun Microsystems)",
 
   tldr: [
@@ -796,6 +797,7 @@ class UserRepositoryTest {
     { version: "Java 17 (LTS)", year: 2021, highlight: "Records, sealed types, pattern matching for instanceof, switch expressions." },
     { version: "Java 21 (LTS)", year: 2023, highlight: "Virtual threads, sequenced collections, pattern matching for switch, generational ZGC." },
     { version: "Java 25 (LTS)", year: 2025, highlight: "Scoped values, structured concurrency, statement patterns, AOT caching improvements." },
+    { version: "Java 26", year: 2026, highlight: "HTTP/3 client (JEP 517), AOT object caching with any GC, structured concurrency 6th preview, Applet API removed." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────
