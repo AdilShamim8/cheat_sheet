@@ -793,6 +793,11 @@ npx playwright test e2e/checkout-smoke.spec.ts --reporter=json > /tmp/result.jso
     { syntax: "SLO + error budget", behavior: "Target reliability (99.9%) minus actual = budget for change risk.", when: "Burn the budget → freeze features and pay down reliability debt." },
   ],
 
+  concurrency: [
+    { syntax: "parallel matrix CI", behavior: "Split tests across runners; merge results (merge queue).", when: "Test suites > 5 minutes: parallelize by file, shard by timing." },
+    { syntax: "blue-green / canary / rolling", behavior: "Two envs instant-switch / small % traffic ramp / gradual pod replacement.", when: "Canary + automated rollback (error-rate SLO guard) is the 2026 default." },
+  ],
+
 };
 
 export default sheet;
