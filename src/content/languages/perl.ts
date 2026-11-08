@@ -857,6 +857,7 @@ is(\$obj->name, 'Alice', 'mock object name');`,
     { version: "5.32", year: 2020, highlight: "isa operator (\$x isa MyClass), chained comparisons (1 < \$x < 10), alpha-regex removed." },
     { version: "5.36", year: 2022, highlight: "Signatures STABLE (no longer experimental), use v5.36 enables strict, given/when removed from feature bundle." },
     { version: "5.40", year: 2024, highlight: "try/catch stable, class/field/method (cor) experimental OO, ^builtin module for core functions." },
+    { version: "5.44", year: 2026, highlight: "class feature stabilized further, new builtin functions, performance work. Current stable: 5.44.x." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────
