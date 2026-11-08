@@ -14,7 +14,7 @@ const sheet: CheatSheet = {
 
   tldr: [
     "NumPy provides the ndarray: a typed, contiguous, N-dimensional buffer plus a vectorized operation library over it. Python loops compile to C-speed loops over raw memory — that one idea is the foundation of pandas, PyTorch, scikit-learn, SciPy, and JAX.",
-    "It is the most-depended-upon numerical package in the Python ecosystem (NumPy 2.5.4 current, Oct 2026; supports Python 3.12-3.15) and the interop substrate: Arrow, DLPack, and the Array API all speak its dialect.",
+    "It is the most-depended-upon numerical package in the Python ecosystem (NumPy 2.5.4 current, Oct 2026; supports Python 3.12-3.14) and the interop substrate: Arrow, DLPack, and the Array API all speak its dialect.",
     "Reach for NumPy directly when you're doing array math — linear algebra, signal processing, simulations, image kernels — or when you need to break out of pandas/PyTorch overhead in a hot loop.",
     "It is NOT a dataframe tool (pandas/Polars), not a GPU tensor library (PyTorch/JAX), and not distributed (Dask): but each of those inherits its mental model — learn it once here.",
   ],
@@ -187,7 +187,7 @@ np.clip(X, lo, out=None)`,
 
   quickReference: [
     { fact: "Learning path: numpy-100 exercises → broadcasting page → einsum practice → Array API for portable kernels.", tag: "learning" },
-    { fact: "Current: NumPy 2.5.4 (Oct 2026); 2.5.0 dropped Python 3.11, supports 3.12-3.15, distutils removed, Array-API-compliant descending sorts, improved free-threading support.", tag: "version" },
+    { fact: "Current: NumPy 2.5.4 (Oct 2026); 2.5.0 dropped Python 3.11, supports 3.12-3.14 (3.15 from the rc), distutils removed, Array-API-compliant descending sorts, improved free-threading support.", tag: "version" },
     { fact: "NumPy 2.x (June 2024) was the first major in 18 years: NEP 50 promotion (python scalars weak), new string dtype, copy= keyword, 100+ removed aliases — migration was the story of 2024-25.", tag: "version" },
     { fact: "Slices are views; fancy (integer-array) indexing copies; reshape/transpose are metadata — until non-contiguity forces a copy.", tag: "behavior" },
     { fact: "Broadcasting: shapes align right; size-1 dims stretch without copying. (n,) is never (n,1) — the top shape bug in ML glue code.", tag: "shapes" },
@@ -489,7 +489,7 @@ def test_zscore_matches_naive():
     { version: "1.24-1.26", year: 2023, highlight: "Deprecation cleanup for 2.0 (np.float aliases removed), meson build migration, NEP 50 design." },
     { version: "2.0", year: 2024, highlight: "First major in 18 years: NEP 50 promotion rules, StringDType, zero-copy __dlpack__ both ways, 100+ removals — ecosystem-wide migration." },
     { version: "2.1-2.2", year: 2024, highlight: "f2py meson, datetime improvements, free-threading (no-GIL) wheels experiment alongside CPython 3.13." },
-    { version: "2.5", year: 2026, highlight: "2.5.0 (Jun): Python 3.11 dropped (3.12-3.15), distutils removed, Array-API descending sorts, better free-threading. Current: 2.5.4 (Oct 2026)." },
+    { version: "2.5", year: 2026, highlight: "2.5.0 (Jun): Python 3.11 dropped (3.12-3.14), distutils removed, Array-API descending sorts, better free-threading. Current: 2.5.4 (Oct 2026)." },
   ],
 
   // ─── §19 Interview hot questions ──────────────────────────────────────────

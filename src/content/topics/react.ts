@@ -14,7 +14,7 @@ const sheet: CheatSheet = {
 
   tldr: [
     "React is a component-based UI library: you describe what the UI should look like for a given state, and React reconciles the DOM to match. It is not a full framework — routing, data fetching, and server concerns come from the ecosystem (Next.js, React Router) or the platform.",
-    "It runs the largest share of the frontend world (85% usage in State of JS 2025; ~252M weekly npm downloads as of Nov 2026) and has the deepest hiring pool, component library ecosystem, and AI-tooling support of any UI technology.",
+    "It runs the largest share of the frontend world (85% usage among front-end framework users in State of JS 2025; ~253M weekly npm downloads as of Nov 2026) and has the deepest hiring pool, component library ecosystem, and AI-tooling support of any UI technology.",
     "Reach for React when you need complex interactive state, a huge ecosystem, or hiring liquidity; it is the default for SaaS dashboards, design tools, and anything with rich client-side interaction.",
     "Avoid React for content-heavy sites where SSR frameworks or HTMX-style server rendering are simpler, or when a tiny bundle matters more than ecosystem (Preact, Solid, Svelte weigh less).",
   ],
@@ -183,18 +183,18 @@ function SubmitButton() {
     { title: "Keys from array index in reorderable lists", symptom: "Inputs keep the wrong value after sort/filter — component identity follows position, not item.", fix: "Use stable unique ids as keys. Index keys are safe only for append-only static lists." },
     { title: "useEffect for data fetching causes waterfalls", symptom: "Fetch-in-useEffect runs after paint, serially per component — slow pages, race conditions on fast typing.", fix: "Fetch on the server (RSC/route loaders) or use a data library (TanStack Query, RSC, SWR) with keys. Never hand-roll fetch races in effects." },
     { title: "mutating state instead of replacing it", symptom: "state.items.push(x) does nothing visible — same reference, React skips the render.", fix: "Always create new references: setItems([...items, x]). Nested objects need spread at each level — Immer makes deep updates ergonomic." },
-    { title: "Overusing useMemo/useCallback/memo", symptom: "Wrapped everything 'for performance' — code is unreadable and may be slower (memo comparison cost).", fix: "Measure first (React DevTools Profiler). Memoize referential stability only where a memoized child actually re-renders expensively. React Compiler (RC 2026) automates this." },
+    { title: "Overusing useMemo/useCallback/memo", symptom: "Wrapped everything 'for performance' — code is unreadable and may be slower (memo comparison cost).", fix: "Measure first (React DevTools Profiler). Memoize referential stability only where a memoized child actually re-renders expensively. React Compiler (stable since Oct 2025) automates this." },
     { title: "Calling hooks conditionally", symptom: "If a hook runs after an early return, React throws 'Rendered fewer hooks than expected' and the tree crashes.", fix: "Hooks must run unconditionally in the same order every render — move early returns below all hooks, extract the conditional part into a component." },
     { title: "Client Components by default in RSC apps", symptom: "Whole app ships as JS because every file starts with 'use client'.", fix: "Only leaf interactive components are client. Layouts, data fetching, and static content stay server components; pass serializable props down." },
   ],
 
   quickReference: [
-    { fact: "Learning path Nov 2026: react.dev learn → build with Vite/Next 16 → React Compiler RC → Testing Library + Playwright.", tag: "learning" },
+    { fact: "Learning path Nov 2026: react.dev learn → build with Vite/Next 16 → React Compiler (stable) → Testing Library + Playwright.", tag: "learning" },
     { fact: "React 19 (Dec 2024) made Actions, useActionState, useOptimistic, useFormStatus, ref-as-prop, and Document Metadata stable; 19.3 (Sep 2026) added <ViewTransition/> and the browser() react-dom entry.", tag: "version" },
-    { fact: "State of JS 2025: 85% usage, 72% retention. npm: ~252M weekly downloads — an order of magnitude above every other UI library.", tag: "usage" },
+    { fact: "State of JS 2025: 85% usage among front-end framework users, 72% satisfaction. npm: ~253M weekly downloads — an order of magnitude above every other UI library.", tag: "usage" },
     { fact: "Server Components render on the server, never hydrate, and ship zero JS; Client Components hydrate and own state. The boundary is the 'use client' directive.", tag: "rsc" },
     { fact: "setX updates are batched automatically (React 18+) — multiple setX in one handler cause one render. Automatic batching applies inside promises and timeouts too.", tag: "behavior" },
-    { fact: "React Compiler (RC, 2026) auto-memoizes components — the long-term answer to manual useMemo/useCallback everywhere.", tag: "version" },
+    { fact: "React Compiler (v1.0 stable since Oct 2025) auto-memoizes components — the long-term answer to manual useMemo/useCallback everywhere.", tag: "version" },
     { fact: "Strict Mode double-invokes render+effects in dev to surface impure functions and missing cleanup — never disable it to 'fix' double fetches.", tag: "debug" },
     { fact: "Keys must be stable and unique among siblings — they are identity, not ordering. crypto.randomUUID() for new items; never Math.random().", tag: "gotcha" },
     { fact: "Error boundaries catch render errors in a subtree — class components with componentDidCatch, or react-error-boundary. They do NOT catch event handlers or effects.", tag: "error" },
@@ -630,7 +630,7 @@ test("checkout flow", async ({ page }) => {
     { fact: "useTransition/useDeferredValue keep input responsive on expensive renders — interruptible rendering is free if you opt in.", tag: "concurrent" },
     { fact: "Keys that stay stable across reorderings prevent subtree remounts — the cheapest perf fix in React.", tag: "lists" },
     { fact: "Debounce expensive work on user input (search), but keep the input itself uncontrolled or urgent-updated.", tag: "concurrent" },
-    { fact: "React Compiler auto-memoizes components — removes most manual useMemo/useCallback in app code (RC in 2026).", tag: "compiler" },
+    { fact: "React Compiler auto-memoizes components — removes most manual useMemo/useCallback in app code (stable since Oct 2025).", tag: "compiler" },
     { fact: "Hydration cost scales with client-component tree size; push 'use client' to the leaves.", tag: "rsc" },
   ],
 
@@ -660,7 +660,7 @@ test("checkout flow", async ({ page }) => {
     { version: "18", year: 2022, highlight: "Concurrent renderer, automatic batching, Suspense on the server, streaming SSR, useTransition/useDeferredValue/useId." },
     { version: "19", year: 2024, highlight: "Actions + useActionState/useOptimistic/useFormStatus, ref-as-prop, Document Metadata, cleanup-function refs, React Compiler preview." },
     { version: "19.1", year: 2025, highlight: "ViewTransition types, Activity component, use aggregate View; React Compiler beta in Next.js." },
-    { version: "19.3", year: 2026, highlight: "<ViewTransition/> component stable, Fragment refs, browser() react-dom entry, Trusted Types integration, React Compiler RC." },
+    { version: "19.3", year: 2026, highlight: "<ViewTransition/> component stable, Fragment refs, browser() react-dom entry, Trusted Types integration." },
   ],
 
   // ─── §19 Interview hot questions ─────────────────────────────────────────

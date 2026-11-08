@@ -169,7 +169,7 @@ git bisect reset`,
   ],
 
   quickReference: [
-    { fact: "Git 2.56 (Sep 2026) is current — Rust support on by default and mandatory in the planned Git 3.0.", tag: "version" },
+    { fact: "Git 2.56 (Sep 2026) is current — Rust support on by default (since 2.55) and mandatory in the planned Git 3.0.", tag: "version" },
     { fact: "Objects are addressed by SHA-1 (160-bit); migration to SHA-256 is in progress via `git config extensions.objectFormat sha256`.", tag: "version" },
     { fact: "Default branch was renamed master → main in 2020 (GitHub default since Oct 2020). Configure per-repo via `git init -b main`.", tag: "version" },
     { fact: "Reflog retention: 90 days for reachable refs, 30 days for unreachable (gc.reflogExpire / gc.reflogExpireUnreachable).", tag: "gotcha" },
@@ -495,7 +495,7 @@ git unpack-objects < /path/to/clean.pack   # re-import from a good copy
     { version: "2.40", year: 2023, highlight: "Improvements to sparse-checkout, rebase backend default to 'merge', better SHA-256 interop." },
     { version: "2.43", year: 2023, highlight: "Configuration of 'advice.*' refinements, pathspec improvements, faster pack writes." },
     { version: "2.44", year: 2024, highlight: "Scalar promoted to a built-in; --recurse-submodules default for many commands; tracing improvements." },
-    { version: "2.56", year: 2026, highlight: "Current line: `git refs` create/delete/update subcommands, experimental `git history drop`, O(n²)→O(n log n) untracked-file speedup, Rust support default (mandatory in Git 3.0)." },
+    { version: "2.56", year: 2026, highlight: "Current line: `git refs` create/delete/update subcommands, experimental `git history drop`, O(n²)→O(n log n) untracked-file speedup, Rust support on by default (since 2.55; mandatory in Git 3.0)." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────

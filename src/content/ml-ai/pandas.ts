@@ -172,8 +172,8 @@ pd.io.sql.to_sql(df, "stg_events", eng, if_exists="replace", index=False)`,
 
   quickReference: [
     { fact: "Learning path: 100 pandas puzzles → user guide (groupby, merge) → pandera for validation → Polars for scale.", tag: "learning" },
-    { fact: "Current: pandas 3.1.1 (Nov 2026). 3.0 (Jan 2026): copy-on-write mandatory, Arrow string dtype, PyArrow backend default; 3.1: parallel read_csv (2-3x), DataFrame.select() with pd.col() expressions, inplace deprecated.", tag: "version" },
-    { fact: "Requires Python 3.11+ (3.1 supports 3.12-3.15); NumPy ≥ 2.0.2.", tag: "version" },
+    { fact: "Current: pandas 3.1.1 (Nov 2026). 3.0 (Jan 2026): copy-on-write mandatory, Arrow-backed default string dtype; 3.1: parallel read_csv + 2-3x faster single-threaded parser, DataFrame.select() with pd.col() expressions, inplace deprecated.", tag: "version" },
+    { fact: "Requires Python 3.11+; NumPy minimum 1.26 (2.x recommended); the default `str` dtype is Arrow-backed, PyArrow optional.", tag: "version" },
     { fact: "Copy-on-write (2.x opt-in, 3.x mandatory): no more silent views — every write copies. Chained assignment is gone; .loc[...] = is the write path.", tag: "behavior" },
     { fact: "Axis semantics: 0/'index' = down (per column), 1/'columns' = across (per row). 'agg by default' rule: reductions collapse along the axis.", tag: "indexing" },
     { fact: "loc = labels (mask, slices by label), iloc = positions, [] = column access or label-slice on the index. at/iat are scalar fast paths.", tag: "indexing" },
@@ -483,8 +483,8 @@ def test_retention():
     { version: "1.3-1.5", year: 2021, highlight: "Copy-on-write path introduced experimentally; PyArrow integration deepens; CoW is the answer to SettingWithCopy." },
     { version: "2.0", year: 2023, highlight: "Copy-on-write opt-in, Apache Arrow backing for strings, performance across the board, deprecated append/iteritems." },
     { version: "2.2", year: 2024, highlight: "CoW default-ready, PyArrow-backed strings default path, PandasAPI consolidation; Polars pressure shows in perf focus." },
-    { version: "3.0", year: 2026, highlight: "Copy-on-write mandatory, Arrow-first dtypes, NumPy 2 required, Python 3.11+ floor — the biggest breaking release ever. (Jan 2026)" },
-    { version: "3.1", year: 2026, highlight: "Parallel read_csv (2-3x by default), DataFrame.select() with pd.col() expressions, filter(cond=), inplace deprecated (PDEP-8). Current: 3.1.1 (Nov 2026)." },
+    { version: "3.0", year: 2026, highlight: "Copy-on-write mandatory, Arrow-backed default string dtype (PyArrow optional, NumPy ≥1.26), Python 3.11+ floor — the biggest breaking release ever. (Jan 2026)" },
+    { version: "3.1", year: 2026, highlight: "Parallel read_csv on by default (≥5 MB local files), single-threaded parser 2-3x faster, DataFrame.select() with pd.col() expressions, filter(cond=), inplace deprecated (PDEP-8). Current: 3.1.1 (Nov 2026)." },
   ],
 
   // ─── §19 Interview hot questions ──────────────────────────────────────────
