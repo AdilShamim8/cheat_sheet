@@ -166,6 +166,7 @@ setInterval(() => {
   ],
 
   pitfalls: [
+    { title: "Assuming CommonJS in new packages", symptom: "require() of ESM fails or behaves inconsistently across Node lines.", fix: "Pick one module system per package (type field). Node 22+ can require(esm) synchronously, but design new packages ESM-first." },
     { title: "Blocking the event loop with sync code", symptom: "Every request and timer freezes while one handler runs — p99 latency spikes to seconds; health checks fail.", fix: "No sync fs/crypto/regex on hot paths. Use fs/promises, stream large inputs, move CPU work to worker_threads or a side service. Monitor event-loop delay (watchdog interval pattern)." },
     { title: "Unhandled promise rejections crash the process", symptom: "Node 15+: an un-awaited rejection with no handler terminates with ERR_UNHANDLED_REJECTION.", fix: "Always await or .catch; add process.on('unhandledRejection') as a safety net that logs and alerts; frameworks' error handlers only cover their own request scope." },
     { title: "Forgetting keep-alive on outbound fetch", symptom: "Every request pays TCP+TLS setup — throughput collapses and ephemeral ports exhaust under load.", fix: "Use an undici Agent with keepAlive, or a shared fetch dispatcher. For custom agents: set connections per origin and timeouts; never construct a new client per request." },
