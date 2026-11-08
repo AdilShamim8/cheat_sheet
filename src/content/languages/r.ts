@@ -183,6 +183,7 @@ plan(sequential)   # always tear down at the end`,
   ],
 
   goDeeper: [
+    { title: "R release notes and announcements", url: "https://cran.r-project.org/src/base/R-4/", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "R Project — Official Manuals", url: "https://cran.r-project.org/manuals.html", note: "An Introduction to R + R Language Definition are the canonical references." },
     { title: "Advanced R (Hadley Wickham)", url: "https://adv-r.hadley.nz/", note: "Free online; the deep treatment of environments, evaluation, and OO systems. Essential for package authors." },
     { title: "R Packages (Hadley Wickham)", url: "https://r-pkgs.org/", note: "How to write, test, document, and submit packages to CRAN — the engineering manual." },
