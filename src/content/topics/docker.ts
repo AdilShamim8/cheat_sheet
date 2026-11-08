@@ -188,6 +188,7 @@ docker inspect <container> --format '{{json .GraphDriver.Data}}'`,
   ],
 
   quickReference: [
+    { fact: "Docker Engine 29.9.3 (Nov 2026) — security-release line; always read the notes before upgrading Swarm clusters.", tag: "version" },
     { fact: "Layer limit: 127 per image on legacy builder; unlimited with BuildKit (practical limit ~50 before overhead dominates).", tag: "gotcha" },
     { fact: "BuildKit is the default builder since Docker 23.0 (Feb 2023); enable explicitly with DOCKER_BUILDKIT=1 on older versions.", tag: "version" },
     { fact: "OverlayFS (overlay2) is the default storage driver on Linux; requires kernel ≥4.0 and is incompatible with some old filesystems.", tag: "version" },
