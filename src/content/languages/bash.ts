@@ -8,6 +8,7 @@ const sheet: CheatSheet = {
   tags: ["shell", "scripting", "unix", "posix", "devops", "automation", "glue"],
   tagline: "The Unix shell — glue language for processes, pipes, and files, with a footgun at every turn that bash strict mode tames.",
   year: 1989,
+  lastUpdated: "2026-11",
   author: "Brian Fox (GNU)",
 
   tldr: [
