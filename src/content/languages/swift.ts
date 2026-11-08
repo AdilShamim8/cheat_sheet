@@ -8,6 +8,7 @@ const sheet: CheatSheet = {
   tags: ["static", "compiled", "apple", "ios", "systems", "value-types", "actor"],
   tagline: "Apple's static, type-safe systems language for iOS/macOS — value semantics, protocol-oriented design, and structured concurrency.",
   year: 2014,
+  lastUpdated: "2026-11",
   author: "Chris Lattner (Apple)",
 
   tldr: [
@@ -943,6 +944,7 @@ let service = UserService(client: mock)`,
     { version: "5.9",  year: 2023, highlight: "Macros (SE-0382, powers Observable), if/switch expressions, noncopyable types (preview)." },
     { version: "5.10", year: 2024, highlight: "Noncopyable generics, strict concurrency checking complete-ier, Swift Testing released." },
     { version: "6.0",  year: 2024, highlight: "Data-race safety enforced by default, typed throws, USDs of concurrency migration. Major." },
+    { version: "6.4",  year: 2026, highlight: "Swift Build default in SwiftPM, Subprocess 1.0, Span↔C++ std::span interop, up to 40x faster Wasm bridging via JavaScriptKit." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────
