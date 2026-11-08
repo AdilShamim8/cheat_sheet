@@ -161,6 +161,7 @@ function route<K extends keyof Routes>(
   ],
 
   quickReference: [
+    { fact: "TypeScript 7.0.2 (Aug 2026) is current — Go-based compiler, ~10x faster, strict by default; 7.1 in beta.", tag: "version" },
     { fact: "`strict: true` enables noImplicitAny, strictNullChecks, strictFunctionTypes, strictBindCallApply, strictPropertyInitialization, noImplicitThis, alwaysStrict, useUnknownInCatchVariables.", tag: "version" },
     { fact: "TypeScript 5.0 (2023) added `const` type parameters; 5.4 added NoInfer; 5.5 added inferred type predicates.", tag: "version" },
     { fact: "Compilation cost scales with project size and `any` count — `any` defeats memoization in the checker and can 10x incremental builds.", tag: "perf" },
