@@ -193,6 +193,7 @@ main = do
   ],
 
   goDeeper: [
+    { title: "Haskell release notes and announcements", url: "https://www.haskell.org/ghc/blog/", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "Haskell Documentation & GHC User's Guide", url: "https://downloads.haskell.org/ghc/latest/docs/users_guide/", note: "The GHC manual — every language extension, every flag. The real language spec." },
     { title: "Learn You a Haskell for Great Good", url: "http://learnyouahaskell.com/", note: "Free, illustrated intro; covers syntax and typeclasses. Pairs well with Real World Haskell for production concerns." },
     { title: "Real World Haskell (Bryan O'Sullivan et al.)", url: "http://book.realworldhaskell.org/", note: "Free online; the canonical 'how do I do IO, FFI, testing, web in Haskell' book." },
