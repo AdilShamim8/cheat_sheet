@@ -192,6 +192,7 @@ class Greeting {
   ],
 
   goDeeper: [
+    { title: "Kotlin release notes and announcements", url: "https://kotlinlang.org/docs/whatsnew.html", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "Kotlin Documentation — Official", url: "https://kotlinlang.org/docs/home.html", note: "The canonical reference; the coroutines and null-safety pages are essential reading." },
     { title: "Kotlin Language Specification", url: "https://kotlinlang.org/spec/", note: "Formal grammar and semantics — useful when IntelliJ's red squiggle is mysterious." },
     { title: "Kotlin Coroutines (Roman Elizarov)", url: "https://elizarov.medium.com/", note: "Blog of the coroutines lead designer; deep design rationale for structured concurrency.", },
