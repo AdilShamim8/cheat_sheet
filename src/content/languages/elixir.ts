@@ -175,6 +175,7 @@ end`,
   ],
 
   quickReference: [
+    { fact: "Elixir 1.20 (Jun 2026): the gradual type system is complete — every program is type-checked by default.", tag: "version" },
     { fact: "Elixir 1.15 / 1.16 (2024) on BEAM/OTP 26+; OTP 27 adds native JSON, two-segment map syntax, and process labels.", tag: "version" },
     { fact: "Mix is the build tool, Hex is the package manager, ExUnit is the test framework — all bundled.", tag: "version" },
     { fact: "BEAM processes are ~2KB initial stack; millions per node. Preemptive scheduling across N CPU cores.", tag: "perf" },
