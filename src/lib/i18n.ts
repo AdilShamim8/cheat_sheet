@@ -40,6 +40,7 @@ const en: Dict = {
   "nav.search": "Search",
 
   "hub.badge": "references",
+  "hub.data.title": "Real-world data",
   "hub.search.placeholder": "Search — python, async, gradient…",
   "hub.clear": "Clear search",
   "hub.filter.all": "All",
@@ -152,6 +153,7 @@ const zh: Dict = {
   "nav.search": "搜索",
 
   "hub.badge": "条参考",
+  "hub.data.title": "真实世界数据",
   "hub.search.placeholder": "搜索 — python, async, gradient…",
   "hub.clear": "清除搜索",
   "hub.filter.all": "全部",
@@ -261,6 +263,7 @@ const es: Dict = {
   "nav.search": "Buscar",
 
   "hub.badge": "referencias",
+  "hub.data.title": "Datos del mundo real",
   "hub.search.placeholder": "Buscar — python, async, gradient…",
   "hub.clear": "Limpiar búsqueda",
   "hub.filter.all": "Todos",
@@ -370,6 +373,7 @@ const ar: Dict = {
   "nav.search": "بحث",
 
   "hub.badge": "مرجع",
+  "hub.data.title": "بيانات العالم الحقيقي",
   "hub.search.placeholder": "ابحث — python, async, gradient…",
   "hub.clear": "مسح البحث",
   "hub.filter.all": "الكل",
@@ -479,6 +483,7 @@ const fr: Dict = {
   "nav.search": "Rechercher",
 
   "hub.badge": "références",
+  "hub.data.title": "Données du monde réel",
   "hub.search.placeholder": "Rechercher — python, async, gradient…",
   "hub.clear": "Effacer",
   "hub.filter.all": "Tous",
@@ -588,6 +593,7 @@ const de: Dict = {
   "nav.search": "Suchen",
 
   "hub.badge": "Referenzen",
+  "hub.data.title": "Daten aus der Praxis",
   "hub.search.placeholder": "Suchen — python, async, gradient…",
   "hub.clear": "Suche löschen",
   "hub.filter.all": "Alle",
@@ -697,6 +703,7 @@ const hi: Dict = {
   "nav.search": "खोज",
 
   "hub.badge": "संदर्भ",
+  "hub.data.title": "वास्तविक दुनिया का डेटा",
   "hub.search.placeholder": "खोजें — python, async, gradient…",
   "hub.clear": "खोज साफ़ करें",
   "hub.filter.all": "सभी",
@@ -806,6 +813,7 @@ const ja: Dict = {
   "nav.search": "検索",
 
   "hub.badge": "リファレンス",
+  "hub.data.title": "বাস্তব জগতের তথ্য",
   "hub.search.placeholder": "検索 — python, async, gradient…",
   "hub.clear": "検索クリア",
   "hub.filter.all": "すべて",
@@ -915,6 +923,7 @@ const bn: Dict = {
   "nav.search": "অনুসন্ধান",
 
   "hub.badge": "রেফারেন্স",
+  "hub.data.title": "実世界データ",
   "hub.search.placeholder": "খুঁজুন — python, async, gradient…",
   "hub.clear": "অনুসন্ধান মুছুন",
   "hub.filter.all": "সব",
