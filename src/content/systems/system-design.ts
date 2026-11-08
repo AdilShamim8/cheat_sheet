@@ -223,6 +223,7 @@ class Circuit {
   ],
 
   goDeeper: [
+    { title: "System Design release notes and announcements", url: "https://sre.google/books/", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "Designing Data-Intensive Applications (Martin Kleppmann)", url: "https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/", note: "The single best book on distributed systems concepts — replication, partitioning, consistency, and the tradeoffs that don't go out of date." },
     { title: "Site Reliability Engineering (Google)", url: "https://sre.google/sre-book/table-of-contents/", note: "Free online; the canonical treatment of SLIs/SLOs, incident response, and load balancing at Google scale." },
     { title: "The Twelve-Factor App", url: "https://12factor.net/", note: "Heroku's checklist for stateless, config-driven, disposable services — still the baseline for cloud-native design." },
