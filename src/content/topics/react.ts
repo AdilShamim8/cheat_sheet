@@ -634,6 +634,7 @@ test("checkout flow", async ({ page }) => {
 
   // ─── §17 Ecosystem & tooling ─────────────────────────────────────────────
   ecosystem: [
+    { tool: "Next.js 16.4.5", purpose: "React framework current line; security release Nov 2026.", url: "https://github.com/vercel/next.js/releases", category: "build" },
     { tool: "Next.js", purpose: "The dominant React framework: App Router RSC, routing, SSR/SSG, caching. Current: 16.4.x.", url: "https://nextjs.org/docs", category: "framework" },
     { tool: "TanStack Query", purpose: "Async state: caching, dedupe, retries, optimistic updates. The client-data standard.", url: "https://tanstack.com/query/latest", category: "data" },
     { tool: "TanStack Router / React Router 7", purpose: "Type-safe routing; React Router 7 merged Remix features.", url: "https://tanstack.com/router/latest", category: "routing" },
