@@ -677,8 +677,17 @@ trivy image --format sarif --output /tmp/scan.sarif myapp:latest   # for GitHub 
   ],
 
   concurrency: [
-    { syntax: "docker compose --scale api=4", behavior: "Run N replicas of a service behind one DNS name.", when: "Local load testing and HA-ish dev stacks without k8s." },
-    { syntax: "BuildKit parallelism", behavior: "Builds independent stages in parallel; remote cache shares layers across machines.", when: "Monorepos and CI: --cache-from cuts rebuilds to changed layers only." },
+    {
+      lang: "bash",
+      caption: "Compose scaling and BuildKit shared cache",
+      code: `docker compose up -d --scale api=4
+
+docker buildx create --use --name shared
+docker buildx build \
+  --cache-from type=registry,ref=registry.example.com/api:buildcache \
+  --cache-to type=registry,ref=registry.example.com/api:buildcache,mode=max \
+  --push -t registry.example.com/api:1.42.0 .`,
+    },
   ],
 
 };
