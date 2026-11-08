@@ -675,6 +675,11 @@ trivy image --format sarif --output /tmp/scan.sarif myapp:latest   # for GitHub 
     { syntax: "restart policy × healthcheck", behavior: "restart: unless-stopped + HEALTHCHECK = self-healing container.", when: "Every long-running service; orchestrators add their own probes on top." },
   ],
 
+  concurrency: [
+    { syntax: "docker compose --scale api=4", behavior: "Run N replicas of a service behind one DNS name.", when: "Local load testing and HA-ish dev stacks without k8s." },
+    { syntax: "BuildKit parallelism", behavior: "Builds independent stages in parallel; remote cache shares layers across machines.", when: "Monorepos and CI: --cache-from cuts rebuilds to changed layers only." },
+  ],
+
 };
 
 export default sheet;
