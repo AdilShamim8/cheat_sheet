@@ -205,6 +205,7 @@ loader = DataLoader(ds, batch_size=32, shuffle=True,
   ],
 
   quickReference: [
+    { fact: "PyTorch 2.15 (Oct 2026): rewritten NCCL is the default distributed backend; DCP checkpoints break 2.14 compat.", tag: "version" },
     { fact: "Memory per param in Adam fp32 ≈ 16 bytes: weight(4) + grad(4) + m(4) + v(4). A 1B-param model needs ~16 GB just for the optimizer.", tag: "perf" },
     { fact: "Mixed precision (fp16/bf16) halves weight + activation memory; bf16 needs no GradScaler, fp16 does.", tag: "perf" },
     { fact: "Default Adam lr=1e-3, AdamW lr=1e-3, SGD lr=1e-2 (with momentum). Transformers typically use 3e-4 to 5e-5 with warmup.", tag: "version" },
