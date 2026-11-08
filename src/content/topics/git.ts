@@ -564,6 +564,15 @@ done`,
 gpr() { git sync && git push --force-with-lease; }`,
     },
   ],
+  concurrency: [
+    {
+      lang: "bash",
+      caption: "Worktrees: parallel branches without stash dances",
+      code: `git worktree add ../hotfix hotfix-branch
+cd ../hotfix && git commit -am "fix"
+cd - && git worktree remove ../hotfix`,
+    },
+  ],
 };
 
 export default sheet;
