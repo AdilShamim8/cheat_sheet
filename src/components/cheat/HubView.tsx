@@ -279,10 +279,10 @@ export function HubView({ onNavigate }: HubViewProps) {
         </p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-3">
           {[
-            { src: "TIOBE · Nov 2026", lines: ["Python #1 — 20.86% (all-time high)", "C 11.48% · Java 8.89% · C++ 8.35%", "C# 3.39% · JS 2.42% · R 2.27%"], url: "https://www.tiobe.com/tiobe-index/" },
+            { src: "TIOBE · Nov 2026", lines: ["Python #1 — 20.86%", "C 11.48% · Java 8.89% · C++ 8.35%", "C# 3.39% · JS 2.42% · R 2.27%"], url: "https://www.tiobe.com/tiobe-index/" },
             { src: "Stack Overflow Survey 2026", lines: ["JavaScript 62% — top for 12th year", "SQL 58.4% · Python 58.0% · Bash 51.3%", "TypeScript 43.8% · Java 27.6% · C# 27.1%"], url: "https://survey.stackoverflow.co/2026/technology" },
             { src: "GitHub Octoverse 2026", lines: ["TypeScript #1 language · Python #2", "225M+ devs · 34.3B commits this year", ">40% of PRs start with an AI agent"], url: "https://github.blog/news-insights/octoverse/" },
-            { src: "State of JS 2025", lines: ["React 85% usage · Vue 52% · Angular 48%", "Svelte 27% · Solid 10% (89% retention)", "react: ~252M weekly npm downloads"], url: "https://2025.stateofjs.com/" },
+            { src: "State of JS 2025", lines: ["React 85% usage · Vue 52% · Angular 48%", "Svelte 27% · Solid 10% (89% retention)", "react: ~253M weekly npm downloads"], url: "https://2025.stateofjs.com/" },
             { src: "DB-Engines · Nov 2026", lines: ["Oracle #1 · MySQL #2 · SQL Server #3", "PostgreSQL #4 — top non-commercial", "MongoDB #5 · Redis #8 · Snowflake #6"], url: "https://db-engines.com/en/ranking" },
             { src: "Cloud infra · Q3 2026", lines: ["AWS 26% · Azure 19% · Google 16%", "$168B quarter — +55% YoY growth", "12th straight quarter of rising growth"], url: "https://www.srgresearch.com/articles/cloud-market-growth-rate-surges-to-well-over-50-per-year-q3-revenues-reach-168-billion" },
           ].map((c) => (
