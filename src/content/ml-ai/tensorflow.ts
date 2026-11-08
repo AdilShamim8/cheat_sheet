@@ -938,6 +938,7 @@ def test_one_batch_produces_finite_grads(strategy):
     { version: "2.16", year: 2024, highlight: "Keras 3 default ('import keras'); multi-backend support (JAX, TF, PyTorch, NumPy)." },
     { version: "2.17", year: 2024, highlight: "Keras 3.4+ default; expanded tf.data ops; continued XLA improvements for LLMs." },
     { version: "2.18", year: 2025, highlight: "Stabilized distributed training APIs; DTensor-on-Keras path maturing for SPMD." },
+    { version: "2.21", year: 2026, highlight: "Current stable: Python 3.9 dropped, TFLite int2/int4/uint4 quantized ops, JPEG XL decode in tf.image; 2.22-rc adds Python 3.14 and CUDA 13." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────
