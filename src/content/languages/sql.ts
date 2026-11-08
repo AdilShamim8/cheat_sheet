@@ -8,6 +8,7 @@ const sheet: CheatSheet = {
   tags: ["declarative", "query-language", "relational", "database", "set-based", "ansi", "analytics"],
   tagline: "Declarative set-based query language for relational databases — the universal data interface, surviving four decades of NoSQL challenges.",
   year: 1974,
+  lastUpdated: "2026-11",
   author: "Donald Chamberlin & Raymond Boyce (IBM)",
 
   tldr: [
@@ -929,6 +930,7 @@ DROP TABLE IF EXISTS users;
     { version: "Postgres 15",  year: 2022, highlight: "MERGE statement, logical replication improvements, performance gains." },
     { version: "Postgres 16",  year: 2023, highlight: "Parallel query improvements, extended stats on expressions, COPY FROM more flexible." },
     { version: "Postgres 17",  year: 2024, highlight: "Faster vacuum, incremental backup, SQL/JSON MERGE, better failover." },
+    { version: "Postgres 18",  year: 2025, highlight: "Asynchronous I/O for heap scans (read_stream API), OAuth authentication for SASL/SCRAM, virtual generated columns. Current: 18.6 (Aug 2026 security release); PG 19 at RC." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────
