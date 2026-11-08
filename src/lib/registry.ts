@@ -60,6 +60,7 @@ import react from "@/content/topics/react";
 import nodejs from "@/content/topics/nodejs";
 import postgresql from "@/content/topics/postgresql";
 import redis from "@/content/topics/redis";
+import kubernetes from "@/content/topics/kubernetes";
 
 export const ALL_SHEETS: CheatSheet[] = [
   // Tier 1
@@ -73,7 +74,7 @@ export const ALL_SHEETS: CheatSheet[] = [
   // Systems
   systemDesign,
   // Topics
-  git, docker, linux, networking, devops, react, nodejs, postgresql, redis,
+  git, docker, linux, networking, devops, react, nodejs, postgresql, redis, kubernetes,
 ];
 
 export const SHEETS_BY_SLUG: Record<string, CheatSheet> = Object.fromEntries(
