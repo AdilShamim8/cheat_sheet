@@ -212,6 +212,7 @@ spec:
   ],
 
   quickReference: [
+    { fact: "Learning path: killercoda scenarios → CKA curriculum → own a cluster in kind → Argo CD for GitOps.", tag: "learning" },
     { fact: "Current: v1.37 'Garhwal' (Aug 2026; patch 1.37.2 Oct 2026). Highlights: Memory QoS beta, Metrics API stable, HPA scale-to-zero, rootless kubelet beta.", tag: "version" },
     { fact: "Release cadence: 3 minors/year, ~12 months of patch support per minor — plan upgrades as routine, not events.", tag: "version" },
     { fact: "The API is the product: kubectl, dashboards, GitOps controllers, and every cloud's UI are API clients — automate via the API, never via UI.", tag: "architecture" },
