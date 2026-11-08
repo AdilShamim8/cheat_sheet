@@ -6,7 +6,7 @@ const sheet: CheatSheet = {
   category: "languages",
   tier: 1,
   tags: ["static-typing", "compiled", "systems", "zero-overhead", "manual-memory", "performance"],
-  tagline: "A zero-overhead, multi-parademic systems language — the default when you need performance, control, and a vast library ecosystem at once.",
+  tagline: "A zero-overhead, multi-paradigm systems language — the default when you need performance, control, and a vast library ecosystem at once.",
   year: 1985,
   author: "Bjarne Stroustrup",
 
