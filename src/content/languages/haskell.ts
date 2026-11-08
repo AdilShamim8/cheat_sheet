@@ -8,6 +8,7 @@ const sheet: CheatSheet = {
   tags: ["functional", "static", "pure", "lazy", "typeclasses", "compiled", "research-language"],
   tagline: "A pure, lazy, statically-typed functional language — the research lab where the ideas behind Rust, Swift, and TypeScript type systems were rehearsed.",
   year: 1990,
+  lastUpdated: "2026-11",
   author: "Haskell Committee",
 
   tldr: [
