@@ -935,6 +935,7 @@ for h in hooks: h.remove()  # ALWAYS clean up hooks after debugging`,
     { version: "2.4",  year: 2024, highlight: "torch.load defaults to weights_only=True (security); ONNX exporter via dynamo." },
     { version: "2.5",  year: 2024, highlight: "CuDNN 9; FlexAttention (block-sparse API); compiled transformer blocks in tree." },
     { version: "2.6",  year: 2025, highlight: "Inductor CPU codegen matures; broader GPU dtype support (fp8 on Hopper)." },
+    { version: "2.15", year: 2026, highlight: "Rewritten NCCL backend default for torch.distributed (flight recorder dumps on hangs), one-sided NIXL transports, NVFP4 decoding on Blackwell, Apple Silicon FP8 decode (~1.3x MoE tokens/s)." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────
