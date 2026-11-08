@@ -795,6 +795,11 @@ fi
     { syntax: "xargs -P / parallel", behavior: "Fan out a command across cores with bounded parallelism.", when: "Batch jobs: convert/compress/process thousands of files." },
   ],
 
+  testing: [
+    { syntax: "shellcheck", behavior: "Static analysis for shell: catches quoting, globbing, and SC2086-class bugs.", when: "Every script, every repo — CI-enforced; the single highest-ROI shell tool." },
+    { syntax: "bats-core", behavior: "Bash automated testing system: run() assertions in .bats files.", when: "Scripts whose correctness matters (deploy scripts, init hooks)." },
+  ],
+
 };
 
 export default sheet;
