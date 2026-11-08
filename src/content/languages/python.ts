@@ -156,6 +156,7 @@ def handle(r: Result) -> int:
   ],
 
   goDeeper: [
+    { title: "Python release notes and announcements", url: "https://www.python.org/downloads/", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "Python Documentation — official language reference", url: "https://docs.python.org/3/reference/", note: "The authoritative spec; read the data model chapter for __dunder__ semantics." },
     { title: "PEP 8 — Style Guide for Python Code", url: "https://peps.python.org/pep-0008/", note: "The canonical style reference; ruff/black implement its spirit." },
     { title: "Fluent Python (Luciano Ramalho)", url: "https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/", note: "Best deep treatment of the data model, descriptors, and concurrency." },
