@@ -492,6 +492,7 @@ git unpack-objects < /path/to/clean.pack   # re-import from a good copy
     { version: "2.40", year: 2023, highlight: "Improvements to sparse-checkout, rebase backend default to 'merge', better SHA-256 interop." },
     { version: "2.43", year: 2023, highlight: "Configuration of 'advice.*' refinements, pathspec improvements, faster pack writes." },
     { version: "2.44", year: 2024, highlight: "Scalar promoted to a built-in; --recurse-submodules default for many commands; tracing improvements." },
+    { version: "2.56", year: 2026, highlight: "Current line: `git refs` create/delete/update subcommands, experimental `git history drop`, O(n²)→O(n log n) untracked-file speedup, Rust support default (mandatory in Git 3.0)." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────
