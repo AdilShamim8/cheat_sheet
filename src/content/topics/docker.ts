@@ -669,6 +669,12 @@ trivy image --format sarif --output /tmp/scan.sarif myapp:latest   # for GitHub 
     { vs: "Kubernetes", whenThis: "Docker for local dev, image building, single-host deploy, compose stacks.", whenThat: "Kubernetes when you have many hosts, need autoscaling, rolling deploys, service mesh, or have an ops team. k8s uses containerd internally; Docker-the-runtime is irrelevant." },
     { vs: "Nix / Guix", whenThis: "Docker when you want broad ecosystem familiarity, simple layer model, and CI-host pre-built caching.", whenThat: "Nix when you need bit-for-bit reproducible builds, declarative envs, multi-version coexistence, and don't mind the learning curve." },
   ],
+  operators: [
+    { syntax: "image:tag immutability", behavior: "Tags are mutable pointers; digests (image@sha256:...) are forever.", when: "Pin digests in prod manifests; tags for humans, digests for machines." },
+    { syntax: "layer caching algebra", behavior: "ORDER of RUN/COPY determines cache hits — least→most volatile.", when: "Copy package manifests first, install, THEN copy source (the classic speedup)." },
+    { syntax: "restart policy × healthcheck", behavior: "restart: unless-stopped + HEALTHCHECK = self-healing container.", when: "Every long-running service; orchestrators add their own probes on top." },
+  ],
+
 };
 
 export default sheet;
