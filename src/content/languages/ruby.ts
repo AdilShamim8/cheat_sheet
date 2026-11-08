@@ -9,6 +9,7 @@ const sheet: CheatSheet = {
   tagline: "Dynamic, object-oriented language optimized for developer happiness — the engine behind Rails and a king of internal DSLs.",
   year: 1995,
   lastUpdated: "2026-11",
+  readingTime: 30,
   author: "Yukihiro Matsumoto (Matz)",
 
   tldr: [
@@ -177,7 +178,6 @@ end
   ],
 
   goDeeper: [
-    { title: "Ruby release notes and announcements", url: "https://www.ruby-lang.org/en/news/", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "Ruby Documentation — ruby-doc.org", url: "https://ruby-doc.org/", note: "Official core/stdlib API reference, per-version." },
     { title: "Programming Ruby (Pickaxe) — Pragmatic Bookshelf", url: "https://pragprog.com/titles/ruby5/programming-ruby-3-3-5th-edition/", note: "The canonical Ruby book; the language tour and metaprogramming chapters are essential." },
     { title: "Ruby Spec — The ruby/spec suite", url: "https://github.com/ruby/spec", note: "Executable specification of Ruby semantics — the ground truth when docs disagree." },
