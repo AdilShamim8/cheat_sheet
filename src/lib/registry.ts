@@ -46,6 +46,7 @@ import pytorch from "@/content/ml-ai/pytorch";
 import tensorflow from "@/content/ml-ai/tensorflow";
 import keras from "@/content/ml-ai/keras";
 import scikitLearn from "@/content/ml-ai/scikit-learn";
+import pandas from "@/content/ml-ai/pandas";
 
 // Systems & architecture
 import systemDesign from "@/content/systems/system-design";
@@ -70,7 +71,7 @@ export const ALL_SHEETS: CheatSheet[] = [
   // Tier 3
   objectiveC, perl, lua, julia, matlab, haskell, elixir, clojure, assembly, fortran, vba,
   // ML / AI
-  pytorch, tensorflow, keras, scikitLearn,
+  pytorch, tensorflow, keras, scikitLearn, pandas,
   // Systems
   systemDesign,
   // Topics
