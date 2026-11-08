@@ -9,6 +9,7 @@ const sheet: CheatSheet = {
   tagline: "Ruby-flavored syntax on Erlang's BEAM VM — for systems that must serve millions of WebSocket connections without dropping them.",
   year: 2011,
   lastUpdated: "2026-11",
+  readingTime: 30,
   author: "José Valim",
 
   tldr: [
@@ -192,7 +193,6 @@ end`,
   ],
 
   goDeeper: [
-    { title: "Elixir release notes and announcements", url: "https://elixir-lang.org/blog.html", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "Elixir Official Documentation & Guides", url: "https://hexdocs.pm/elixir/", note: "Authoritative docs; the 'Getting Started' guide is the canonical onboarding path. Hexdocs is the source of truth for every package." },
     { title: "Erlang/OTP Documentation", url: "https://www.erlang.org/docs", note: "Elixir sits on top of OTP — the GenServer, Supervisor, and Application behaviours are documented here in their original form." },
     { title: "Programming Elixir ≥ 1.6 (Dave Thomas)", url: "https://pragprog.com/titles/elixir16/", note: "The canonical intro book; the pattern-matching chapter alone is worth the price." },
