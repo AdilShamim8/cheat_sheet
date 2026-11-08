@@ -182,6 +182,7 @@ Response res = new Response(userF.join(), ordersF.join(), profileF.join());`,
   ],
 
   goDeeper: [
+    { title: "Java release notes and announcements", url: "https://openjdk.org/projects/jdk/", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "The Java Language Specification (JLS)", url: "https://docs.oracle.com/javase/specs/jls/se21/html/index.html", note: "The authoritative language reference; definitive on generics erasure, memory model, and concurrency semantics." },
     { title: "Effective Java (Joshua Bloch, 3rd ed.)", url: "https://www.oreilly.com/library/view/effective-java-3rd/9780134686097/", note: "The canonical book on idiomatic modern Java — items on equals/hashCode, generics, and concurrency are required reading." },
     { title: "Java SE Documentation — Oracle", url: "https://docs.oracle.com/en/java/javase/21/", note: "Official API docs, developer guides, and migration notes per version." },
