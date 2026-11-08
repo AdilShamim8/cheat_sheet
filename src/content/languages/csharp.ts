@@ -169,6 +169,7 @@ tx.Commit();   // rollback runs at scope exit if we throw before here`,
   ],
 
   quickReference: [
+    { fact: ".NET 10 is LTS (EOL Nov 2028); C# 15/.NET 11 at RC — pin LTS for services.", tag: "version" },
     { fact: ".NET 8 (LTS, Nov 2023) added primary constructors, collection expressions; .NET 9 (Nov 2024) adds `field` keyword, more source generators; cadence is annual LTS every even year.", tag: "version" },
     { fact: "JIT compiles per-method on first call; tiered compilation (default since .NET Core 3) tiers C1→C2 — microbenchmarks need explicit warmup.", tag: "perf" },
     { fact: "Span<T> / Memory<T> are zero-allocation views over arrays/strings/native memory — the foundation of modern perf-oriented BCL.", tag: "perf" },
