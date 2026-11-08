@@ -10,6 +10,7 @@ const sheet: CheatSheet = {
   year: 2006,
   author: "Travis Oliphant (from Numeric/NumArray lineage)",
   lastUpdated: "2026-11",
+  readingTime: 27,
 
   tldr: [
     "NumPy provides the ndarray: a typed, contiguous, N-dimensional buffer plus a vectorized operation library over it. Python loops compile to C-speed loops over raw memory — that one idea is the foundation of pandas, PyTorch, scikit-learn, SciPy, and JAX.",
@@ -200,7 +201,6 @@ np.clip(X, lo, out=None)`,
   ],
 
   goDeeper: [
-    { title: "NumPy release notes and announcements", url: "https://numpy.org/news/", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "NumPy documentation — Absolute Basics + User Guide", url: "https://numpy.org/doc/stable/user/absolute_beginners.html", note: "Start here, then broadcasting and indexing pages — the two that unlock everything else." },
     { title: "NumPy 2.x migration guide", url: "https://numpy.org/doc/stable/numpy_2_0_migration_guide.html", note: "NEP 50 promotion and the removed aliases — read before pinning a major version." },
     { title: "100 NumPy Exercises (rougier)", url: "https://github.com/rougier/numpy-100", note: "The classic drill set — do 20 and your array intuition levels up." },
@@ -464,7 +464,6 @@ def test_zscore_matches_naive():
 
   // ─── §17 Ecosystem & tooling ──────────────────────────────────────────────
   ecosystem: [
-    { tool: "Ruff 0.17.4", purpose: "Rust linter/formatter; 0.17.0 shipped signed binaries and removed ruff-lsp (Oct 2026).", url: "https://github.com/astral-sh/ruff/releases", category: "build" },
     { tool: "SciPy", purpose: "Built on NumPy: optimization, signal, sparse, stats, spatial — the rest of numerical Python.", url: "https://scipy.org/", category: "science" },
     { tool: "pandas", purpose: "DataFrames over NumPy arrays — labeled, tabular, SQL-ish.", url: "https://pandas.pydata.org/", category: "data" },
     { tool: "scikit-learn", purpose: "ML estimators consuming (and validating) NumPy arrays.", url: "https://scikit-learn.org/", category: "ml" },
