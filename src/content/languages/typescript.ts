@@ -176,6 +176,7 @@ function route<K extends keyof Routes>(
   ],
 
   goDeeper: [
+    { title: "TypeScript release notes and announcements", url: "https://github.com/microsoft/TypeScript/releases", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "TypeScript Handbook — Official Docs", url: "https://www.typescriptlang.org/docs/handbook/intro.html", note: "The authoritative tutorial; the Type Manipulation section covers generics, mapped, conditional, and template literal types." },
     { title: "TypeScript Release Notes", url: "https://devblogs.microsoft.com/typescript/", note: "Per-version changes are the fastest way to learn what idioms are now safe to use." },
     { title: "Type-level TypeScript", url: "https://type-level-typescript.com/", note: "Free deep course on the type system as a programming language in its own right." },
