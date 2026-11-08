@@ -195,6 +195,7 @@ func sync<R: Repository>(_ remote: R) async throws where R.Entity: Codable {
   ],
 
   quickReference: [
+    { fact: "Swift 6.4.2 (Sep 2026) is current — Swift Build default in SwiftPM, Subprocess 1.0.", tag: "version" },
     { fact: "ARC (Automatic Reference Counting) — no tracing GC; insert `weak`/`unowned` to break cycles. Cost is paid at assignment, not pause.", tag: "perf" },
     { fact: "Structs are value types — copied on assignment. Classes are reference types — ARC-managed. Default to struct.", tag: "gotcha" },
     { fact: "Swift 5.5 introduced structured concurrency (async/await, actors, TaskGroup); Swift 6 enforces data-race safety at compile time.", tag: "version" },
