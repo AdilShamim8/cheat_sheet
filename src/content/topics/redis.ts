@@ -140,6 +140,7 @@ ZRANGEBYSCORE events <from_ms> <to_ms>   # time-indexed lookup
   ],
 
   pitfalls: [
+    { title: "Treating cluster-bus versions as compatible", symptom: "Mixed 7.x/8.x cluster nodes lose replication or crash on protocol mismatches.", fix: "Upgrade clusters node-by-node within one major line; 8.10.3 fixes a >4GB PUBLISH heap overflow — read security releases before scheduling." },
     { title: "KEYS * in production", symptom: "Every client times out; latency graph flatlines whenever a monitoring script or admin console runs KEYS.", fix: "KEYS is O(N) over ALL keys on the single thread. Use SCAN with COUNT for iteration (non-blocking, cursor-based), or maintain a set of key names. Config: rename-command KEYS '' in prod configs as a guardrail." },
     { title: "Big keys (multi-MB values or 1M+-member collections)", symptom: "Latency spikes on access and during BGSAVE (copy-on-write doubles the memory of that key), migration/resharding stalls.", fix: "Keep values under ~10KB and collections in the tens-of-thousands. Shard big structures across keys (hash slots), use unlink-friendly deletes (UNLINK, not DEL) for big keys, monitor with redis-cli --bigkeys / MEMORY USAGE." },
     { title: "Non-atomic read-modify-write sequences", symptom: "GET value, compute in app, SET result — under concurrency the last write wins and updates are lost.", fix: "That's not Redis being broken; your logic spans multiple commands. Use single-command ops (INCR, SETNX, SET ... GET), MULTI/EXEC when all-or-nothing matters, or Lua for multi-step logic. Server-side = atomic." },
