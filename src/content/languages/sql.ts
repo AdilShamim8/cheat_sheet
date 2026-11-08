@@ -214,6 +214,7 @@ ORDER BY path;
   ],
 
   goDeeper: [
+    { title: "SQL release notes and announcements", url: "https://www.postgresql.org/docs/release/", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "PostgreSQL Documentation — SQL Language", url: "https://www.postgresql.org/docs/current/sql.html", note: "The most thorough free SQL reference; the window functions and EXPLAIN chapters are essential." },
     { title: "SQL Standard — ISO/IEC 9075", url: "https://www.iso.org/standard/76583.html", note: "The formal standard (paid). Most engineers use the Postgres docs as a free approximation." },
     { title: "Use The Index, Luke! (Markus Winand)", url: "https://use-the-index-luke.com/", note: "The canonical free book on indexing and query optimization — reads like a thriller." },
