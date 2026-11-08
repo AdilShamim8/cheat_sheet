@@ -198,6 +198,7 @@ EventLoop::run();`,
   ],
 
   goDeeper: [
+    { title: "PHP release notes and announcements", url: "https://www.php.net/releases/", note: "Primary source for tracking what is current — check here before trusting any cheat sheet, including this one." },
     { title: "PHP Manual — Official Documentation", url: "https://www.php.net/manual/en/", note: "The annotated manual is still the canonical reference; user comments often surface real-world gotchas." },
     { title: "PHP RFCs — Request for Comments", url: "https://wiki.php.net/rfc", note: "The source of truth for every modern feature; read RFCs to understand why a feature exists." },
     { title: "PHP: The Right Way", url: "https://phptherightway.com/", note: "Modern best-practices primer — passwords, sessions, dependency injection, security." },
