@@ -551,6 +551,19 @@ git branch --merged main | grep -v main | while read -r b; do
 done`,
     },
   ],
+  functions: [
+    {
+      lang: "bash",
+      caption: "Git aliases as composable functions",
+      code: `# ~/.gitconfig
+[alias]
+  lg = log --graph --oneline --decorate -20
+  undo = reset --soft HEAD~1
+  sync = !git fetch origin && git rebase origin/main
+
+gpr() { git sync && git push --force-with-lease; }`,
+    },
+  ],
 };
 
 export default sheet;
