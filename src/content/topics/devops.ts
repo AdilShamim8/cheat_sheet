@@ -795,8 +795,21 @@ npx playwright test e2e/checkout-smoke.spec.ts --reporter=json > /tmp/result.jso
   ],
 
   concurrency: [
-    { syntax: "parallel matrix CI", behavior: "Split tests across runners; merge results (merge queue).", when: "Test suites > 5 minutes: parallelize by file, shard by timing." },
-    { syntax: "blue-green / canary / rolling", behavior: "Two envs instant-switch / small % traffic ramp / gradual pod replacement.", when: "Canary + automated rollback (error-rate SLO guard) is the 2026 default." },
+    {
+      lang: "bash",
+      caption: "Canary rollout with automated rollback guard",
+      code: `kubectl argo rollouts promote api --to 5%
+if ! check_error_rate "api" 5m; then
+  kubectl argo rollouts abort api
+  exit 1
+fi
+kubectl argo rollouts promote api --full
+
+# Parallel CI: shard the suite across runners
+bun test --shard=1/4 & bun test --shard=2/4 &
+bun test --shard=3/4 & bun test --shard=4/4 &
+wait`,
+    },
   ],
 
 };
