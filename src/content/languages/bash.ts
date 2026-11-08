@@ -940,6 +940,7 @@ jobs:
 
   // ─── §17 Ecosystem & Tooling ───────────────────────────────────────
   ecosystem: [
+    { tool: "Deno 2.9.8", purpose: "Modern JS/TS runtime alternative for scripting (Oct 2026).", url: "https://github.com/denoland/deno/releases", category: "build" },
     { tool: "bash", purpose: "GNU Bourne-Again Shell — the default on most Linux/macOS. v5.x current.", url: "https://www.gnu.org/software/bash/", category: "build" },
     { tool: "dash / ash", purpose: "POSIX sh — fast, minimal. /bin/sh on Debian/Alpine. No arrays, no [[ ]].", url: "https://en.wikipedia.org/wiki/Almquist_shell", category: "build" },
     { tool: "zsh", purpose: "Interactive shell — default on macOS since Catalina. Better tab completion + history.", url: "https://www.zsh.org/", category: "build" },
