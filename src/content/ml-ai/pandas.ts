@@ -171,6 +171,7 @@ pd.io.sql.to_sql(df, "stg_events", eng, if_exists="replace", index=False)`,
   ],
 
   quickReference: [
+    { fact: "Learning path: 100 pandas puzzles → user guide (groupby, merge) → pandera for validation → Polars for scale.", tag: "learning" },
     { fact: "Current: pandas 3.1.1 (Nov 2026). 3.0 (Jan 2026): copy-on-write mandatory, Arrow string dtype, PyArrow backend default; 3.1: parallel read_csv (2-3x), DataFrame.select() with pd.col() expressions, inplace deprecated.", tag: "version" },
     { fact: "Requires Python 3.11+ (3.1 supports 3.12-3.15); NumPy ≥ 2.0.2.", tag: "version" },
     { fact: "Copy-on-write (2.x opt-in, 3.x mandatory): no more silent views — every write copies. Chained assignment is gone; .loc[...] = is the write path.", tag: "behavior" },
