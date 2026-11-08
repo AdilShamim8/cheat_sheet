@@ -8,6 +8,7 @@ const sheet: CheatSheet = {
   tags: ["deep-learning", "autodiff", "gpu", "tpu", "neural-networks", "production", "google", "tensor"],
   tagline: "End-to-end ML platform with eager execution, graph compilation via tf.function, and a battle-tested serving stack.",
   year: 2015,
+  lastUpdated: "2026-11",
   author: "Google Brain",
 
   tldr: [
