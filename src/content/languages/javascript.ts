@@ -8,6 +8,7 @@ const sheet: CheatSheet = {
   tags: ["dynamic", "interpreted", "web", "async", "event-loop", "frontend", "backend"],
   tagline: "The only native language of the browser — runs the web front-end and, via Node.js, a vast slice of back-ends and tooling.",
   year: 1995,
+  lastUpdated: "2026-11",
   author: "Brendan Eich",
 
   tldr: [
@@ -832,6 +833,7 @@ export default defineConfig({
     { version: "ES2023", year: 2023, highlight: "Array.findLast/findLastIndex, toSorted/toReversed (non-mutating), Hashbang grammar." },
     { version: "ES2024", year: 2024, highlight: "Promise.withResolvers, Object.groupBy, Map.groupBy, well-formed Unicode strings." },
     { version: "ES2025", year: 2025, highlight: "Iterator helpers (map/filter/take on iterators), Set methods (union/intersection), import attributes, RegExp.escape." },
+    { version: "ES2026", year: 2026, highlight: "Deferred module evaluation (await-free lazy imports), Float16Array, RegExp modifiers, Iterator sequencing." },
   ],
 
   // ─── §19 Interview Hot Questions ───────────────────────────────────
